@@ -4,8 +4,8 @@ function loop ()
     end
 end
 
-iterator = coroutine.wrap(loop)
+f_iter = coroutine.wrap(loop)
 
-for i,v in iterator do
+for i,v in f_iter do
     print(i,v)
 end
