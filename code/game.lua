@@ -1,5 +1,5 @@
 math.randomseed(os.time())
-function move ()
+function move1 ()
     while true do
         if math.random(2) == 1 then
             coroutine.yield('move')
@@ -9,30 +9,47 @@ function move ()
     end
 end
 
-player1 = coroutine.wrap(move)
-player2 = coroutine.wrap(move)
+function move2 ()
+    -- primeiro um pouco à frente
+    coroutine.yield('move')
+    coroutine.yield('move')
+    coroutine.yield('move')
+    coroutine.yield('move')
 
-moves1 = 0
-moves2 = 0
+    -- agora espero um pouco
+    coroutine.yield('stay')
+    coroutine.yield('stay')
+    coroutine.yield('stay')
+    coroutine.yield('stay')
+
+    -- agora me comporto como "move1"
+    move1()
+end
+
+player1 = coroutine.wrap(move1)
+player2 = coroutine.wrap(move2)
+
+n1 = 0
+n2 = 0
 
 while true do
     if player1() == 'move' then
-        moves1 = moves1 + 1
+        n1 = n1 + 1
     end
-    print('[1] '..string.rep('*',moves1))
+    print('[1] '..string.rep('*',n1))
 
     if player2() == 'move' then
-        moves2 = moves2 + 1
+        n2 = n2 + 1
     end
-    print('[2] '..string.rep('*',moves2))
+    print('[2] '..string.rep('*',n2))
 
-    if moves1>=10 and moves2>=10 then
+    if n1>=10 and n2>=10 then
         print('EMPATE')
         break
-    elseif moves1 >= 10 then
+    elseif n1 >= 10 then
         print('JOGADOR 1')
         break
-    elseif moves2 >= 10 then
+    elseif n2 >= 10 then
         print('JOGADOR 2')
         break
     end
