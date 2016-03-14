@@ -1,5 +1,23 @@
 # Atenção
 
+## 14/03
+
+Para o Trabalho-01, favor incluir uma seção de "Bibliografia" com as fontes de 
+referência para o seu artigo, ex.:
+
+```
+<!-- ARTIGO.md -->
+
+# Introdução
+
+<...>
+
+# Bibliografia
+
+* Site da linguagem: http://www.<linguagem>.org
+* Wikipedia: https://en.wikipedia.org/wiki/<Linguagem>
+```
+
 ## 09/03
 
 Planilha com as notas parciais:
