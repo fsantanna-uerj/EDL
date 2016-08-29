@@ -10,6 +10,13 @@ function c_iter ()
         end
 end
 
+print'------------'
+local f_iter = c_iter()
+for i,v in f_iter do
+    print(i,v)
+end
+
+print'------------'
 local f_iter = c_iter()
 for i,v in f_iter do
     print(i,v)

@@ -11,8 +11,14 @@ function f_coro ()
     coroutine.yield(10, 10*10)
 end
 
+print'------------'
 f_iter = coroutine.wrap(f_coro)
+for i,v in f_iter do
+    print(i,v)
+end
 
+print'------------'
+f_iter = coroutine.wrap(f_coro)
 for i,v in f_iter do
     print(i,v)
 end

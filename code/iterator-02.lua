@@ -7,6 +7,12 @@ function f_iter ()
     return i, i*i
 end
 
+print'------------'
+for i,v in f_iter do
+    print(i,v)
+end
+
+print'------------'
 for i,v in f_iter do
     print(i,v)
 end
