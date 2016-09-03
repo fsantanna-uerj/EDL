@@ -1,12 +1,13 @@
-function counter (ini)
-    local cur = ini or 0
-    return
-        function ()
-            cur = cur + 1
-            return cur
-        end
+local cur1 = 0
+function inc1 ()
+    cur1 = cur1 + 1
+    return cur1
 end
 
-c1 = counter()
-c2 = counter(10)
-print(c1(), c2(), c1())
+local cur2 = 0
+function inc2 ()
+    cur2 = cur2 + 1
+    return cur2
+end
+
+print(inc1(), inc2(), inc2(), inc1())

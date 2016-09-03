@@ -9,4 +9,5 @@ end
 
 c1 = counter()
 c2 = counter(10)
-print(c1(), c2(), c1())
+print(c1(), c2(), c1(),
+      c1, c2, counter)
