@@ -146,6 +146,14 @@ public class HelloWorld {
           STOP RUN.
 ```
 
+###Análise
+
+ * **Readability**: Quando se discute a leitura de um código em COBOL, geralmente duas vertentes são defendidas, há quem diga, por exemplo, que a forte tipagem e as funções bem estruturadas fazem do COBOl uma das linguagens mais fáceis de se compreender, outros, por outro lado, afirmam que a forma bruta de escrita e tipagem fazem dele uma linguagem de difícil compreensão.
+ 
+ * **Writability**: Como o COBOL é uma linguagem baseada na língua inglesa, as funções e os recursos requerem um conhecimento de inglês, sua estruturação em divisões faz com que a escrita precise ser emparelhada e ordenada dando um ar mais pesado a linguagem.
+ 
+ * **Expressiveness**: Como o COBOL é uma linguagem antiga, sua expressividade, quando comparada comparada com outras lingaugem mais atuais, como Java, aparenta passada. Também a estrutura e tipagem do COBOL em relãção a linguagem orientadas a objetos denotam uma expressividade baixa e carente de atualizações, que é realmente um reflexo de uma linguagem de mais de 50 anos.  
+
 ##Conclusão
 
 O COBOL, apesar de ser a 18ª linguagem mais usada, atualmente enfrenta problemas como o custo de se manter um [Mainframe](https://pt.wikipedia.org/wiki/Mainframe) e a dificuldade de se migrar os dados para sistemas não dependentes, algumas empresas até oferecem serviços desse tipo ([Aqui.](http://www.cobol-it.com/)). A verdade é que o [_skill-gap_](http://blog.hackerrank.com/wp-content/uploads/2015/07/COBOL-knowledge-skill-gap-3.png), ou seja, o número de pessoas que estão aprendendo a usar COBOL relacionado com a demanda de profissionais na área não é favorável, mostrando a eminência de uma reestruturação funcional. E apesar dos dados não serem os melhores, a IBM já anunciou planos de desenvolvimento em COBOL para os próximos [50 anos](https://www.youtube.com/watch?v=JLMqkuou2-s), o que pode significar que ainda teremos contato com o COBOL.
