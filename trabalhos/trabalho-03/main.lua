@@ -11,12 +11,19 @@ function love.load()
 	bulletimg = love.graphics.newImage ('LaserBlue.png')
 	background = love.graphics.newImage('Back_Ground.jpg')
 	winning = love.graphics.newImage('Won.png')
+	
+	--Nome: 'love.graphics'
+	--Propriedade: sintaxe
+	--Tempo de Linkagem: Compilação
+	--Explicação: O modulo graphics é chamado em tempo de compilação a fim de ser responsável pelo desenho de linhas, imagens
+	-- textos ou objetos na tela. 
 
 	--Game States
 	gameOver=false
 	gameWon=false
 	canMove=true
 	score=0
+	
 	--Window Dimensions
 	winw = love.graphics.getWidth()
 	winh = love.graphics.getHeight()
@@ -29,6 +36,11 @@ function love.load()
 	player.x = winw / 2 - player.w
 	player.y = winh - 50
 	player.speed = 300
+	
+	--Nome: '/'
+	--Propriedade: Semântica
+	--Tempo de Linkagem: Compilação
+	--Explicação: O operador '/' será definido quanto ao sua finalidade em tempo de compilação de acordo com a lingugem.
 
 	--Create Enemies
 	enemies = {}
@@ -46,7 +58,8 @@ function love.load()
 			enemy.right = true
 		end
 	end
-
+	
+	
 	--Creating collision rectangle for left side
 	colrectL = {}
 	colrectL.x = -10
@@ -90,6 +103,13 @@ function love.update(dt)
 	canShoot = false
 	canShootTimer = canShootTimerMax
 	end
+	
+	--Nome: 'newBullet'
+	--Propriedade: Variável
+	--Tempo de Linkagem: Execução
+	--Explicação: A variável 'newBullet' tem seu valor determinado em tempo de execução, pois depende de valores funcionais que
+	--respondem a interações do usuário.
+
 
 -- Boundaries for Enemies
 
@@ -112,6 +132,12 @@ function love.update(dt)
 	--Update bullets positions
 	for i, bullet in ipairs(bullets) do
 		bullet.y = bullet.y - (shootSpeed * dt)
+		
+	--Nome: 'for'
+	--Propriedade: sintaxe
+	--Tempo de Linkagem: Design
+	--Explicação: O bloco 'for' é definido no design da linguagem sendo uma palavra reservada de classificação 'loop'.
+
 
   		if bullet.y < 0 then -- Remove Bullets (Off the screen)
 			table.remove(bullets, i)
@@ -128,6 +154,11 @@ function love.update(dt)
 			end
 		end
 	end
+	--Nome: 'table.remove(enemies, i)'
+	--Propriedade: Tabela (remove)
+	--Tempo de Linkagem: Execução
+	--Explicação: A remoção da tabela é definida em tempo de execução, pois depende da interação do usuário com as demais
+	--regras do programa.
 
 	if not next(enemies) then
 			for i, bullet in ipairs(bullets) do
@@ -178,6 +209,12 @@ function love.draw()
 		winbmg:play()
 		winbmg:setVolume(0.1)
 		love.graphics.draw(winning, 0, 0)
+		
+	--Nome: 'if'
+	--Propriedade: sintaxe
+	--Tempo de Linkagem: Design
+	--Explicação: O bloco 'if' é definido no design da linguagem sendo uma palavra reservada de classificação 'condition'.
+
 	end 
 end
 
