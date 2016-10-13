@@ -1,4 +1,4 @@
-module Stack exposing (create, empty, top, push, pop)
+module M_Stack exposing (create, empty, top, push, pop)
 
 type alias Stack = List Int
 
