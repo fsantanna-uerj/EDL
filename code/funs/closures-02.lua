@@ -1,15 +1,15 @@
-function new (o)
+function new (x,y)
   return {
     move = function (dx,dy)
-             o.x = o.x + dx
-             o.y = o.y + dy
-             return o.x, o.y
+             x = x + dx
+             y = y + dy
+             return x, y
            end
   }
 end
 
-local o1 = new{x=0,y=0}
-local o2 = new{x=100,y=100}
+local o1 = new(0,0)
+local o2 = new(100,100)
 print( o1.move(10,10) )
 print( o2.move(20,20) )
 print( o1.move(-5,-5) )

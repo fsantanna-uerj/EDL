@@ -1,18 +1,18 @@
-function new (o)
+function new (x,y)
   return {
     move = function (dx,dy)
-             o.x = o.x + dx
-             o.y = o.y + dy
-             return o.x, o.y
+             x = x + dx
+             y = y + dy
+             return x, y
            end,
     get = function ()
-             return o.x, o.y
+             return x, y
           end,
   }
 end
 
-local o1 = new{x=0,  y=290}
-local o2 = new{x=780,y=290}
+local o1 = new(0,  290)
+local o2 = new(780,290)
 
 function love.update (dt)
     o1.move( 100*dt, 0)

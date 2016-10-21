@@ -1,10 +1,12 @@
 function f1 ()
     local x = 10
     local function f2 ()
-              return x
+              local function f3 ()
+                        return x
+                    end
+              return f3
           end
     return f2
 end
 
-local f = f1()
-print( f() )
+print( f1()()() )
