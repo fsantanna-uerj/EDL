@@ -11,7 +11,6 @@ end
 
 r2 = clone(r1)
 print('r2', r2.x, r2.y, r2.w, r2.h)
-
 r2.getArea = function ()
                 return r2.w * r2.h
              end
@@ -21,7 +20,6 @@ r3 = clone(r2)
 r3.h = 200
 print('r3', r3.x, r3.y, r3.w, r3.h)
 print('r3.area', r3.getArea())
-
 r3.getArea = function (o)
                 return o.w * o.h
              end
@@ -40,7 +38,6 @@ print('r5.area', r5:getArea())
 r5.w = 400
 print('r5', r5.x, r5.y, r5.w, r5.h)
 print('r5.area', r5:getArea())
-
 
 Rect = {
     getArea = function (self)
