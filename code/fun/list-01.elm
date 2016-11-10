@@ -17,4 +17,4 @@ h = List.head list
 --main = text (toString listByAppending)
 --main = text (toString listByPrepending)
 --main = text (toString t)
---main = text (toString h)
+main = text (toString h)
