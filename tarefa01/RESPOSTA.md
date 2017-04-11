@@ -4,9 +4,6 @@ Autor: Paulo Henrique Pfitzner      Data:11/04/2017</br>
 Professor: Francisco Sant Anna                     
 Revisões:                                         
 
-
-# 11/04/2017
-
 <!-- RESPOSTA.md -->
 
 - [x] Arquivo cabeçalho :+1: para uso em programas! :shipit:
