@@ -1,12 +1,15 @@
-<br#!                                              !/>      
-<br#!----------------------------------------------!/>
-<br#! Propósito: Estudo de Estrutura de Linguagens !/>
-<br#!----------------------------------------------!/>
-<br#!  Arquivo: RESPOSTA.MD                        !/>   
-<br#!    Autor: Paulo Henrique Pfitzner  11/04/2017!/>
-<br#!Professor: Francisco Sant Anna                !/>
-<br#! Revisões:                                    !/>
-<br#!----------------------------------------------!/>
+<table>
+<tr>
+<td>#!                                              !</td>      
+<td>#!----------------------------------------------!</td>
+<td>#! Propósito: Estudo de Estrutura de Linguagens !</td>
+<td>#!----------------------------------------------!</td>
+<td>#!  Arquivo: RESPOSTA.MD                        !</td>   
+<td>#!    Autor: Paulo Henrique Pfitzner  11/04/2017!</td>
+<td>#!Professor: Francisco Sant Anna                !</td>
+<td>#! Revisões:                                    !</td>
+<td>#!----------------------------------------------!</td>
+</tr>
 
 # 11/04/2017
 
