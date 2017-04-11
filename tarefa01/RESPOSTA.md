@@ -1,8 +1,9 @@
-Propósito: Estudo de Estrutura de Linguagens       
-Arquivo: RESPOSTA.MD                                 
-Autor: Paulo Henrique Pfitzner      Data:11/04/2017
+Propósito: Estudo de Estrutura de Linguagens       </br>    
+Arquivo: RESPOSTA.MD                               </br>
+Autor: Paulo Henrique Pfitzner      Data:11/04/2017</br>
 Professor: Francisco Sant Anna                     
-Revisões:                                          
+Revisões:                                         
+
 
 # 11/04/2017
 
