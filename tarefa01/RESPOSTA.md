@@ -1,12 +1,12 @@
-#                                                    
-#!----------------------------------------------!
-#! Propósito: Estudo de Estrutura de Linguagens !
-#!----------------------------------------------!
-#!  Arquivo: RESPOSTA.MD                        !   
-#!    Autor: Paulo Henrique Pfitzner  11/04/2017!
-#!Professor: Francisco Sant'Anna                !
-#! Revisões:                                    !
-#!----------------------------------------------!
+\*#!                                              !\*      
+\*#!----------------------------------------------!\*
+\*#! Propósito: Estudo de Estrutura de Linguagens !\*
+\*#!----------------------------------------------!\*
+\*#!  Arquivo: RESPOSTA.MD                        !\*   
+\*#!    Autor: Paulo Henrique Pfitzner  11/04/2017!\*
+\*#!Professor: Francisco Sant'Anna                !\*
+\*#! Revisões:                                    !\*
+\*#!----------------------------------------------!\*
 
 # 11/04/2017
 
@@ -17,4 +17,4 @@
 - [ ] Cronograma
 
 @github/EDL
-[Contribution guidelines for this project](/RESPOSTA.md)
+[Contribution guidelines for this project](/tarefa01/RESPOSTA.md)
