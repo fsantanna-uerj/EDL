@@ -1,5 +1,4 @@
-<table>
-<td>
+<table style="width:100%">
 <tr>#!                                              !</tr>      
 <tr>#!----------------------------------------------!</tr>
 <tr>#! Propósito: Estudo de Estrutura de Linguagens !</tr>
@@ -9,7 +8,6 @@
 <tr>#!Professor: Francisco Sant Anna                !</tr>
 <tr>#! Revisões:                                    !</tr>
 <tr>#!----------------------------------------------!</tr>
-</td>
 </table>
 
 # 11/04/2017
