@@ -62,7 +62,7 @@ Javascript     | Elm
 `function(x, y) { return x + y; }` | `\x y -> x + y`
 `Math.max(3, 4)`    | `max 3 4`
 `numbers.map(Math.sqrt)`    | `List.map sqrt numbers`
-`return 2+2`    | `2`
+`return 2+2`    | `2 + 2`
 
 
 Como podemos ver na primeira linha, Elm é uma linguagem que facilita tanto a leitura quanto a escrita através de uma sintaxe que evita o 
