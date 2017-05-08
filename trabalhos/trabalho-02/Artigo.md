@@ -33,7 +33,6 @@ Elm é  projetada com  o objetivo de entregar uma melhor experiência para o des
 - **Time Travel Debugger**: Uma ferramenta que grava e re-simula cada estado da aplicação durante a execução do código para melhor visualização do que ocorre em seu programa;
 - **Gerenciador de pacotes**;
 - **Editor Online**;
-- **Editor Online**;
 - **REPL**;
 - **Interpolação com HTML, CSS e Javascript**;
 
