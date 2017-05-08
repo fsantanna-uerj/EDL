@@ -7,7 +7,7 @@ Origem
 -------------
  A linguagem foi criada como um trabalho de conclusão da curso de graduação de 
 Evan Czaplicki e teve seu lançamento em abril de  2012. Ele como amante da programação funcional começou este projeto afim de trazer a programação funcional, uma maior escalabilidade e mais facilidade de manutenção para dentro do mundo do desenvolvimento web.
-Sua evolução se dá tanto pelas empresas onde Evan trabalhoa, como Prezi e NoRedInk, quanto pelo apoio da comunidade na forma de módulos.
+Sua evolução se dá tanto pelas empresas onde Evan trabalha, como Prezi e NoRedInk, quanto pelo apoio da comunidade na forma de módulos.
 
 
 Influências
