@@ -1,15 +1,15 @@
 Elm
 ===================
 
-Elm é uma linguagem funcional pura e reativa que, assim como algumas outras linguagens web modernas, é compilada para Javascipt, Html e CSS. Elm tem o objetivo de fazer da programação client-side (front-end) uma boa experiência, sendo uma linguagem simples e  fácil de usar.
+Elm é uma linguagem funcional pura e reativa que assim como algumas outras linguagens web modernas, é compilada para Javascipt, Html e CSS. Elm tem o objetivo de fazer da programação client-side (front-end) uma boa experiência, sendo uma linguagem simples e  fácil de usar.
 
 
 
 Origem
 -------------
- A linguagem foi criada como um Trabalho de conclusão da graduação de 
-Evan Czaplicki e teve seu lançamento em abril de  2012. Ele como amante da programação funcional começou este projeto afim de trazer esse tipo de paradigma , uma maior escalabilidade e  facilidade de manutenção para dentro do mundo do desenvolvimento web.
-Seu desenvolvimento se deu tanto pelas empresas onde Evan trabalhou, como Prezi e NoRedInk, quanto pelo apoio da comunidade na forma de módulos.
+ A linguagem foi criada como um trabalho de conclusão da curso de graduação de 
+Evan Czaplicki e teve seu lançamento em abril de  2012. Ele como amante da programação funcional começou este projeto afim de trazer a programação functional, uma maior escalabilidade e  mais facilidade de manutenção para dentro do mundo do desenvolvimento web.
+Sua evolução se dá tanto pelas empresas onde Evan trabalhoa, como Prezi e NoRedInk, quanto pelo apoio da comunidade na forma de módulos.
 
 
 Influências
@@ -18,7 +18,11 @@ Haskell, Standart-ML, OCaml
 
 Classificação
 -------------
-Elm é uma linguagem funcional e reativa, com tipagem forte e estrutura de dados persistente (ou imutável).
+Elm trás as seguintes características como diferencial das liguagens web:
+
+-**Tipagem forte**: Um sistema rígido de tipagem oferece uma form
+
+ uma linguagem funcional pura e reativa, com tipagem forte e estrutura de dados persistente (ou imutável).
 
 
 Por que Elm ?
@@ -64,7 +68,7 @@ newPoint = List.map .x [point,{x=0,y=0}]
 Outro diferencial nesta linguagem é a interpolação com HTML, CSS e Javascript.
 Enquanto em javascript, podemos no máximo colocar todos os códigos no mesmo arquivo, em Elm eles se comunicam como um só, possibilitando a manipulação de objetos do HTML como funções, o cidadão de primeira classe da linguagem.
 
-```
+```html
 // Javascript + HTML
 <!DOCTYPE html>
 <html><head><title>TODO list</title></head>
@@ -87,7 +91,8 @@ Enquanto em javascript, podemos no máximo colocar todos os códigos no mesmo ar
 		}
 	</script>
 </body></html>
-
+```
+```elm
 //Elm
 import Html exposing (Html, button, div, text, br, input, ul, li, h1, h3)
 import Html.Events exposing (onClick, onInput)
@@ -133,8 +138,14 @@ view model =
 
 
 http://evan.czaplicki.us/
+
 http://elm-lang.org
+
 https://en.wikipedia.org/wiki/Elm_(programming_language)
+
 http://elm-lang.org/blog/blazing-fast-html-round-two
+
 https://www.youtube.com/watch?v=oYk8CKH7OhE
+
 https://github.com/izdi/elm-cheat-sheet
+
