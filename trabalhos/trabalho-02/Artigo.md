@@ -1,17 +1,17 @@
 Elm
 ===================
 
-Elm é uma linguagem funcional pura e reativa que assim como algumas outras linguagens web modernas, é compilada para Javascipt, Html e 
-CSS. Elm tem o objetivo de fazer da programação client-side (front-end) uma boa experiência, sendo uma linguagem simples e  fácil de 
-usar.
+Elm é uma linguagem funcional pura e reativa que assim como algumas outras linguagens web modernas, é compilada para 
+Javascipt, Html e CSS. Elm tem o objetivo de fazer da programação client-side (front-end) uma boa experiência, sendo 
+uma linguagem simples e  fácil de usar.
 
 Origem
 -------------
  A linguagem foi criada como um trabalho de conclusão da curso de graduação de 
-Evan Czaplicki e teve seu lançamento em abril de  2012. Ele como amante da programação funcional começou este projeto afim de trazer a 
-programação funcional, uma maior escalabilidade e mais facilidade de manutenção para dentro do mundo do desenvolvimento web.
-Sua evolução se dá tanto pelas empresas onde Evan trabalhoa, como Prezi e NoRedInk, quanto pelo apoio da comunidade na forma de módulos.
-
+Evan Czaplicki e teve seu lançamento em abril de  2012. Ele como amante da programação funcional começou este projeto afim 
+de trazer a programação funcional, uma maior escalabilidade e mais facilidade de manutenção para dentro do mundo do 
+desenvolvimento web. Sua evolução se dá tanto pelas empresas onde Evan trabalha, como Prezi e NoRedInk, quanto pelo apoio da 
+comunidade na forma de módulos.
 
 Influências
 -------------
@@ -21,30 +21,33 @@ Classificação
 -------------
 Elm trás as seguintes características como diferencial das liguagens web:
 
--**Funcional Pura**: Uma linguagem pura trás maior facilidade de refatoração do código e diminui a possibilidade de efeitos colaterais no 
-código.
+- **Funcional Pura**: Uma linguagem pura trás maior facilidade de refatoração e diminui a possibilidade de efeitos 
+colaterais no código.
 
--**Tipagem forte**: Um sistema rígido de tipagem oferece uma previsibilidade maior para o código, ajudando tanto na leitura quanto na 
-análise do compilador.
+- **Tipagem forte**: Um sistema forte de tipagem oferece uma previsibilidade maior para o código, ajuda o desenvolvedor leitura 
+e também na análise do compilador.
 
--**Estrutura de dados persistente**: Uma estrutura de dados persistente faz com que uma vez definido um objeto seu valor não pode mais 
-ser alterado, o que se pode fazer é retornar um novo objeto com os valores modificados. Isso dá ao programa maior previsibilidade e 
-estabilidade, deixando menos propenso a efeitos colaterais.
+- **Estrutura de dados persistente**: Uma estrutura de dados persistente faz com que uma vez definido um objeto seu valor não 
+pode mais ser alterado. O que se pode fazer é retornar um novo objeto com os valores modificados. Isso dá ao programa maior 
+previsibilidade e estabilidade, deixando menos propenso a efeitos colaterais.
 
 
 Por que Elm ?
 -------------
-Elm é  projetada com  o objetivo de entregar uma melhor experiência para o desenvolvedor de aplicações web (client-side), sendo uma 
-linguagem escalável e sem erros em tempo de execução. Hoje Elm conta com uma arquitetura própria de desenvolvimento, chamada de "Elm 
+Elm é  projetada com  o objetivo de entregar uma melhor experiência para o desenvolvedor de aplicações web (client-side), 
+sendo uma 
+linguagem escalável e sem erros em tempo de execução. Hoje Elm conta com uma arquitetura própria de desenvolvimento, chamada 
+de "Elm 
 Archtecture", que apresenta um padrão de projeto modular e que promove o reuso de seus componentes. O desenvolvimento da linguagem também 
 tem o objetivo de com o tempo oferecer novas ferramentas para quem a usa, como por exemplo:
 
--  **Compilador inteligente** : O compilador de Elm é uma ferramenta amigável, agindo mais como um assistente, não só dando com mais 
+-  **Compilador inteligente** : O compilador de Elm é uma ferramenta amigável, agindo mais como um assistente, não só dando 
+com mais 
 detalhes o erro ocorrido mas também tentando dar sugestões de como consertar o ocorrido;
-- **Time Travel Debugger**: Uma ferramenta que grava e re-simula cada estado da aplicação durante a execução do código para melhor 
+- **Time Travel Debugger**: Uma ferramenta que grava e re-simula cada estado da aplicação durante a execução do código para 
+melhor 
 visualização do que ocorre em seu programa;
 - **Gerenciador de pacotes**;
-- **Editor Online**;
 - **Editor Online**;
 - **REPL**;
 - **Interpolação com HTML, CSS e Javascript**;
@@ -62,14 +65,14 @@ Javascript     | Elm
 `function(x, y) { return x + y; }` | `\x y -> x + y`
 `Math.max(3, 4)`    | `max 3 4`
 `numbers.map(Math.sqrt)`    | `List.map sqrt numbers`
-`return 2+2`    | `2 + 2`
+`return 2 + 2`    | `2 + 2`
 
 
-Como podemos ver na primeira linha, Elm é uma linguagem que facilita tanto a leitura quanto a escrita através de uma sintaxe que evita o 
-uso de símbolos e palavras ao escrever o código. Isso também proporciona uma maior unirfomidade na forma como os desenvolvedores 
-escrevem, dando menos liberdade no posicionamento dos símbolos da linguagem. 
-Para a maioria das distinções só se precisa de alguns  símbolos, como `\` para declaração de funções anônimas e espaço para separar os 
-parâmetros. Além disso, em Elm não há como declarar o retorno de uma função, pois tudo na linguagem é uma expressão.
+Como podemos ver na primeira linha, Elm é uma linguagem que facilita tanto a leitura quanto a escrita através de uma sintaxe 
+que evita o uso de símbolos e palavras da sintaxe ao escrever o código. Isso também proporciona uma maior unirfomidade no como os 
+desenvolvedores escrevem, dando menos liberdade no posicionamento dos símbolos da linguagem. 
+Para a maioria das definições só se precisa no máximo de alguns  símbolos, como `\` para declaração de funções anônimas e espaço para 
+separar os parâmetros. Além disso, em Elm não há como declarar o retorno de uma função, pois tudo na linguagem é uma expressão.
 
 Mais um exemplo:
 
@@ -88,7 +91,8 @@ newPoint = List.map .x [point,{x=0,y=0}]
 ```
 
 Outro diferencial nesta linguagem é a interpolação com HTML, CSS e Javascript.
-Enquanto em javascript, podemos no máximo colocar todos os códigos no mesmo arquivo, em Elm eles se comunicam como um só, possibilitando 
+Enquanto em javascript, podemos no máximo colocar todos os códigos no mesmo arquivo, em Elm eles se comunicam como um só, 
+possibilitando 
 a manipulação de objetos do HTML como funções, o cidadão de primeira classe da linguagem.
 
 ```html
@@ -165,7 +169,8 @@ render_to_do lst=
     List.map (\element -> li [] [text element]) lst
 
 view : Model -> Html Msg
-{- Definimos view como uma função que retorna funções HTML. A maioria delas recebe como argumentos: primeiro seus atributos, como id e 
+{- Definimos view como uma função que retorna funções HTML. A maioria delas recebe como argumentos: primeiro seus atributos, 
+como id e 
 class, e como segundo seus filhos. -}
 view model =
   div []
@@ -173,7 +178,8 @@ view model =
       h3 [] [ text "A fazer"]
     , input [ placeholder "Todo" ,id "taskBox", onInput ListenChange] []
     , h3 [] [ text "Feito"]
-    {- abaixo temos uma ul que recebe [id "list"] como primeiro argumento, e como segundo a função que definimos anteriormente, passando 
+    {- abaixo temos uma ul que recebe [id "list"] como primeiro argumento, e como segundo a função que definimos anteriormente,
+     passando 
     como argumento a lista dentro do model -}
     , ul [id "list"] (render_to_do model.to_do_list)
     , button [ onClick AddTask] [text "Add Message"] 
@@ -183,11 +189,15 @@ view model =
 Conclusão
 -------------
 
-Elm é uma linguagem nova, cheia de recursos e peculiaridades, seja em sua sintaxe ou na forma como se desenvolve,  e por isso ainda tem 
-um grande caminho a percorrer antes de deixar de ser uma linguagem para entusiastas e se tornar expressiva no ambiente front-end, já tão 
+Elm é uma linguagem nova, cheia de recursos e peculiaridades, seja em sua sintaxe ou na forma como se desenvolve,  e por isso 
+ainda tem 
+um grande caminho a percorrer antes de deixar de ser uma linguagem para entusiastas e se tornar expressiva no ambiente 
+front-end, já tão 
 concorrido. 
-O fato de ser pensada para agradar o desenvolvedor é sem dúvida um diferencial, pois trás ferramentas inovadoras para quem a usa e também 
-um processo de desenvolvimento menos frustrante para aqueles que não são acostumados com linguagens tão dinâmicas como o javascript.
+O fato de ser pensada para agradar o desenvolvedor é sem dúvida um diferencial, pois trás ferramentas inovadoras para quem a 
+usa e também 
+um processo de desenvolvimento menos frustrante para aqueles que não são acostumados com linguagens tão dinâmicas como o 
+javascript.
 
 
 
