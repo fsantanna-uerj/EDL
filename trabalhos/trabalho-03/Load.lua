@@ -8,6 +8,14 @@ function love.load ()
     angleMax = 1.5
     angleMin = 0.5
 
+    collisions = 0
+    collided = false
+    ballSpeed = 6
+    launched = false
+    score = 0
+
+    gameOn = true
+
     ceil = 0
 
     bars = {}

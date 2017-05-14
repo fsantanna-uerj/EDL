@@ -25,4 +25,8 @@ function love.keypressed(key)
         ball.velX = shooter.x  - centerX
         ball.velY = shooter.y - height 
     end
+
+    if (key == 'r' and (not gameOn)) then 
+        love.load()
+    end
 end

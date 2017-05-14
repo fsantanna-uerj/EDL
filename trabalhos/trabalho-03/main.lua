@@ -4,13 +4,7 @@ require("Phisics")
 require("Debug")
 require("Colliding")
 
-collisions = 0
-collided = false
-ballSpeed = 6
-launched = false
-score = 0
 
-gameOn = true
 function love.update (dt)
     if (gameOn) then
         gaugeAngle(dt)
@@ -40,10 +34,12 @@ function love.draw ()
     end
 
 
-    love.graphics.printf("Voce fez " .. score .. " pontos", width - 100,height-100,200,"left")
+    love.graphics.printf("Voce fez " .. score .. " pontos", width - 200,height-100,200,"left")
 
     if(not gameOn) then 
-        love.graphics.printf("GAME OVER", centerX,centerY,400,"left")
+        love.graphics.printf("GAME OVER", centerX-100,centerY,400,"left")
+        love.graphics.printf("VOCÊ FEZ " .. score .. " PONTOS", centerX-100,centerY + 50,400,"center")
+        love.graphics.printf("APERTE R PARA RECOMEÇAR", centerX-100,centerY + 50,400,"center")
     end
 
     logMe()
