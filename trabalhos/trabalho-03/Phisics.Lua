@@ -25,6 +25,7 @@ function move( dt )
 end
 
 function stop()
+    angle = 0
     shooter.vy = 0
     shooter.ay = 0
 end

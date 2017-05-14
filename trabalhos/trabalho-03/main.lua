@@ -3,40 +3,22 @@ require("Controls")
 require("Phisics")
 require("Debug")
 
-
-impulsed = false
-val = 0
-max = 100
-shooterGauge = 0
-shooterGaugeMax = 760
-shooterGaugeMin = 0
-gaugeWay = true
-
-gaugeBarH = 200
-
+shooter ={}
+shooter.height = 20
+shooter.width = 20
+angle = 0
+angleMax = 1.5
+angleMin = 0.5
+r = 60
 function love.update (dt)
-    checkGround();
-    gravity(dt);
-    move(dt)    
-
-    if (love.keyboard.isDown("a")  and shooter.onGround) then
-        storeGauge(dt)
-    end
-    if love.keyboard.isDown("s") then
-        -- unpressedKey()
-        shooter.y = 499
-        -- shooter.vy = shooterGauge
-        shooter.ay = -shooterGauge
-        shooterGauge = 0
-    end
+    gaugeAngle(dt)
 end
 
 function love.draw ()
-    --shooterDraw
-    love.graphics.rectangle('fill', shooter.x,shooter.y, shooter.w,shooter.h)
-
-    --GaugeDraw
-    love.graphics.rectangle('line', 450,height-gaugeBarH,50,gaugeBarH)
-    love.graphics.rectangle('fill', 450,height,50,-(gaugeBarH * shooterGauge / shooterGaugeMax))
+    myX = centerX + (r * math.sin(angle * math.pi))
+    myY = height + (r * math.cos(angle * math.pi))
+    -- love.graphics.polygon("fill",centerX,height,centerX-shooter.width,height-shooter.height,centerX+shooter.width,height-shooter.height)
+    love.graphics.circle("fill",myX,myY,10)
+    guideLines()
     logMe()
 end

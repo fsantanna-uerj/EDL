@@ -1,31 +1,31 @@
-
-function love.keypressed (key)
-    if (key == "a" and shooter.onGround ) then
-        impulse(val)  
-        val = 0
+alreadyImpulsed = false
+function control(dt)
+    if (love.keyboard.isDown("a")  and shooter.onGround) then
+        -- alreadyImpulsed = false
+        storeGauge(dt)
+    end
+    
+    if(love.keyboard.isDown("s")) then
+        alreadyImpulsed = true
+        shooter.y = 499
+        shooter.ay = -shooterGauge
+        shooterGauge = 0
     end
 end
 
-function unpressedKey(key)
-    if (key == "a" and shooter.onGround) then
-        impulse(val)  
-        val = val+1
-    end
-end
-
-function storeGauge(dt)
-
+function gaugeAngle(dt)
+    angleVel = 1
     if(gaugeWay) then
-        shooterGauge = shooterGauge + (dt * 500)
+        angle = angle + (dt * angleVel)
     else
-        shooterGauge = shooterGauge - (dt * 500)
+        angle = angle - (dt * angleVel)
     end
 
-    if(shooterGauge > shooterGaugeMax) then
-        shooterGauge = shooterGaugeMax
+    if(angle > angleMax) then
+        angle = angleMax
         gaugeWay = false
-    elseif (shooterGauge < shooterGaugeMin) then
-        shooterGauge = shooterGaugeMin
+    elseif (angle < angleMin) then
+        angle = angleMin
         gaugeWay = true
     end
 end
