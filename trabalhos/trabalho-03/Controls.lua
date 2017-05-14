@@ -14,3 +14,15 @@ function gaugeAngle(dt)
         gaugeWay = true
     end
 end
+
+
+function love.keypressed(key)
+    if key == 'a' then
+        createBar()
+        launched = not launched
+        ball.x = shooter.x 
+        ball.y = shooter.y 
+        ball.velX = shooter.x  - centerX
+        ball.velY = shooter.y - height 
+    end
+end

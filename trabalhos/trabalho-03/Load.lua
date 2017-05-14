@@ -10,9 +10,11 @@ function love.load ()
 
     ceil = 0
 
+    bars = {}
+
     shooter ={x = 20,y = 20, radius = 60}
 
-    ball = {x=0,y=0,velX = 0, velY = 0, radius = 10}
+    ball = {x=0,y=0,velX = 0, velY = 0, radius = 10, halfheight = 10, halfwidth = 10}
     
     -- shooter = { x=50,  y=500, w=100, h=100, vy=0, ay=1,onGround = false }
 
