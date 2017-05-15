@@ -10,7 +10,7 @@ function love.load ()
 
     collisions = 0
     collided = false
-    ballSpeed = 6
+    ballSpeed = 10
     launched = false
     score = 0
 
@@ -46,7 +46,7 @@ function createBars()
         local newBarW = 10 + (math.random() * (barMaxW - barMinW))
         local newBar = {
             x = 0 + math.random() * (width - barMaxW)
-            , y = shooter.y + 10 + math.random() * height-barH
+            , y =  10 + math.random() * height-barH - 100
             , height = barH
             , width = newBarW
             , halfwidth = newBarW/4
