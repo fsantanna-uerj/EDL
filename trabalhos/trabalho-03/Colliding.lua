@@ -1,7 +1,16 @@
 function collidingForTwoRectangles(obj)   
-   local leftrightoverlap = math.min(obj.y+obj.halfheight,ball.y+ball.halfheight)-math.max(obj.y-obj.halfheight,ball.y-ball.halfheight)
-   local bottomtopoverlap = math.min(obj.x+obj.halfwidth,ball.x+ball.halfwidth)-math.max(obj.x-obj.halfwidth,ball.x-ball.halfwidth)
-      return leftrightoverlap>0 and bottomtopoverlap>0
+    globalOBJ =  obj
+    local leftrightoverlap = math.min(obj.y+obj.halfheight,ball.y+ball.halfheight)-math.max(obj.y-obj.halfheight,ball.y-ball.halfheight)
+    local bottomtopoverlap = math.min(obj.x+obj.halfwidth,ball.x+ball.halfwidth)-math.max(obj.x-obj.halfwidth,ball.x-ball.halfwidth)
+    if (leftrightoverlap>0 and bottomtopoverlap>0) then
+        if(leftrightoverlap>bottomtopoverlap) then 
+            invertMovement("x")
+        else
+            invertMovement("y")
+        end
+        return true
+    end
+    return false
 end
 
 function collideBorders()

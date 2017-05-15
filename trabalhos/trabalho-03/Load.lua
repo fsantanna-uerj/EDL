@@ -33,4 +33,25 @@ function love.load ()
     gaugeBarH = 200
 
     love.window.setMode( width, height, {fullscreen=false, vsync=false, msaa=0} )
+    createBars() 
+end
+
+function createBars()
+    local barMinW = 20
+    local barMaxW = 200
+    local barH = 20
+    local barN = 3 + math.floor(math.random() * 7)
+    -- local barN = 1;
+    for i=1, barN do
+        local newBarW = 10 + (math.random() * (barMaxW - barMinW))
+        local newBar = {
+            x = 0 + math.random() * (width - barMaxW)
+            , y = shooter.y + 10 + math.random() * height-barH
+            , height = barH
+            , width = newBarW
+            , halfwidth = newBarW/4
+            , halfheight = barH /4
+            , enabled = true}
+        table.insert(bars,newBar)
+    end
 end

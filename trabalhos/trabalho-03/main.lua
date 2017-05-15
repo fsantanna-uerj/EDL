@@ -24,12 +24,12 @@ function love.draw ()
 
     if(launched) then
         love.graphics.circle("fill",ball.x,ball.y,ball.radius)
-        
-        for i=1, table.getn(bars) do
-            bar = bars[i]
-            if(bar.enabled) then
-                love.graphics.rectangle("line",bar.x,bar.y,bar.width,bar.height)
-            end
+    end
+
+    for i=1, table.getn(bars) do
+        bar = bars[i]
+        if(bar.enabled) then
+            love.graphics.rectangle("line",bar.x,bar.y,bar.width,bar.height)
         end
     end
 
@@ -38,11 +38,11 @@ function love.draw ()
 
     if(not gameOn) then 
         love.graphics.printf("GAME OVER", centerX-100,centerY,400,"left")
-        love.graphics.printf("VOCÊ FEZ " .. score .. " PONTOS", centerX-100,centerY + 50,400,"center")
-        love.graphics.printf("APERTE R PARA RECOMEÇAR", centerX-100,centerY + 50,400,"center")
+        love.graphics.printf("VOCÊ FEZ " .. score .. " PONTOS", centerX-100,centerY + 50,400,"left")
+        love.graphics.printf("APERTE R PARA RECOMEÇAR", centerX-100,centerY + 100,400,"left")
     end
 
-    logMe()
+    -- logMe()
 
 
 end
@@ -71,22 +71,7 @@ function collideBarsAndScore()
     score = myScore * 10;
 end
         
-function createBar()
-    local barMinW = 20
-    local barMaxW = 100
-    local barH = 20
-    
-    local newBarW = 10 + (math.random() * (barMaxW - barMinW))
-    local newBar = {
-        x = 0 + math.random() * (width - barMaxW)
-        , y = 0 + math.random() * height-barH
-        , height = barH
-        , width = newBarW
-        , halfwidth = newBarW/2
-        , halfheight = barH /2
-        , enabled = true}
-    table.insert(bars,newBar)
-end
+
 
 
 

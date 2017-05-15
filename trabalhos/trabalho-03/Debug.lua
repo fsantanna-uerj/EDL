@@ -1,15 +1,10 @@
 function logMe()
     logs = {
         {"Angle: " .. angle}
-        , {"Shooter X: " .. shooter.x}
-        , {"Shooter y: " .. shooter.y}
-        , {"Launched: " .. boolToString(launched)}
-        , {"BallVelX: " .. ball.velX}
-        , {"BallVelY: " .. ball.velY}
         , {"BallX: " .. ball.x}
         , {"BallY: " .. ball.y}
-        , {"collided: " .. boolToString(collided)}
-        , {"collisions: " .. collisions}
+        , {"OBJ X: " .. globalOBJ.x}
+        , {"OBJ Y: " .. globalOBJ.y}
     }
     log2(logs)
 end
