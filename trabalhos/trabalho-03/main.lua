@@ -1,6 +1,5 @@
 require("Load")
 require("Controls")
-require("Phisics")
 require("Debug")
 require("Colliding")
 
