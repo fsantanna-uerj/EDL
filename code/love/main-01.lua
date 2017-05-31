@@ -19,7 +19,7 @@ function love.update (dt)
     - ]]..dt..[[ 
 <<<<
 ]])
-    love.timer.sleep(1)
+    love.timer.sleep(2)
 end
 
 function love.keypressed (key)

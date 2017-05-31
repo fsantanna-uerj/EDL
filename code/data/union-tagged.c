@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 typedef struct flexType {
-    char  is_int;
+    char  isint;
     union {
         int   i;
         float f;
@@ -11,8 +11,8 @@ typedef struct flexType {
 int main (void) {
     Flex F;
     F.i = 999999999;
-    F.is_int = 1;
-    if (F.is_int) {
+    F.isint = 1;
+    if (F.isint) {
         printf(">>> %d\n", F.i);
     } else {
         printf(">>> %f\n", F.f);
