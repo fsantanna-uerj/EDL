@@ -1,11 +1,3 @@
---[[
-Nome: palavra reservada "function"
-Propriedade: semântica
-Binding time: design time
-Explicacao: define um bloco de código que tem seu próprio escopo e variáveis, mas que também pode usar as variáveis
-de níveis acima do seu
-]]
-
 function love.load ()
     width = 800
     height = 600
@@ -16,8 +8,8 @@ function love.load ()
     angleMax = 1.5
     angleMin = 0.5
 
-    collisions = 0
-    collided = false
+    --Trabalho-06: Tipo de dado não primitivo: collideInfo é uma tupla, guardando um booleano e um número
+    collideInfo = {false,0}
     ballSpeed = 10
     launched = false
     score = 0
@@ -28,6 +20,7 @@ function love.load ()
 
     bars = {}
 
+    --Trabalho-06: Tipo de dado não primitivo: shooter é um registro, podendo acessar seus valores com shooter.x, shooter.y e shooter.radius
     shooter ={x = 20,y = 20, radius = 60}
 
     ball = {x=0,y=0,velX = 0, velY = 0, radius = 10, halfheight = 10, halfwidth = 10}
@@ -45,22 +38,9 @@ function love.load ()
 end
 
 function createBars()
-
---[[
-Nome: palavra reservada "local"
-Propriedade: semântica
-Binding time: design time
-Explicacao: define uma variável que tem seu acesso condedido somente ao bloco de código onde está declarada e inferiores
-]]
     local barMinW = 20
     local barMaxW = 200
     local barH = 20
---[[
-Nome: math.random()
-Propriedade: valor
-Binding time: runtime
-Explicacao: seu valor é definido aleatóriamente em tempo de execução
-]]
     local barN = 3 + math.floor(math.random() * 7)
     -- local barN = 1;
     for i=1, barN do
@@ -73,23 +53,18 @@ Explicacao: seu valor é definido aleatóriamente em tempo de execução
             , halfwidth = newBarW/4
             , halfheight = barH /4
             , enabled = true}
+        --Trabalho-06: Tipo de dado não primitivo: bars é um array, guardando infinitos objetos do tipo barra
         table.insert(bars,newBar)
     end
 end
 
 function love.update (dt)
---[[
-Nome: parâmetro 'dt'
-Propriedade: Endereço
-Binding time: runtime
-Explicacao: dt é uma variável local da funcão love.update, sendo definida a cada chamada desta função
-]]
     if (gameOn) then
         gaugeAngle(dt)
         ball.x = ball.x + ball.velX * dt * ballSpeed
         ball.y = ball.y + ball.velY * dt * ballSpeed
         if (launched) then
-            collided = collideBorders()
+            collideInfo[1] = collideBorders()
             collideBarsAndScore()
         end
     end
@@ -107,6 +82,7 @@ function love.draw ()
     for i=1, table.getn(bars) do
         bar = bars[i]
         if(bar.enabled) then
+            --Trabalho-06: Tipo de dado não primitivo: ("line") é um enum
             love.graphics.rectangle("line",bar.x,bar.y,bar.width,bar.height)
         end
     end
@@ -139,7 +115,7 @@ function collideBarsAndScore()
         bar = bars[i]
         if (bar.enabled) then
             if (collidingForTwoRectangles(bar)) then
-                collisions =  collisions + 1
+                collideInfo[2] =  collideInfo[2] + 1
                 bar.enabled = false
             end
         else
