@@ -11,6 +11,6 @@ f2: Int -> Int -> Int
 f2 x y = (x * y)
 m2 = List.foldl f2 1 l
 
---main = text (toString l)
+main = text (toString l)
 --main = text (toString m1)
-main = text (toString m2)
+--main = text (toString m2)
