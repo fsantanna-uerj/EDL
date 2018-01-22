@@ -1,4 +1,4 @@
-hoje = 'sexta'
+local hoje = 'sexta'
 print(hoje)
 
 if hoje == 'sexta' then

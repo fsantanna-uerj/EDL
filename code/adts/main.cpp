@@ -1,3 +1,4 @@
+//#define private public
 #include <stdio.h>
 #include "stack.hpp"
 

@@ -12,9 +12,9 @@ toName d =
     Sex -> "Sexta"
     Sab -> "Sábado"
     Dom -> "Domingo"
-    --otherwise -> "???"
+    --otherwise -> "Dia de Trabalho"
     
-hoje = Sab
+hoje = Seg
 
 main = text (toString hoje)
 --main = text (toName hoje)
