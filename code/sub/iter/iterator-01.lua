@@ -1,3 +1,5 @@
+-- loop numerico
+
 print'------------'
 for i=1, 10 do
     local v = i*i

@@ -1,3 +1,5 @@
+-- loop generico (iterador)
+
 local i = 0
 function f_iter ()
     if i == 10 then

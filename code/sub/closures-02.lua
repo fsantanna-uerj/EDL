@@ -1,11 +1,12 @@
 function new (x,y)
-  return {
-    move = function (dx,dy)
-             x = x + dx
-             y = y + dy
-             return x, y
-           end
-  }
+    local me = {
+        move = function (dx,dy)
+            x = x + dx
+            y = y + dy
+            return x, y
+         end
+    }
+    return me
 end
 
 local o1 = new(0,0)
