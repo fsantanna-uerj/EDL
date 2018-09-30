@@ -28,4 +28,3 @@ sub cap12 {
 
 smart_print("frase global");
 cap1();
-cap2();
