@@ -1,4 +1,5 @@
 //#define private public
+
 #include <stdio.h>
 #include "stack.hpp"
 
@@ -11,6 +12,6 @@ int main (void) {
     int v2 = stk.top();
     stk.pop();
     printf(">>> v1=%d v=%d empty=%d\n", v1, v2, stk.empty());
-    //printf(">>> %d\n", stk.maxLen);
+    printf(">>> %d\n", stk.maxLen);
     return 0;
 }
