@@ -14,7 +14,6 @@ Considere a seguinte representação para expressões:
 data Exp = Num Int
          | Add Exp Exp
          | Sub Exp Exp
-  deriving Show
 ```
 
 - Defina valores do tipo `Exp` para as seguintes expressões:
@@ -34,7 +33,7 @@ data Exp = Num Int
 
 - Em vez de retornar um inteiro, defina a função `avalia'` que retorna a
   expressão reduzida a um caso `Num`, e.x:
-    - `avalia (Add (Num 1) (Num 2)`  -->  `Num 3`
+    - `avalia (Add (Num 1) (Num 2)` `-->` `Num 3`
 
 ## 2.
 
