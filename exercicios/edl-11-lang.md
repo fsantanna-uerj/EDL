@@ -17,22 +17,26 @@ data Exp = Num Int
 ```
 
 - Defina valores do tipo `Exp` para as seguintes expressões:
+    - `1`
+        - Resposta: `e0 = Num 1`
     - `1 + 10 - 20`
     - `1 + (10 - 20)`
     - `(5 + 5) - (5 - 5)`
 
 - Escreva e calcule as expressões correspondentes aos seguintes valores:
-    - `e1 = Add (Add (Add 1 2) 3) 4`
-    - `e2 = Add 1 (Add 2 (Add 3 4))`
-    - `e3 = Sub (Sub (Sub 1 2) 3) 4`
-    - `e4 = Sub 1 (Sub 2 (Sub 3 4))`
-    - `e5 = Sub (Sub 1 2) (Sub 3 4)`
+    - `e0 = Add (Num 1) (Num 2)`
+        - Resposta: `1 + 2`
+    - `e1 = Add (Add (Add (Num 1) (Num 2)) (Num 3)) (Num 4)`
+    - `e2 = Add (Num 1) (Add (Num 2) (Add (Num 3) (Num 4)))`
+    - `e3 = Sub (Sub (Sub (Num 1) (Num 2)) (Num 3)) (Num 4)`
+    - `e4 = Sub (Num 1) (Sub (Num 2) (Sub (Num 3) (Num 4)))`
+    - `e5 = Sub (Sub (Num 1) (Num 2)) (Sub (Num 3) (Num 4))`
 
 - Defina a função `avalia` que recebe uma expressão e retorna o valor inteiro
   correspondente a sua avaliação.
 
 - Em vez de retornar um inteiro, defina a função `avalia'` que retorna a
-  expressão reduzida a um caso `Num`, e.x:
+  expressão reduzida a um caso `Num`, ex.:
     - `avalia (Add (Num 1) (Num 2)` `-->` `Num 3`
 
 ## 2.
