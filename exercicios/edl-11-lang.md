@@ -44,3 +44,38 @@ data Exp = Num Int
 - Adicione as operações de multiplicação e divisão ao exercício `1`.
     - Redefina a representação
     - Redefina as funções `avalia` e `avalia'`
+
+## 3.
+
+Considere o tipo `Exp` para representar expressões definido na questão `1`:
+
+```
+data Exp = Num Int
+         | Add Exp Exp
+         | Sub Exp Exp
+```
+
+Considere a variável `e1` que representa a expressão `(1+2) - 5` a seguir:
+
+```
+e1 = Sub (Add (Num 1) (Num 2)) (Num 5)
+```
+
+Considere também a sua implementação da função `avalia` da questão `1`:
+
+```
+avalia :: Expr -> Int
+```
+
+- Reescreva o tipo `Exp`, a variável `e1` e a função `avalia` na linguagem C.
+    - Dica: o tipo `Exp` deve usar `struct`, `union` e `enum`.
+- Com base nesse exercício, faça uma análise sobre a expressividade das duas
+  linguagens.
+
+## 4.
+
+- Refaça a questão `3` usando a linguagem Java.
+    - Dica: o tipo `Exp` deve ser uma classe abstrata e os subtipos devem ser
+            subclasses.
+- Com base nesse exercício, faça uma análise sobre a expressividade das duas
+  linguagens.
