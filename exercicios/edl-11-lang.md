@@ -42,8 +42,8 @@ data Exp = Num Int
 ## 2.
 
 - Adicione as operações de multiplicação e divisão ao exercício `1`.
-    - Redefina a representação
-    - Redefina as funções `avalia` e `avalia'`
+    - Redefina a representação.
+    - Redefina as funções `avalia` e `avalia'`.
 
 ## 3.
 
@@ -79,3 +79,19 @@ avalia :: Expr -> Int
             subclasses.
 - Com base nesse exercício, faça uma análise sobre a expressividade das duas
   linguagens.
+
+## 5.
+
+- Adicione expressões booleanas (`and`, `or`, `not`) ao exercício `1`.
+    - Redefina a representação.
+    - Redefina as funções `avalia`.
+    - Qual decisão de projeto foi necessária, por quê ela foi necessária e qual
+      foi a sua escolha?
+
+## 6.
+
+- Adicione expressões condicionais (`>`, `==`, etc) ao exercício `1`.
+    - Redefina a representação.
+    - Redefina as funções `avalia`.
+    - Qual decisão de projeto foi necessária, por quê ela foi necessária e qual
+      foi a sua escolha?
