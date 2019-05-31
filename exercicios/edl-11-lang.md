@@ -122,8 +122,8 @@ data Exp = Num Int
   seguintes valores:
     - `c0 = Atr "x" (Add (Num 1) (Num 2))`
         - Resposta: `x = 1 + 2   -- (valor final x=3)`
-    - `c1 = Seq (Atr "x" (Num 10)) (Atr "x" (Num 1))
-    - `c2 = Seq (Atr "x" (Num 1)) (Seq (Atr "y" (Add (Var "x") (Num 1))) (Atr "x" (Var "y")))
+    - `c1 = Seq (Atr "x" (Num 10)) (Atr "x" (Num 1))`
+    - `c2 = Seq (Atr "x" (Num 1)) (Seq (Atr "y" (Add (Var "x") (Num 1))) (Atr "x" (Var "y")))`
 
 Considere a representação a seguir para um ambiente de variáveis:
 
