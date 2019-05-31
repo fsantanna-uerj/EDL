@@ -95,3 +95,67 @@ avalia :: Expr -> Int
     - Redefina as funções `avalia`.
     - Qual decisão de projeto foi necessária, por quê ela foi necessária e qual
       foi a sua escolha?
+
+-------------------------------------------------------------------------------
+
+## 7.
+
+Considere as seguintes representações para comandos e expressões:
+
+```
+data Cmd = Atr String Exp   -- atribuicao, ex.: x=1
+         | Seq Cmd Cmd      -- sequencia,  ex.: x=1 ; y=x
+
+data Exp = Num Int
+         | Add Exp Exp
+         | Sub Exp Exp
+         | Var String
+```
+
+- Defina valores do tipo `Cmd` para os seguintes comandos:
+    - `x = 1`
+        - Resposta: `c0 = Atr "x" (Num 1)`
+    - `x = 1 + x - 20`
+    - `x = 1 ; y = 2 ; z = x+y`
+
+- Escreva e calcule o valor final de `x` paras os comandos correspondentes aos
+  seguintes valores:
+    - `c0 = Atr "x" (Add (Num 1) (Num 2))`
+        - Resposta: `x = 1 + 2   -- (valor final x=3)`
+    - `c1 = Seq (Atr "x" (Num 10)) (Atr "x" (Num 1))
+    - `c2 = Seq (Atr "x" (Num 1)) (Seq (Atr "y" (Add (Var "x") (Num 1))) (Atr "x" (Var "y")))
+
+Considere a representação a seguir para um ambiente de variáveis:
+
+```
+type Amb = String -> Int
+    -- uma funcao que recebe um identificador de uma variavel
+    -- e retorna o valor inteiro atual associado a ela
+```
+
+- Implemente as funções
+    `avaliaExp :: Amb -> Exp -> Int` e
+    `avaliaCmd :: Amb -> Cmd -> Amb`.
+    - A resposta completa está no arquivo `lang-04.hs`.
+
+- Teste **individualmente** as funções do item anterior.
+    - Teste com diferentes ambientes iniciais.
+    - Teste pelo menos 5 exemplos para cada função, variando os ambientes.
+
+## 8.
+
+- Crie uma função `avaliaProg :: Cmd -> Int`, que recebe um comando e retorna
+  o valor final da variável `ret`.
+    - Assuma um ambiente inicial onde variáveis não atribuídas tenham o valor
+      `0` por padrão.
+
+## 9.
+
+Considere a seguinte representação para comandos:
+
+```
+data Cmd = Atr String Exp
+         | Seq [Cmd]
+```
+
+- Reimplemente a função `avaliaCmd` da questão `7`.
