@@ -159,3 +159,40 @@ data Cmd = Atr String Exp
 ```
 
 - Reimplemente a função `avaliaCmd` da questão `7`.
+
+## 10.
+
+Adicione comandos de condição e repetição à questão `7`:
+
+```
+data Cmd = Atr String Exp
+         | Seq Cmd Cmd
+         | Cnd Exp Cmd Cmd
+         | Rep Exp Cmd
+```
+
+- Reimplemente a função `avaliaCmd` para tratar os novos comandos.
+
+## 11.
+
+Nos exercícios anteriores, a definição de ambiente usa uma função:
+
+```
+type Amb = String -> Int
+```
+
+Altere a definição de ambientes para uma lista de pares `(String,Int)` que
+mapeia o identificador de uma variável para o seu valor atual:
+
+```
+type Amb = [(String,Int)]
+```
+
+Por exemplo, na lista a seguir, o valor de `x` é `3` e o de `y` é `5` (valor
+mais atual):
+
+```
+amb1 = [("y",5),("x",3),("z",2),("y",1)]
+```
+
+- Altere a questão `7` para funcionar com essa nova representação.
