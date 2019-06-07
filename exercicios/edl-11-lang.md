@@ -173,6 +173,10 @@ data Cmd = Atr String Exp
 
 - Reimplemente a função `avaliaCmd` para tratar os novos comandos.
 
+- Teste programas com as especificações a seguir:
+    - Calcule a soma de `x` até `y` (`x + x+1 + x+2 + ... + y`).
+    - Calcule a soma dos quadrados de `1` até `10` (`1*1 + 2*2 + ... + 10*10`).
+
 ## 11.
 
 Nos exercícios anteriores, a definição de ambiente usa uma função:
@@ -196,3 +200,47 @@ amb1 = [("y",5),("x",3),("z",2),("y",1)]
 ```
 
 - Altere a questão `7` para funcionar com essa nova representação.
+
+-------------------------------------------------------------------------------
+
+## 12.
+
+Considere as seguintes representações para comandos e expressões:
+
+```
+data Cmd = Atr String Exp   -- atribuicao, ex.: x=1
+         | Seq Cmd Cmd      -- sequencia,  ex.: x=1 ; y=x
+         | Dcl String       -- declaracao, ex.: int x
+
+data Exp = Num Int
+         | Add Exp Exp
+         | Sub Exp Exp
+         | Var String
+```
+
+Um programa só é valido caso os identificadores usados nos comandos `Atr` e
+expressões `Var` tenham sido previamente declarados com comandos `Dcl`.
+
+- Implemente as funções
+    `verificaExp :: [String] -> Exp -> Bool` e
+    `verificaCmd :: [String] -> Cmd -> ([String],Bool)`.
+    - O argumento `[String]` é uma lista de identificadores declarados antes de
+      aplicar um comando.
+    - As funções devem retornar se a expressão ou comando é válida.
+    - `verificaCmd` também deve retornar uma nova lista de identificadores que
+      inclui os que o comando passado declarou.
+    - A resposta completa está no arquivo `lang-05.hs`.
+
+- Teste as funções individualmente com casos válidos e inválidos.
+
+## 13.
+
+- Crie uma função `verificaProg :: Cmd -> Bool`, que recebe um comando e
+  retorna se o comando é válido de acordo com a questão `12`.
+
+- Crie uma função `avaliaProg :: Cmd -> Maybe Int`, que recebe um comando e
+  retorna o valor final da variável `ret` caso o programa seja válido.
+    - Baseie-se na questão `8`.
+    - O tipo `Maybe` deve ser usado da seguinte forma:
+        - Caso o programa seja inválido, a função deve retornar `Nothing`.
+        - Caso o programa seja válido, a função deve retornar `Just ret`.
