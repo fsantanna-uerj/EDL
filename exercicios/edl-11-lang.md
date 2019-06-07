@@ -225,11 +225,11 @@ expressões `Var` tenham sido previamente declarados com comandos `Dcl`.
     `verificaExp :: [String] -> Exp -> Bool` e
     `verificaCmd :: [String] -> Cmd -> ([String],Bool)`.
     - O argumento `[String]` é uma lista de identificadores declarados antes de
-      aplicar um comando.
+      aplicar um comando, ou seja, o seu ambiente estático.
     - As funções devem retornar se a expressão ou comando é válida.
     - `verificaCmd` também deve retornar uma nova lista de identificadores que
       inclui os que o comando passado declarou.
-    - A resposta completa está no arquivo `lang-05.hs`.
+    - A resposta completa está no arquivo `lang-06.hs`.
 
 - Teste as funções individualmente com casos válidos e inválidos.
 
@@ -244,3 +244,20 @@ expressões `Var` tenham sido previamente declarados com comandos `Dcl`.
     - O tipo `Maybe` deve ser usado da seguinte forma:
         - Caso o programa seja inválido, a função deve retornar `Nothing`.
         - Caso o programa seja válido, a função deve retornar `Just ret`.
+
+## 14.
+
+Nos exercícios anteriores, a definição de ambiente estático usa uma lista:
+
+```
+type AmbE = [String]    -- ambiente estatico
+```
+
+Altere a definição de ambientes para uma função que dado um
+identificador, retorna se ele está declarado ou não:
+
+```
+type AmbE = String -> Bool
+```
+
+- Altere a questão `12` para funcionar com essa nova representação.
