@@ -1,5 +1,5 @@
 function counter (ini)
-    local cur = ini or 0
+    local cur = 0
     return
         function ()
             cur = cur + 1
@@ -8,6 +8,6 @@ function counter (ini)
 end
 
 c1 = counter()
-c2 = counter(10)
+c2 = counter()
 print(c1(), c2(), c1())
 --print(counter,c1,c2)
