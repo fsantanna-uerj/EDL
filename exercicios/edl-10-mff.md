@@ -73,12 +73,12 @@ m = soma xs -- teste da funcao passando a lista xs
 
 ## 1.
 
-a. Crie um valor `pares` que guarde os elementos pares de `xs`.
-b. Crie um valor `incs` que guarde os incrementos dos elementos de `xs`.
-c. Crie uma função `dups` que recebe uma lista e retorna os seus valores
+1. Crie um valor `pares` que guarde os elementos pares de `xs`.
+2. Crie um valor `incs` que guarde os incrementos dos elementos de `xs`.
+3. Crie uma função `dups` que recebe uma lista e retorna os seus valores
    duplicados.
-d. Crie um valor `maior` que guarde o maior valor de `xs`.
-e. Crie uma função `menor` que receba uma lista e retorne o seu valor menor.
+4. Crie um valor `maior` que guarde o maior valor de `xs`.
+5. Crie uma função `menor` que receba uma lista e retorne o seu valor menor.
 
 ## 2.
 
@@ -117,14 +117,14 @@ medias :: [ (String,Float,Float) ] -> [Float]
 medias turma = map media turma
 ```
 
-a. Crie um valor `notas1` com todas as primeiras notas dos alunos de `turma1`.
+1. Crie um valor `notas1` com todas as primeiras notas dos alunos de `turma1`.
 
 ```
 notas1 :: [Float]
 notas1 = <complete>             -- (ex., [5.5, 9.0, 4.0, ...])
 ```
 
-b. Crie uma função `oitos` que receba uma turma e retorne os nomes dos alunos
+2. Crie uma função `oitos` que receba uma turma e retorne os nomes dos alunos
    que tiraram acima de 8 (inclusive) nas **duas** notas.
 
 ```
@@ -132,7 +132,7 @@ oitos :: [ (String,Float,Float) ] -> [String]
 oitos turma = <complete>        -- (ex., ["Maria", ...])
 ```
 
-c. Crie uma função `todas` que receba uma turma e retorne uma
+3. Crie uma função `todas` que receba uma turma e retorne uma
 Tripla com a média de todas as P1, média de todas as P2 e médias de todas as
 P1+P2:
 
@@ -141,7 +141,7 @@ todas :: [ (String,Float,Float) ] -> (Float, Float, Float)
 todas turma = <complete>        -- (ex., (7.5, 4.8, 6.1))
 ```
 
-d. Crie um valor `baixas` com todas as notas (P1 ou P2) abaixo de 5
+4. Crie um valor `baixas` com todas as notas (P1 ou P2) abaixo de 5
    (inclusive):
 
 ```
@@ -149,7 +149,7 @@ baixas :: [Float]
 baixas = <complete>             -- (ex., [3.5, 5.0, 3.0])
 ```
 
-e. Crie uma função `pretty` que receba uma turma e retorne uma string no
+5. Crie uma função `pretty` que receba uma turma e retorne uma string no
    formato *"nome media (resultado)"*:
 
 ```
@@ -190,15 +190,15 @@ musicas = [ ("Aquele Abraco",       1, 100),
 
 Defina os valores a seguir:
 
-a. Somente o nome das músicas:
+1. Somente o nome das músicas:
     - `["Aquele Abraco", "Esperando na Janela", ...]`
-b. Somente músicas com >= 2min:
+2. Somente músicas com >= 2min:
     - `[("Esperando...",1,150), ("Borboletas",2,120), ... ]`
-c. Maior duração:
+3. Maior duração:
     - `200`
-d.  Nomes com >= 2min:
+4.  Nomes com >= 2min:
     - `["Esperando...", "Borboletas",, ... ]`
-e.  Pretty-print música:
+5.  Pretty-print música:
 
 ```
 Nome: Borboletas
