@@ -30,7 +30,7 @@ duplica n = n * 2
 A lista `ys` contém os elementos de `xs` todos duplicados:
 
 ```
-ys :: [Int]
+ys :: [Int]             -- isso é um valor
 ys = map duplica xs
 ```
 
@@ -39,14 +39,14 @@ ys = map duplica xs
 Considere a função `maior2` a seguir:
 
 ```
-maior2 :: Int -> Bool
+maior2 :: Int -> Bool   -- isso é uma função
 maior2 n = n > 2
 ```
 
 A lista `zs` contém os elementos de `xs` maiores que `2`:
 
 ```
-zs :: [Int]
+zs :: [Int]             -- isso é um valor
 zs = filter maior2 xs
 ```
 
@@ -55,18 +55,18 @@ zs = filter maior2 xs
 O valor a seguir é a soma de todos os elementos de `xs`:
 
 ```
-n :: Int
+n :: Int                -- isso é um valor
 n = foldr (+) 0 xs
 ```
 
 A função a seguir recebe uma lista e retorna a soma de todos os seus elementos:
 
 ```
-soma :: [Int] -> Int
+soma :: [Int] -> Int    -- isso é uma função
 soma vs = foldr (+) 0 vs
 
-m :: Int
-m = soma xs     -- teste da funcao passando a lista xs
+m :: Int                -- isso é um valor
+m = soma xs -- teste da funcao passando a lista xs
 ```
 
 -------------------------------------------------------------------------------
