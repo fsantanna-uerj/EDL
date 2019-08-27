@@ -75,7 +75,7 @@ m = soma xs -- teste da funcao passando a lista xs
 
 1. Crie um valor `pares` que guarde os elementos pares de `xs`.
 2. Crie um valor `incs` que guarde os incrementos dos elementos de `xs`.
-3. Crie uma função `dups` que recebe uma lista e retorna os seus valores
+3. Crie uma função `dups` que receba uma lista e retorna os seus valores
    duplicados.
 4. Crie um valor `maior` que guarde o maior valor de `xs`.
 5. Crie uma função `menor` que receba uma lista e retorne o seu valor menor.
@@ -97,7 +97,7 @@ Considere as funções a seguir para acessar o nome e as notas de um aluno:
 
 ```
 nome :: (String,Float,Float) -> String
-nome (n,_,_) = n
+nome (nm,_,_) = nm
 
 nota1 :: (String,Float,Float) -> String
 nota1 (_,n1,_) = n1
@@ -117,7 +117,7 @@ medias :: [ (String,Float,Float) ] -> [Float]
 medias turma = map media turma
 ```
 
-1. Crie um valor `notas1` com todas as primeiras notas dos alunos de `turma1`.
+1. Crie um valor `notas1` com todas as primeiras notas de todos alunos de `turma1`.
 
 ```
 notas1 :: [Float]
