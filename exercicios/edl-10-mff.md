@@ -99,10 +99,10 @@ Considere as funções a seguir para acessar o nome e as notas de um aluno:
 nome :: (String,Float,Float) -> String
 nome (nm,_,_) = nm
 
-nota1 :: (String,Float,Float) -> String
+nota1 :: (String,Float,Float) -> Float
 nota1 (_,n1,_) = n1
 
-nota2 :: (String,Float,Float) -> String
+nota2 :: (String,Float,Float) -> Float
 nota2 (_,_,n2) = n2
 ```
 
