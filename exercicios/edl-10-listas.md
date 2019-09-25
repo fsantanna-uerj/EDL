@@ -3,91 +3,206 @@
 Slide 10 - Funcional - Map/Filter/Foldr
 =======================================
 
-- Defina o **tipo** e a **implementação** de todas as funções pedidas nos
-  exercícios a seguir.
+- Defina o **tipo** e a **implementação** de todos os valores e funções pedidos
+  nos exercícios a seguir.
+- Sempre que possível, use as funções `map`, `filter` e `foldr` (ou seja, não
+  defina novas funções recursivas).
+
+## Exemplos:
+
+
+Considere a lista a seguir:
+
+```
+xs :: [Int]             -- isso é um valor
+xs = [1,2,3,4]
+```
+
+### Map
+
+Considere a função `duplica` a seguir:
+
+```
+duplica :: Int -> Int   -- isso é uma função
+duplica n = n * 2
+```
+
+A lista `ys` contém os elementos de `xs` todos duplicados:
+
+```
+ys :: [Int]             -- isso é um valor
+ys = map duplica xs
+```
+
+### Filter
+
+Considere a função `maior2` a seguir:
+
+```
+maior2 :: Int -> Bool   -- isso é uma função
+maior2 n = n > 2
+```
+
+A lista `zs` contém os elementos de `xs` maiores que `2`:
+
+```
+zs :: [Int]             -- isso é um valor
+zs = filter maior2 xs
+```
+
+### Foldr
+
+O valor a seguir é a soma de todos os elementos de `xs`:
+
+```
+n :: Int                -- isso é um valor
+n = foldr (+) 0 xs
+```
+
+A função a seguir recebe uma lista e retorna a soma de todos os seus elementos:
+
+```
+soma :: [Int] -> Int    -- isso é uma função
+soma vs = foldr (+) 0 vs
+
+m :: Int                -- isso é um valor
+m = soma xs -- teste da funcao passando a lista xs
+```
+
+-------------------------------------------------------------------------------
 
 ## 1.
 
-Considere a seguinte representação para árvores binárias:
-
-```
-data Arvore = Folha | Galho Arvore Arvore
-```
-
-- Desenhe as árvores correspondentes aos seguintes valores:
-    - `a1 = Galho (Galho Folha Folha) (Galho Folha Folha)`
-    - `a2 = Galho (Galho (Galho Folha Folha) Folha) Folha`
-    - `a3 = Galho Folha (Galho (Galho Folha Folha) (Galho Folha Folha))`
-
-- Defina a função `folhas` que recebe uma árvore e retorna a sua quantidade de
-  folhas.
-
-- Defina a função `altura` que recebe uma árvore e retorna a sua altura, ou
-  seja, a maior distância entre a raíz e as folhas.
-  (Uma árvore com apenas uma folha tem altura `0`).
-
-- Defina a função `espelho` que recebe uma árvore e inverte as subárvores de
-  todos os galhos (troca a esquerda com a direita).
+1. Crie um valor `pares` que guarde os elementos pares de `xs`.
+2. Crie um valor `incs` que guarde os incrementos dos elementos de `xs`.
+3. Crie uma função `dups` que receba uma lista e retorna os seus valores
+   duplicados.
+4. Crie um valor `maior` que guarde o maior valor de `xs`.
+5. Crie uma função `menor` que receba uma lista e retorne o seu valor menor.
 
 ## 2.
 
-Considere a seguinte representação para árvores binárias:
+Considere uma turma de 50 alunos.
+Cada aluno possui duas notas.
+O aluno que ficou com média maior ou igual a cinco é considerado aprovado.
+
+Considere um exemplo de uma turma:
 
 ```
-data Arvore = Folha | Galho Int Arvore Arvore
+turma1 :: [ (String,Float,Float) ]
+turma1 = [ ("Joao",7.5,3.5), ("Maria",10.0,8.0), ("Jose",5.0,3.0), ... ] -- 50 alunos
 ```
 
-- Redefina todas as funções do exercício `1` para funcionarem com essa nova
-  representação.
+Considere as funções a seguir para acessar o nome e as notas de um aluno:
 
-- Defina a função `soma` que recebe uma árvore e retorna a soma de todos os
-  valores guardados nos seus galhos.
+```
+nome :: (String,Float,Float) -> String
+nome (nm,_,_) = nm
 
-- Defina a função `dobra` que recebe uma árvore e retorna uma nova árvore com
-  todos os valores dos galhos originais duplicados.
+nota1 :: (String,Float,Float) -> Float
+nota1 (_,n1,_) = n1
 
-- Defina uma função `possui` que recebe uma árvore e um valor e retorna se
-  algum galho da árvore guarda esse valor.
+nota2 :: (String,Float,Float) -> Float
+nota2 (_,_,n2) = n2
+```
 
-- Considere ávores binárias de busca, ou seja, árvores em que os galhos à
-  esquerda sempre guardam valores menores ou iguais que os galhos à direita.
-    - Redefina a função `possui` de maneira mais eficiente que o exercício
-      anterior.
-    - Defina a função `maximo` que recebe uma árvore e retorna o seu maior
-      valor.
-    - Defina a função `insere` que recebe uma árvore e um valor e retorna uma
-      nova árvore com esse novo valor, respeitando a propriedade de árvore de
-      busca.
+Considere a função `medias` que recebe uma turma e retorna uma lista com as
+médias de todos os alunos:
+
+```
+media :: (String,Float,Float) -> Float
+media aluno = ((nota1 aluno) + (nota2 aluno)) / 2
+
+medias :: [ (String,Float,Float) ] -> [Float]
+medias turma = map media turma
+```
+
+1. Crie um valor `notas1` com todas as primeiras notas de todos alunos de `turma1`.
+
+```
+notas1 :: [Float]
+notas1 = <complete>             -- (ex., [5.5, 9.0, 4.0, ...])
+```
+
+2. Crie uma função `oitos` que receba uma turma e retorne os nomes dos alunos
+   que tiraram acima de 8 (inclusive) nas **duas** notas.
+
+```
+oitos :: [ (String,Float,Float) ] -> [String]
+oitos turma = <complete>        -- (ex., ["Maria", ...])
+```
+
+3. Crie uma função `todas` que receba uma turma e retorne uma
+Tripla com a média de todas as P1, média de todas as P2 e médias de todas as
+P1+P2:
+
+```
+todas :: [ (String,Float,Float) ] -> (Float, Float, Float)
+todas turma = <complete>        -- (ex., (7.5, 4.8, 6.1))
+```
+
+4. Crie um valor `baixas` com todas as notas (P1 ou P2) abaixo de 5
+   (inclusive):
+
+```
+baixas :: [Float]
+baixas = <complete>             -- (ex., [3.5, 5.0, 3.0])
+```
+
+5. Crie uma função `pretty` que receba uma turma e retorne uma string no
+   formato *"nome media (resultado)"*:
+
+```
+pretty :: [ (String,Float,Float) ] -> String
+pretty turma = <complete>
+```
+
+Ex.:
+
+```
+Joao 5.5 (aprovado)
+Maria 9.0 (aprovado)
+Jose 4.0 (reprovado)
+...
+```
 
 ## 3.
 
-- Crie uma nova representação de árvores que guarde valores nas folhas em vez
-  de guardar nos galhos.
+Considere as definições a seguir:
 
-- Redefina todas as funções do exercício `2` para funcionarem com essa nova
-  representação.
+```
+bandas :: [[String]]
+bandas = [ ["Gilberto Gil"],
+           ["Victor","Leo"],
+           ["Gonzagao"],
+           ["Claudinho","Bochecha"] ]
 
-## 4.
+musicas :: [(String, Int, Int)]
+musicas = [ ("Aquele Abraco",       1, 100),
+            ("Esperando na Janela", 1, 150),
+            ("Borboletas",          2, 120),
+            ("Asa Branca",          3, 120),
+            ("Assum Preto",         3, 140),
+            ("Vem Morena",          3, 200),
+            ("Nosso Sonho",         4, 150),
+            ("Quero te Encontrar",  4, 100) ]
+```
 
-- Baseado no exercício `2`, crie uma nova representação que guarde nos galhos
-  qualquer tipo de dados, ou seja, não necessariamente inteiros.
+Defina os valores a seguir:
 
-- Redefina todas as funções do exercício `2` para funcionarem com essa
-  nova representação.
-    - Quais funções deixaram de funcionar? Por quê?
-    - Adicione os prefixos `Num a =>` ou `Ord a =>` (ou ambos) nos exercícios
-      que não funcionaram e verifique se é possível fazer com que todos
-      funcionem.
+1. Somente o nome das músicas:
+    - `["Aquele Abraco", "Esperando na Janela", ...]`
+2. Somente músicas com >= 2min:
+    - `[("Esperando...",1,150), ("Borboletas",2,120), ... ]`
+3. Maior duração:
+    - `200`
+4.  Nomes com >= 2min:
+    - `["Esperando...", "Borboletas",, ... ]`
+5.  Pretty-print música:
 
-- Defina uma função `mapA` com o seguinte tipo:
-    - `mapA :: (a -> b) -> Arvore a -> Arvore b`
-    - A função deve mapear todos os valores de uma árvore para uma nova árvore,
-      usando uma função de mapeamento.
-    - Crie pelo menos `3` exemplos interessantes de uso dessa função.
-
-- Defina uma função `foldA` com o seguinte tipo:
-    - `foldA :: (a -> b -> b) -> b -> Arvore a -> b`
-    - A função deve fazer um *fold* de todos os valores guardados na árvore
-      recebida com a função passada e a partir de um acumulador inicial também
-      recebido.
-    - Crie pelo menos `3` exemplos interessantes de uso dessa função.
+```
+Nome: Borboletas
+Autores: Victor, Leo
+Duracao: 120
+... 
+```
