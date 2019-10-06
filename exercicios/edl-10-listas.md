@@ -206,3 +206,60 @@ Autores: Victor, Leo
 Duracao: 120
 ... 
 ```
+
+## 4.
+
+Considere a tabela de um campeonato no seguinte formato:
+
+```
+brasil19 = [
+    ("Corinthians", ( 8,7,2), (19, 9)),  -- (nome, (v,e,d), (gp,gc))
+    ("Goias",       ( 6,3,8), (16,27)),  --   (vitorias, empates, derrotas)
+    ("Flamengo",    (11,3,3), (38,18)),  --   (gols a favor, gols contra)
+    ("Gremio",      ( 5,7,5), (20,21)),
+    ...
+]
+```
+
+Uma vitória vale 3 pontos, um empate vale 1 ponto e uma derrota vale 0 pontos.
+
+Considere a função a seguir para extrair a quantidade de gols a favor e contra
+de um dado time:
+
+```
+getGols :: (String, (Int,Int,Int), (Int,Int)) -> (Int,Int)
+getGols (nome,ved,gols) = gols
+ex = getGols (head brasil19) --> (19,9)
+```
+
+1. Crie um valor `nomes`  que guarde os nomes de todos os times de `brasil19`.
+
+2. Crie um valor `pontos` que guarde os nomes e total de pontos dos times de
+   `brasil19`:
+
+```
+[
+    ("Corinthians", 31),
+    ("Goias",       21),
+    ("Flamengo",    36),
+    ("Gremio",      22),
+    ...
+]
+```
+
+3. Crie uma função `positivos` que receba uma tabela qualquer (não
+   necessariamente `brasil19`) e retorne uma nova tabela somente com os times
+   com saldo de gols positivos (mais gols a favor do que contra).
+
+4. Crie uma função `maisN` que receba uma tabela qualquer, uma
+   quantidade de pontos `n` e retorne os nomes dos times com mais de `n` pontos.
+
+```
+maisN :: [(String, (Int,Int,Int), (Int,Int))] -> Int -> [String]
+```
+
+5. Crie um valor `campeao` que guarde o nome e a quantidade de pontos do time
+    com mais pontos em `brasil19`.
+
+6. Crie uma função `mediaGols` que receba uma tabela e retorne a média de gols
+    feitos por jogo no campeonato.
