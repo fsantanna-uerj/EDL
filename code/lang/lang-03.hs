@@ -9,13 +9,23 @@ e2 = Add e1 e1
 e3 = Sub (Num 100) e2
 e4 = Add (Num 5) (Var "i")
 
-ambiente :: String -> Int
-ambiente id = 10
+type Mem = [(String,Int)]
 
-avalia :: Exp -> Int
-avalia (Num v)     = v
-avalia (Add e1 e2) = (avalia e1) + (avalia e2)
-avalia (Sub e1 e2) = (avalia e1) - (avalia e2)
-avalia (Var id)    = ambiente id
+consulta :: Mem -> String -> Int
+consulta []           id = 0
+consulta ((id',v'):l) id = if id == id' then
+                         v'
+                       else
+                         consulta l id
 
-main = print (avalia e4)
+escreve :: Mem -> String -> Int -> Mem
+escreve mem id v = (id,v):mem
+
+avalia :: Mem -> Exp -> Int
+avalia mem (Num v)     = v
+avalia mem (Add e1 e2) = (avalia mem e1) + (avalia mem e2)
+avalia mem (Sub e1 e2) = (avalia mem e1) - (avalia mem e2)
+avalia mem (Var id)    = consulta mem id
+
+--main = print (avalia [] e4)
+main = print (avalia [("i",10),("i",5)] e4)

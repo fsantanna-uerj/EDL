@@ -128,14 +128,14 @@ data Exp = Num Int
 Considere a representação a seguir para um ambiente de variáveis:
 
 ```
-type Amb = String -> Int
-    -- uma funcao que recebe um identificador de uma variavel
-    -- e retorna o valor inteiro atual associado a ela
+type Mem = [(String,Int)]
+    -- Associa um identificador a um valor inteiro
+    -- O valor mais recente é adicionado no início
 ```
 
 - Implemente as funções
-    `avaliaExp :: Amb -> Exp -> Int` e
-    `avaliaCmd :: Amb -> Cmd -> Amb`.
+    `avaliaExp :: Mem -> Exp -> Int` e
+    `avaliaCmd :: Mem -> Cmd -> Mem`.
     - A resposta completa está no arquivo `lang-04.hs`.
 
 - Teste **individualmente** as funções do item anterior.
@@ -145,7 +145,7 @@ type Amb = String -> Int
 ## 8.
 
 - Crie uma função `avaliaProg :: Cmd -> Int`, que recebe um comando e retorna
-  o valor final da variável `ret`.
+  o valor final da variável `"ret"`.
     - Assuma um ambiente inicial onde variáveis não atribuídas tenham o valor
       `0` por padrão.
 
@@ -177,6 +177,8 @@ data Cmd = Atr String Exp
     - Calcule a soma de `x` até `y` (`x + x+1 + x+2 + ... + y`).
     - Calcule a soma dos quadrados de `1` até `10` (`1*1 + 2*2 + ... + 10*10`).
 
+<!--
+
 ## 11.
 
 Nos exercícios anteriores, a definição de ambiente usa uma função:
@@ -201,9 +203,11 @@ amb1 = [("y",5),("x",3),("z",2),("y",1)]
 
 - Altere a questão `7` para funcionar com essa nova representação.
 
+-->
+
 -------------------------------------------------------------------------------
 
-## 12.
+## 11.
 
 Considere as seguintes representações para comandos e expressões:
 
@@ -233,7 +237,7 @@ expressões `Var` tenham sido previamente declarados com comandos `Dcl`.
 
 - Teste as funções individualmente com casos válidos e inválidos.
 
-## 13.
+## 12.
 
 - Crie uma função `verificaProg :: Cmd -> Bool`, que recebe um comando e
   retorna se o comando é válido de acordo com a questão `12`.
@@ -245,7 +249,7 @@ expressões `Var` tenham sido previamente declarados com comandos `Dcl`.
         - Caso o programa seja inválido, a função deve retornar `Nothing`.
         - Caso o programa seja válido, a função deve retornar `Just ret`.
 
-## 14.
+## 13.
 
 Nos exercícios anteriores, a definição de ambiente estático usa uma lista:
 
