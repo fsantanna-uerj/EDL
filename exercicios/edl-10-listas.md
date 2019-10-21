@@ -1,7 +1,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/></p>        
 
-Slide 10 - Funcional - Map/Filter/Foldr
-=======================================
+Slide 10 - Listas - Map/Filter/Foldr
+====================================
 
 - Defina o **tipo** e a **implementação** de todos os valores e funções pedidos
   nos exercícios a seguir.

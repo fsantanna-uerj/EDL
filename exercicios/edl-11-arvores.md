@@ -1,6 +1,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/></p>        
 
-Slide 10 - Funcional - Árvores
+Slide 11 - Funcional - Árvores
 ==============================
 
 - Defina o **tipo** e a **implementação** de todas as funções pedidas nos
