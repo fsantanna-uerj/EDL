@@ -87,6 +87,7 @@ avalia :: Expr -> Int
     - Redefina as funções `avalia`.
     - Qual decisão de projeto foi necessária, por quê ela foi necessária e qual
       foi a sua escolha?
+        - Pense em como funciona a linguagem C, por exemplo.
 
 ## 6.
 
