@@ -38,11 +38,10 @@ avaliaCmd mem (Atr id exp) = escreve mem id v where
                                v = avaliaExp mem exp
 avaliaCmd mem (Seq c1 c2)  = avaliaCmd mem' c2 where
                                mem' = avaliaCmd mem c1
-
-avaliaCmd amb (Cnd exp c1 c2) = if (avaliaExp amb exp) /= 0 then
-                                  avaliaCmd amb c1
+avaliaCmd mem (Cnd exp c1 c2) = if (avaliaExp mem exp) /= 0 then
+                                  avaliaCmd mem c1
                                 else
-                                  avaliaCmd amb c2
+                                  avaliaCmd mem c2
 
 -------------------------------------------------------------------------------
 

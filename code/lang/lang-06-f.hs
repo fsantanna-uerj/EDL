@@ -13,7 +13,6 @@ data Exp = Num Int
 data Cmd = Atr String Exp
          | Seq Cmd Cmd
          | Dcl String
-         | Cnd Exp Cmd Cmd
   deriving Show
 
 -------------------------------------------------------------------------------
@@ -37,36 +36,26 @@ verificaCmd vars (Seq c1 c2)   = (v2,       b1 && b2) where
 -- Runtime
 -------------------------------------------------------------------------------
 
-type Mem = [(String,Int)]
+type Amb = String -> Int
 
-consulta :: Mem -> String -> Int
-consulta []           id = 0
-consulta ((id',v'):l) id = if id == id' then
-                         v'
-                       else
-                         consulta l id
+avaliaExp :: Amb -> Exp -> Int
+avaliaExp amb (Num v)     = v
+avaliaExp amb (Add e1 e2) = (avaliaExp amb e1) + (avaliaExp amb e2)
+avaliaExp amb (Sub e1 e2) = (avaliaExp amb e1) - (avaliaExp amb e2)
+avaliaExp amb (Var id)    = amb id
 
-escreve :: Mem -> String -> Int -> Mem
-escreve mem id v = (id,v):mem
-
-avaliaExp :: Mem -> Exp -> Int
-avaliaExp mem (Num v)     = v
-avaliaExp mem (Add e1 e2) = (avaliaExp mem e1) + (avaliaExp mem e2)
-avaliaExp mem (Sub e1 e2) = (avaliaExp mem e1) - (avaliaExp mem e2)
-avaliaExp mem (Var id)    = consulta mem id
-
-avaliaCmd :: Mem -> Cmd -> Mem
-avaliaCmd mem (Dcl _)      = mem
-avaliaCmd mem (Atr id exp) = escreve mem id v where
-                               v = avaliaExp mem exp
-avaliaCmd mem (Seq c1 c2)  = avaliaCmd mem' c2 where
-                               mem' = avaliaCmd mem c1
-avaliaCmd mem (Cnd exp c1 c2) = if (avaliaExp mem exp) /= 0 then
-                                  avaliaCmd mem c1
-                                else
-                                  avaliaCmd mem c2
+avaliaCmd :: Amb -> Cmd -> Amb
+avaliaCmd amb (Atr id exp) = (\x -> if x==id then v
+                                             else amb x)
+                             where v = avaliaExp amb exp
+avaliaCmd amb (Seq c1 c2)  = avaliaCmd amb' c2
+                             where amb' = avaliaCmd amb c1
+avaliaCmd amb (Dcl _)      = amb
 
 -------------------------------------------------------------------------------
+
+amb0 :: Amb
+amb0 id = 0
 
 p0 :: Cmd
 p0 = Seq (Atr "x" (Num 10))
@@ -75,8 +64,4 @@ p0 = Seq (Atr "x" (Num 10))
 p1 = Seq (Dcl "x") p0
 p2 = Seq (Dcl "y") p1
 
-pe = Atr "x" (Num 10)
-
---main = print (verificaCmd [] p2)
---main = print (verificaCmd [] pe)
-main = print (avaliaCmd [] p2)
+main = print (verificaCmd [] p2)
