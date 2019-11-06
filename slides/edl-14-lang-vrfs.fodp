@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.presentation">
- <office:meta><meta:generator>LibreOffice/6.0.7.3$Linux_X86_64 LibreOffice_project/00m0$Build-3</meta:generator><meta:creation-date>2011-05-24T14:40:40</meta:creation-date><dc:language>fi-FI</dc:language><meta:editing-cycles>1379</meta:editing-cycles><meta:editing-duration>P61DT21H13M52S</meta:editing-duration><meta:initial-creator>chico </meta:initial-creator><dc:date>2019-11-06T07:23:41.303250520</dc:date><meta:document-statistic meta:object-count="54"/><meta:user-defined meta:name="Info 1"/><meta:user-defined meta:name="Info 2"/><meta:user-defined meta:name="Info 3"/><meta:user-defined meta:name="Info 4"/><meta:template xlink:type="simple" xlink:actuate="onRequest" xlink:title="" xlink:href="../usr/lib/openoffice/basis3.2/share/template/en-US/presnt/Orange.otp"/></office:meta>
+ <office:meta><meta:generator>LibreOffice/6.0.7.3$Linux_X86_64 LibreOffice_project/00m0$Build-3</meta:generator><meta:creation-date>2011-05-24T14:40:40</meta:creation-date><dc:language>fi-FI</dc:language><meta:editing-cycles>1381</meta:editing-cycles><meta:editing-duration>P61DT22H9M38S</meta:editing-duration><meta:initial-creator>chico </meta:initial-creator><dc:date>2019-11-06T08:19:28.469862385</dc:date><meta:document-statistic meta:object-count="54"/><meta:user-defined meta:name="Info 1"/><meta:user-defined meta:name="Info 2"/><meta:user-defined meta:name="Info 3"/><meta:user-defined meta:name="Info 4"/><meta:template xlink:type="simple" xlink:actuate="onRequest" xlink:title="" xlink:href="../usr/lib/openoffice/basis3.2/share/template/en-US/presnt/Orange.otp"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="VisibleAreaTop" config:type="int">-318</config:config-item>
-   <config:config-item config:name="VisibleAreaLeft" config:type="int">-3598</config:config-item>
+   <config:config-item config:name="VisibleAreaTop" config:type="int">-119</config:config-item>
+   <config:config-item config:name="VisibleAreaLeft" config:type="int">-1100</config:config-item>
    <config:config-item config:name="VisibleAreaWidth" config:type="int">35243</config:config-item>
    <config:config-item config:name="VisibleAreaHeight" config:type="int">21654</config:config-item>
    <config:config-item-map-indexed config:name="Views">
@@ -35,8 +35,8 @@
      <config:config-item config:name="IsClickChangeRotation" config:type="boolean">true</config:config-item>
      <config:config-item config:name="SlidesPerRow" config:type="short">7</config:config-item>
      <config:config-item config:name="EditMode" config:type="int">0</config:config-item>
-     <config:config-item config:name="VisibleAreaTop" config:type="int">-327</config:config-item>
-     <config:config-item config:name="VisibleAreaLeft" config:type="int">-1130</config:config-item>
+     <config:config-item config:name="VisibleAreaTop" config:type="int">-119</config:config-item>
+     <config:config-item config:name="VisibleAreaLeft" config:type="int">-1100</config:config-item>
      <config:config-item config:name="VisibleAreaWidth" config:type="int">30354</config:config-item>
      <config:config-item config:name="VisibleAreaHeight" config:type="int">21673</config:config-item>
      <config:config-item config:name="GridCoarseWidth" config:type="int">2540</config:config-item>
@@ -1823,10 +1823,13 @@
    <style:text-properties fo:color="#000000" style:font-name="FreeMono" fo:font-size="20pt" fo:font-weight="normal" style:font-size-asian="20pt" style:font-weight-asian="normal" style:font-size-complex="20pt" style:font-weight-complex="normal"/>
   </style:style>
   <style:style style:name="T12" style:family="text">
-   <style:text-properties style:font-name="FreeMono" fo:font-size="28pt" style:font-size-asian="28pt" style:font-size-complex="28pt"/>
+   <style:text-properties fo:font-size="28pt" style:font-size-asian="28pt" style:font-size-complex="28pt"/>
   </style:style>
   <style:style style:name="T13" style:family="text">
-   <style:text-properties style:font-name="FreeMono"/>
+   <style:text-properties fo:font-size="26pt" style:font-size-asian="26pt" style:font-size-complex="26pt"/>
+  </style:style>
+  <style:style style:name="T14" style:family="text">
+   <style:text-properties style:font-name="FreeMono" fo:font-size="28pt" style:font-size-asian="28pt" style:font-size-complex="28pt"/>
   </style:style>
   <text:list-style style:name="L1">
    <text:list-level-style-bullet text:level="1" text:bullet-char="●">
@@ -2423,30 +2426,40 @@
       <text:p>O Tipo “Maybe”</text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame presentation:style-name="pr20" draw:layer="layout" svg:width="25.199cm" svg:height="13.859cm" svg:x="1.4cm" svg:y="4.914cm" presentation:class="outline">
+    <draw:frame presentation:style-name="pr20" draw:layer="layout" svg:width="25.199cm" svg:height="15.07cm" svg:x="1.4cm" svg:y="4.914cm" presentation:class="outline" presentation:user-transformed="true">
      <draw:text-box>
       <text:list text:style-name="L2">
        <text:list-item>
-        <text:p xml:id="id10" text:id="id10">Usado quando houver possibilidade de falha:</text:p>
+        <text:p xml:id="id10" text:id="id10"><text:span text:style-name="T12">Usado quando houver possibilidade de falha:</text:span></text:p>
         <text:list>
          <text:list-item>
-          <text:p xml:id="id11" text:id="id11"><text:span text:style-name="T12">avaliaProg :: Cmd -&gt; Maybe Int</text:span></text:p>
+          <text:p xml:id="id11" text:id="id11"><text:span text:style-name="T7">avaliaProg :: Cmd -&gt; Maybe Int</text:span></text:p>
          </text:list-item>
         </text:list>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id12" text:id="id12">Verificação do programa pode falhar</text:p>
+        <text:p xml:id="id12" text:id="id12"><text:span text:style-name="T12">Verificação do programa pode falhar</text:span></text:p>
         <text:list>
          <text:list-item>
-          <text:p xml:id="id13" text:id="id13">Em caso de falha, retornar <text:span text:style-name="T13">Nothing</text:span></text:p>
+          <text:p xml:id="id13" text:id="id13"><text:span text:style-name="T13">Em caso de falha, retornar </text:span><text:span text:style-name="T7">Nothing</text:span></text:p>
          </text:list-item>
          <text:list-item>
-          <text:p xml:id="id14" text:id="id14">Em caso de sucess, retornar <text:span text:style-name="T13">Just Int</text:span></text:p>
+          <text:p xml:id="id14" text:id="id14"><text:span text:style-name="T13">Em caso de sucess, retornar </text:span><text:span text:style-name="T7">Just Int</text:span></text:p>
          </text:list-item>
         </text:list>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id15" text:id="id15"><text:span text:style-name="T13">Maybe a = Nothing | Just a</text:span></text:p>
+        <text:p xml:id="id15" text:id="id15"><text:span text:style-name="T14">Maybe a = Nothing | Just a</text:span></text:p>
+       </text:list-item>
+       <text:list-item>
+        <text:p xml:id="id16" text:id="id16"><text:span text:style-name="T12">Uso do </text:span><text:span text:style-name="T14">Maybe</text:span><text:span text:style-name="T12"> sempre exige considerar a falha:</text:span></text:p>
+        <text:list>
+         <text:list-item>
+          <text:p xml:id="id17" text:id="id17"><text:span text:style-name="T7">case avaliaProg &lt;algum-cmd&gt; of</text:span></text:p>
+          <text:p xml:id="id18" text:id="id18"><text:span text:style-name="T7"><text:s text:c="4"/></text:span><text:span text:style-name="T7">Nothing <text:s/>-&gt; trata o erro</text:span></text:p>
+          <text:p xml:id="id19" text:id="id19"><text:span text:style-name="T7"><text:s text:c="4"/></text:span><text:span text:style-name="T7">Just ret -&gt; trata o sucesso</text:span></text:p>
+         </text:list-item>
+        </text:list>
        </text:list-item>
       </text:list>
      </draw:text-box>
@@ -2492,6 +2505,34 @@
        <anim:par smil:begin="0s">
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
          <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id15" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
+        </anim:par>
+       </anim:par>
+      </anim:par>
+      <anim:par smil:begin="next">
+       <anim:par smil:begin="0s">
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id16" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
+        </anim:par>
+       </anim:par>
+      </anim:par>
+      <anim:par smil:begin="next">
+       <anim:par smil:begin="0s">
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id17" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
+        </anim:par>
+       </anim:par>
+      </anim:par>
+      <anim:par smil:begin="next">
+       <anim:par smil:begin="0s">
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id18" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
+        </anim:par>
+       </anim:par>
+      </anim:par>
+      <anim:par smil:begin="next">
+       <anim:par smil:begin="0s">
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id19" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
        </anim:par>
       </anim:par>
