@@ -1,5 +1,5 @@
 -- exs
---  - programas
+--  - pares
 --  - multiplos args
 --  - Exp.Arg
 --  - Exp.Func
@@ -46,37 +46,42 @@ type Cod = [(String,Cmd)]
 type Env = (Mem,Cod)
 
 data Cmd = Atr String Exp
+         | Prt Exp
          | Seq Cmd Cmd
          | Cnd Exp Cmd Cmd
          | Fun String Cmd
-         | Ret Exp
   deriving Show
 
 avaliaCmd :: Env -> Cmd -> Env
-avaliaCmd (mem,cod) (Atr id exp)     = (escreve mem id v,cod) where
+avaliaCmd env       (Prt e)         = traceShow (avaliaExp env e) env
+avaliaCmd (mem,cod) (Atr id exp)    = (escreve mem id v,cod) where
                                         v = avaliaExp (mem,cod) exp
-avaliaCmd env       (Seq (Ret e) c2) = avaliaCmd env (Ret e)
-avaliaCmd env       (Seq c1 c2)      = avaliaCmd env' c2 where
+avaliaCmd env       (Seq c1 c2)     = avaliaCmd env' c2 where
                                         env' = avaliaCmd env c1
-avaliaCmd env       (Cnd exp c1 c2)  = if (avaliaExp env exp) /= 0 then
+avaliaCmd env       (Cnd exp c1 c2) = if (avaliaExp env exp) /= 0 then
                                         avaliaCmd env c1
-                                       else
+                                      else
                                         avaliaCmd env c2
-avaliaCmd (mem,cod) (Fun id c)       = (mem, escreve cod id c)
-avaliaCmd (mem,cod) (Ret e)          = (escreve mem "ret" v, cod) where
-                                        v = avaliaExp (mem,cod) e
+avaliaCmd (mem,cod) (Fun id c)      = (mem, escreve cod id c)
 
 -------------------------------------------------------------------------------
 
 p1 = Seq
-      (Fun "dup" (Ret (Add (Var "arg") (Var "arg"))))
-      (Ret (App "dup" (Num 10)))
+      (Fun "duplica"
+        (Atr "ret"
+          (Add (Var "arg")
+               (Var "arg"))))
+      (Prt (App "duplica" (Num 10)))
 
 p2 = Seq
-      (Fun "sum"
+      (Fun "soma"
         (Cnd (Var "arg")
-             (Ret (Add (Var "arg") (App "sum" (Sub (Var "arg") (Num 1)))))
-             (Ret (Num 0))))
-      (Ret (App "sum" (Num 10)))
+          (Atr "ret"
+            (Add (Var "arg")
+                 (App "soma"
+                   (Sub (Var "arg")
+                        (Num 1)))))
+          (Atr "ret" (Num 0))))
+      (Prt (App "soma" (Num 10)))
 
 main = print (avaliaCmd ([],[]) p2)
