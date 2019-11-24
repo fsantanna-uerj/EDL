@@ -45,11 +45,11 @@ avaliaExp (mem,cod) (App id e)  = ret where
 type Cod = [(String,Cmd)]
 type Env = (Mem,Cod)
 
-data Cmd = Atr String Exp
-         | Prt Exp
-         | Seq Cmd Cmd
-         | Cnd Exp Cmd Cmd
-         | Fun String Cmd
+data Cmd = Atr String Exp     -- x = 1
+         | Prt Exp            -- prt x
+         | Seq Cmd Cmd        -- cmd1 ; cmd2
+         | Cnd Exp Cmd Cmd    -- if cnd then cmd1 else cmd2
+         | Fun String Cmd     -- def f: cmd
   deriving Show
 
 avaliaCmd :: Env -> Cmd -> Env
