@@ -1,0 +1,121 @@
+
+
+A gente já começa aqui com um gráfico bem complexo do histórico das linguagens
+de programação...
+... Desde os primórdios no final da década de 50 com Fortran até os anos 2000
+com Java, C#, Python, etc.
+Pode ver aqui que esse gráfico termina em 2011 e já tem muita coisa nova.
+Vou mostrar num próximo slide um pouco mais limpo.
+
+Bom, o que é importante aqui nesse gráfico?
+Várias coisas né?
+A gente pode ver aqui que as setas mostram não só uma relação temporal, só que
+mais importante uma relação de influência.
+Cada linguagem tem uma história que quase sempre tá atrelada à história de uma
+outra linguagem anterior.
+
+Essa relação pode ser só um avanço natural, por exemplo, Java 5,6 e 7, ou um
+avanço num mesmo paradigma. Por exemplo, a gente ve aqui uma setinha indo de
+C++ pra Java e de Java pra C#.
+São todas linguagens orientadas a objetos não é isso?
+E existe claramente uma influência de C++ em Java e de Java em C#.
+
+Uma parte desse curso é a gente ter uma visão um pouco mais crítica sobre as
+Linguagens... De onde elas vêm, o que elas tem em comum, o que elas têm de
+especial, quais são as tendências de hoje...
+
+Mais pra frente eu vou propor um trabalho pra meio que dissecar uma linguagem
+de programação com essa visão crítica.
+A idéia é vocês escolherem uma linguagem de programação que vocês não conhecem
+e aí fazer uma análise de alguma funcionalidade especial da linguagem.
+
+Voltando aqui pro gráfico, tem linguagens que são influenciadas por mais de uma
+linguagem também.
+A gente vê aqui Ruby que tem uma setinha chegando de Smalltalk e de Perl.
+
+Essas duas linguagens são bem importantes historicamente.
+O Perl, a gente vê aqui como influenciador de Ruby, JavaScript e PHP.
+Perl é aqui de 1986 mas tava no auge no meio da década de 90.
+Inclusive foi a primeira linguagem de programação que eu usei profissionalmente
+mesmo.
+O Perl dominava os sites da Internet. Era o início da onda de comércio
+eletrônico. O início dos sites com conteúdo dinâmico.
+E aqui a gente vê que o Perl teve influência nas duas principais linguagens da
+Web até hoje, que são o PHP e o JavaScript.
+E o que que tem de especial em Perl ou em PHP ou em JavaScript pra elas terem
+dominado esse nicho?
+Por que a gente usa PHP pra programar um site, mas usa C# pra fazer um sistema
+de uma empresa?
+O que que tem de fundamental, aqui é importante frisar esse fundamental.
+O que tem de fundamental nessas linguagens que fazem elas serem adotadas pra
+um cenário, mas não pro outro?
+
+Esse curso vai ajudar a responder essas preguntas e esse trabalho que eu vou
+passar vai ser um desafio nesse sentido de identificar as características mais
+fundamentais das lingaugens.
+A gente tem uma tendência de olhar muito superficialmente pras linguagens.
+Por exemplo, ah, C usa chaves pra delimitar os blocos, Python usa o dois pontos
+e a indentação dos blocos.
+Ah eu gosto de chaves, ah eu gosto de indentação.
+Ah o C precisa de uma função "main", o Python eu já saio escrevendo o programa
+direto da primeira linha.
+Mas será que isso é realmente uma questão fundamental?
+Será que essa diferença é relevante na hora de escolher uma delas?
+
+Voltando aqui de novo pro gráfico vamos olhar aqui C++ em 85.
+Bom, existia C aqui na década de 70 e alguém quis fazer uma versão orientada
+a objetos dela.
+Mas será que C++ foi a primeira linguagem OO?
+Vamos olhar aqui pra trás: um caminho vai aqui pro C, que a gente sabe que não
+é OO. E esse outro caminho vem aqui pra SIMULA 67.
+Nossa já existia OO na década de 60?
+Pois é, é interessante como essas ideias demoram pra virarem uma tendência.
+Elas em geral surgem nas universidades como uma prova de conceito, uma ideia,
+as vezes bem rudimentar. Mas com algo fundamentalmente novo que nem sempre é
+óbvio, nem sempre é fácil. E depois essas ideias vão evoluindo até chegarem
+no mercado de programadores.
+Aqui saindo de SIMULA, a gente também chega até Smalltalk, que a gente falou
+antes. Foi uma das linguagens que influenciou o Ruby.
+E o que tinha nela de fundamental?
+O Smalltalk é uma linguagem que tenta levar esse conceito de objetos ao extremo
+e tudo nela é considerado objeto. Um número é um objeto, um item visual é um
+objeto, até uma classe é um objeto.
+
+E aqui é interessante como C++ e Smalltalk levaram pra duas linhas de linguagem
+OO um pouco diferentes. Ó, o C++ foi pra Java e C# que são linguagens OO 
+digamos mais "caretas".
+Com os conceitos de classe, objeto, interface, etc, mais amarradinhos.
+Por outro lado, aqui desse lado, a gente vê Perl, JavaScript, Ruby, que são
+linguagens com mais flexibilidade de programação.
+São as linguagens mais dinâmicas, a gente vai falar disso mais pra frente no
+curso.
+
+Tem uma outra linhagem aqui que eu também quero destacar pela importancia cada
+vez maior nos dias de hoje que são as linguagens funcionais.
+Como é um paradigma que a gente não vê nas outras disciplinas, uma grande parte 
+desse curso vai ser de linguagens funcionais. A maior parte até.
+
+A gente vê aqui LISP bem lá atrás em separado
+
+
+Olhando aqui pra trás de novo, a gente vê essa linguagem ALGOL e vê que ela é
+bisavó ou tataravó de praticamente tudo. Inclusive aqui Basic, C, Pascal e tudo
+que veio depois.
+O Algol introduziu a forma que a gente organiza o código até hoje.
+Tudo que a gente acha óbvio hoje de programação estruturada com procedimentos
+organizados e blocos com variáveis locais e etc. vem de Algol.
+
+===
+
+Olha aqui, eu peguei essas quatro linguagens mais antigas que nasceram mais ou
+menos na mesma época e peguei o código do Insertion Sort em cada uma delas.
+Qual que é mais familiar? Pelo menos a sintaxe? Dá uma pausa aí no vídeo pra
+observar um pouco...
+Pelo menos a uma primeira vista, o Algol parece mais com as linguagens mais
+populares de hoje né?
+Olha aqui a ideia de bloco BEGIN-END, que pode ser também abre e fecha chaves.
+Olha aqui declaracao de variável local, loop, indentacao. Tudo que a gente tem
+hoje como dado.
+A gente chama essa linha de sintaxe da linguagem de linguagens estilo Algol.
+
+
