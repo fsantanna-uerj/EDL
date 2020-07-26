@@ -1,18 +1,32 @@
+A gente começa aqui com um gráfico bem complexo do histórico das linguagens
+de programação consideradas de "alto nível".
+Desde os primórdios no final da década de 50 com Fortran, que é considerada
+como a primeira "linguagem de alto nível"...
+...Até os anos 2000 com Java, C#, Python, etc.
 
+O termo "alto nível" tá aqui entre aspas porque caiu um pouco em desuso.
+Isso porque qualquer linguagem que não seja Assembly era considerada de alto
+nível.
+Bem lá atrás ainda se programava muito em Assembly, na verdade, em vários
+Assembly's porque eram muitas máquinas diferentes.
 
-A gente já começa aqui com um gráfico bem complexo do histórico das linguagens
-de programação...
-... Desde os primórdios no final da década de 50 com Fortran até os anos 2000
-com Java, C#, Python, etc.
-Pode ver aqui que esse gráfico termina em 2011 e já tem muita coisa nova.
-Vou mostrar num próximo slide um pouco mais limpo.
+Hoje em dia a gente chama as linguagens de alto nível simplesmente de
+"linguagens" e se refere a Assembly explicitamente quando a gente quer falar de
+"baixo nível".
+A bem da verdade, hoje quando a gente fala "baixo nível", é até mais comum
+associar a linguagem C.
+Mas historicamente não seria muito correto chamar C de "baixo nível".
+Por outro lado, C é mais "baixo nível" que Python por exemplo, então esse uso
+relativo é super válido de usar hoje.
 
-Bom, o que é importante aqui nesse gráfico?
-Várias coisas né?
+Voltando aqui pro gráfico, ele termina aqui em 2011 e já tem muita coisa nova
+que a gente ainda vai falar.
+
+Bom, o que é importante aqui nesse gráfico? Várias coisas.
 A gente pode ver aqui que as setas mostram não só uma relação temporal, só que
 mais importante uma relação de influência.
 Cada linguagem tem uma história que quase sempre tá atrelada à história de uma
-outra linguagem anterior.
+outra linguagem que veio antes.
 
 Essa relação pode ser só um avanço natural, por exemplo, Java 5,6 e 7, ou um
 avanço num mesmo paradigma. Por exemplo, a gente ve aqui uma setinha indo de
@@ -104,6 +118,14 @@ que veio depois.
 O Algol introduziu a forma que a gente organiza o código até hoje.
 Tudo que a gente acha óbvio hoje de programação estruturada com procedimentos
 organizados e blocos com variáveis locais e etc. vem de Algol.
+
+===
+
+Exercício:
+
+- Quais linguagens que apareceram nos slides que você já conhecia?
+- Qual linguagem você tem mais curiosidade de conhecer? Por quê?
+- Qual linguagem você mais gosta? Por quê?
 
 ===
 

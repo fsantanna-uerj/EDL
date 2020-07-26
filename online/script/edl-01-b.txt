@@ -1,0 +1,202 @@
+Essa é a continuação da aula sobre Linguagens de Alto Nível.
+
+---
+
+Primeiro vamos falar um pouquinho das linguagens de baixo nível como
+contraponto.
+
+No nível mais baixo possível, a gente tem o código de máquina, que é o que
+efetivamente carregado pra memória do computador pra que a CPU execute.
+Esses números vão corresponder às instruções de máquina. Por exemplo, esse
+"FA" pode significar a instrução de comparar um registrador a outro.
+
+Cada arquitetura, por exemplo ARM ou Intel, vai ter um conjunto de instruções
+e esse código vai variar muito de CPU pra CPU.
+É o código menos portável possível, ele é muito atrelado a uma CPU.
+
+A gente não espera que um programador saiba decodificar esse código e
+identificar o que esse programa faz.
+Afinal de contas ele é código de máquina, feito pra CPU executar.
+As linguagens tem um compilador que sabe traduzir um código de alto nível para
+esse código de máquina.
+Mas é possível programar assim, já foi mais necessário no passado e em algumas
+situações extremas, por exemplo, pra quem desenvolve novas arquiteturas de CPU.
+Ou até com programas que você não tem mais o código fonte e precisa de algum
+ajuste simples, pode ser uma alternativa.
+
+---
+
+Uma linguagem bem mais razoável é o Assembly, que também varia de CPU pra CPU.
+Continua sendo bastante ilegível esse código, mas eu pelo menos já consigo
+identificar as instruções mais facilmente.
+Aqui essa instrução MOV, eu sei que copia um valor da memória pra um
+registrador da CPU.
+Aqui eu tô vendo se o registrador é igual a zero.
+Mas ainda assim, falta muita estrutura nesse código.
+
+---
+
+Falta fugir dessas intruções exatas da CPU pra conceitos mais abstratos, mais
+próximos de como a gente raciocina, com variáveis, loops, estruturas de dados.
+O código de máquina e o assembly são um simples mapeamento 1 pra 1 com a CPU
+uma linha aqui de assembly corresponde exatamente a uma instrução de máquina
+que a CPU vai processar.
+E a memória também. A gente tem um conjunto fixo de poucos registradores na CPU:
+eax, ebx, ecx, etc.
+E a memória princiapl, a RAM, é vista como um grande espaço linear, como se
+fosse um grande vetor.
+Eu não tenho struct, tabelas hash, matrizes, listas, nada.
+Só uma memória sequencial que o programa tem que lidar.
+
+---
+
+Tem um salto de entendimento daqui do código de máquina pro Assembly.
+Mas ainda assim, a rigor não é tão diferente.
+A gente aqui no Assembly tem esses mnemonicos que são mais fáceis de lembrar
+que um número. A gente pode somar endereços, a gente já pode usar uns endereços
+simbólicos parecidos com variáveis.
+Mas a maneira de programar ainda é a mesma.
+A gente usa as instruções da CPU diretamente, sem nenhuma abstração mais
+próxima de como a gente pensa.
+
+---
+
+Bom, nesse curso a gente não vai mais se preocupar com linguagens de baixo
+nível.
+É mesmo só pra gente posicionar essas linguagens no espectro oposto das
+linguagens de alto nível.
+
+===
+
+Voltando agora pras linguagens de alto nível.
+Aqui a gente tem um código em C que vocês já tão acostumados.
+Será que já dá pra entender o que esse código tá fazendo?
+Dá uma pausa aí no vídeo e tenta descobrir...
+
+---
+
+Essa é a função fibonacci, também era a função fibonacci no slide de linguagem
+de máquina e assembly.
+Mas aqui claro que fica mais fácil de tentar deduzir.
+
+---
+
+Vamos pensar em três aspectos aqui comparando linguagens de alto nível e baixo
+nível:
+    - portabilidade, produtividade e performance
+
+Portabilidade vai ser a facilidade de pegar o mesmo código, aqui por exemplo,
+esse fibonacci, e executar em máquinas diferentes sem fazer muitas alterações.
+Qual vai ser a linguagem mais portável? Esse C aqui ou aquele código de máquina
+do slide anterior?
+Claro que é esse código C. Eu posso pegar ele e usar um compilador em qualquer
+arquitetura e ele vai fazer a mesma coisa. Eu não vou precisar mudar nada.
+Tem vários  detalhes não tão óbvios que os compiladores resolvem pra
+gente.
+Por exemplo * os detalhes de registradores. Quantos a minha CPU tem?
+Esse N aqui, em que registrador eu coloco? E se eu tiver mais 10 variáveis?
+Elas vão todas caber na CPU ou eu vou precisar a usar a memória também?
+Em cada CPU pode ser diferente, portanto teria que ter um código diferente pra
+cada caso.
+
+E a sintaxe também né? * É o mais óbvio. A sintaxe do C é igual em qualquer
+compilador. O C é padronizado e os compiladores tem que seguir esse padrão.
+O Assembly já não é assim, porque ele tá atrelado à CPU, então cada um faz de
+um jeito.
+
+Produtividade é o quanto você precisa escrever ou quanto tempo você precisa
+pra implementar alguma ideia, por exemplo implementar a função fibonnaci.
+Se a gente comparar com o código de máquina, parece que você tem que escrever
+menos né? A questão é mais quanto tempo você levou pra escrever, testar e
+corrigir o programa até ele funcionar perfeito.
+
+É aqui que as linguagens de alto nível vão se mostrar muito melhores.
+A gente começa já tendo abstrações de dados. *
+Por exemplo, aqui * a gente define essas variáveis com um tipo específico.
+A linguagem já vai sabe o tamanho do dado, quais operações eu posso fazer,
+vai verificar os usos da variável pra saber se o tipo tá correto.
+Isso sem falar de structs, matrizes, classes e objetos e por aí vai.
+O outro lado * tão importante, são as abstrações de controle *.
+O if, while, funções e outros mecanismos ainda mais avançados.
+E ainda tem linguagens que são projetadas com primitivas ainda mais poderosas,
+por exemplo pra programar com concorrência e paralelismo ou ainda linguagens
+de domínio específico por exemplo SQL.
+É uma linguagem que não serve pra tudo, mas pro domínio dela, fazer consultas
+a banco de dados, ela é extremamente produtiva.
+
+---
+
+Performance é um aspecto um pouco mais delicado...
+A princípio a gente tenderia a dizer que o Assembly vai ter uma performance
+melhor, já que você tem controle máximo sobre o programa e pode determinar
+exatamente qual instrução executar em cada mommento.
+Mas eu vou levantar aqui três pontos aqui que colocam em cheque essa impressão
+inicial.
+O primeiro dele * são otimizações globais no código, ou seja, otimizações que
+envolvem partes distantes do programa, por exemplo, em funções diferentes ou
+até em arquivos diferentes.
+Imagina uma função que o seu programa só chama uma vez no código inteiro.
+Você separou a funçao pro código ficar mais modularizado ou porque antes voce
+chamava a funcao mais de uma vez.
+Um compilador pode muito bem eliminar a funcao e pegar o código dela e colar no
+lugar da chamada da funcao.
+Assim o código vai ficar um pouco mais rápido.
+
+Um outro ponto * são instruções específicas de CPUs.
+Um compilador é escrito por um expert da arquitetura e ele vai saber melhor do
+que a gente como gerar um código eficiente para cada padrão de uso dos
+programas em C por exemplo.
+Na prática, é muito complicado entender os detalhes de uma arquitetura e ainda
+mais se voce vai ter o programa em outras arquiteturas com outras instruções
+específicas.
+
+Um terceiro ponto é a complexidade do programa.
+Pra programas pequenos, é até possível ter um bom controle do código pra
+otimizar ele bem.
+Mas conforme a complexidade do código vai aumentando, já fica complicado até de
+fazer o programa funcionar direito em Assembly, quanto mais fazer ele executar
+rápido.
+
+Por isso que, na prática, os programas escritos em linguagens de alto nível
+podem superar o desempenho dos escritos em baixo nível.
+
+===
+
+Pra finalizar essa aula, vou propor 4 exercícios.
+
+A idéia é cada um escolher uma linguagem qualquer, pode ser conhecida ou não,
+e responder a essas perguntas...
+
+***
+
+Sobre a portabilidade dela.
+Em sistemas operacionais ela roda? Windows, Linux, Android, algum video game, etc?
+Em que arquiteturas? Aqui a gente tá falando do hardware e CPU...
+Se vocês não conhecerem muitas, vocês podem dar uma procurada.
+Vejam se é a mesma CPU que tá no celular e no computador de vocês.
+Vejam outros dispositivos digitais que vocês tenham, será que são arquiteturas
+diferentes?
+E ainda respondam em qual arquitetura a linguagem não está disponível...
+Onde vocês esperariam que fosse possível ter um compilador da linguagem, mas na
+verdade ele não existe...
+
+***
+
+Sobre abstrações de dados...
+Na linguagem que você escolheu, o que tem de interessante pra estruturas de
+dados. O que tem além dos tipos primitivos (inteiro, string, booleano)?
+E o que você esperava que tivesse e sentiu falta? O que a linguagem não tem
+pronto de estrutura de dados?
+
+***
+
+Sobre abstrações de controle... A mesma coisa...
+O que tem de interessante e diferente e o que não tem de comum?
+
+***
+
+Sobre abstrações de domínio específico.
+Aqui é um pouco diferente. O ideal é vocês escolherem uma linguagem que não
+seja essas mais genéricas tipo C, Java e Python.
+Tem que ser uma linguagem que tenha um nicho mais específico.
+Lembram que eu falei de SQL? Então, algo nessa linha...

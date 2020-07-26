@@ -1,5 +1,7 @@
 alunos*/
 Sergio/
+*.mp4
+*.mkv
 .*.swp
 .*.swo
 elm-stuff/

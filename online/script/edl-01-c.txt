@@ -1,0 +1,243 @@
+Essa é a continuação da aula sobre Linguagens de Alto Nível.
+
+---
+
+A partir de agora, quando a gente falar de Linguagem de Programação a gente
+está sempre se referindo às linguagens de alto nível.
+
+Uma coisa que a gente ainda não discutiu, é sobre o que é exatamente uma
+linguagem de programação.
+Como a gente já programa, intuitivamente a gente já tem uma boa noção do que é
+uma linguagem.
+Mas mesmo assim, vamos pelo menos olhar isso sob alguns aspectos.
+
+Primeiro, * se é uma linguagem, quem são os interlocutores? Quem está falando
+com quem? Quando a gente tá programando, a gente tá se expressando usando uma
+notação com regras e com uma lógica imposta por essas regras.
+Sob esse aspecto, uma linguagem de programação traduz o que a gente escreve
+pra um formato que o computador consegue executar.
+Na prática, a linguagem *, ou mais tecnicamente o compilador da linguagem, vai
+pegar um programa em alto nível, tipo o fibonnacci em C que a gente viu.
+E traduzir pra código de máquina que é uma sequência de números, que a gente
+também viu na aula passada. Certo?
+
+---
+
+Nessa visão de um compilador ou interpretador *, a linguagem é um programa que
+reconhece e executa outros programas.
+São duas etapas: reconhecer é a primeira e executar é a segunda.
+---
+Eu tinha falado que a linguagem tem uma notação e uma lógica.
+A primeira coisa é verificar essa notação. A notação a gente chama também de
+sintaxe. E ela tem a ver com a forma, com o vocabulário, com o que a gente lê e
+escreve. Nem sempre o seu programa tá seguindo essas regras corretamente e aí
+o programa nem chega a executar. O compilador dá um erro de sintaxe.
+
+A segunda coisa é executar o programa seguindo uma lógica.
+A gente chama de semântica ou significado do programa as regras de execução
+dele. O que significa somar dois números? O que acontece exatamente quando eu
+chamo uma função? E se eu fizer uma divisão por 0? E se uma função falhar,
+pra onde eu vou? O programa termina ou gera uma exceção que pode ser tratada?
+Se eu tiver threads, quais são as regras de execução entre elas?
+A parte semântica é disparada a mais complicada e também o foco principal desse
+curso.
+
+---
+
+Uma outra visão sobre as linguagens é em cima do fato que elas oferecem pra
+gente uma abstração sobre o que computador realmente.
+Ou seja, o computador é uma máquina que executa instruções concretas,
+específicas e a linguagem oferece uma abstração sobre essa máquina.
+Vamos desenvolver melhor essa idéia...
+
+===
+
+Vamos pegar esse código aqui em Python.
+Um programa bem simples que lê uma frase da entrada e exibe ela na tela 5 vezes
+dentro de um loop.
+
+---
+
+Agora aqui tem uma representação de um computador.
+O que que é importante num computador?
+Um computador tem os dispositivos de entrada * aqui em amarelo.
+Os dispositivos de saída * aqui em azul.
+A CPU * aqui em cinza.
+E a memória * aqui em vermelho.
+
+O programa em Python, ele usa os dispositivos de entrada e saída, pra ler a
+frase e exibir a mensagem. Ele usa a CPU pra contar de 1 até 5 e ele usa a
+memória pra guardar a frase que ele precisa exibir.
+
+Mas o programa faz tudo de uma forma abstrata.
+Por exemplo, eu não digo exatamente qual dispositivo de entra e saída.
+A contagem de um a cinco não está usando diretamente as instruções da CPU e pra
+memória eu também me refiro através de o nome de uma variável e não através de
+um endereço físco no computador.
+
+Se a gente pintar esse programa de acordo com entrada, saída, memória e CPU,
+ele vai ficar assim...
+A leitura * está abstraída em uma única palavra "input" que em português
+significa entrada. O input aqui é uma função, dá pra ver pelo uso dos
+parênteses.
+Sendo uma função, é claro que eu poderia fazer o mesmo em outras linguagens.
+Isso não é exatamente uma abstração de Python. Até mesmo em Assembly eu poderia
+fazer algo muito parecido.
+Mas o importante aqui é essa busca pela abstração. Todos os detalhes de como a
+leitura é feita estão escondidos. Até mesmo de onde vem exatamente essa
+entrada. É do teclado? Como que eu sei? Às vezes as abstrações são tão radicais
+que fica um pouco mágico demais.
+Nesse caso aqui, a gente teria que entender melhor como as
+linguagens interagem com o sistema operacional. Aqui também entra o conceito de
+entrada e saída padrão.
+Mas de novo, é uma abstração que esconde muito bem os detalhes e ajuda muito no
+desenvolvimento.
+
+A saída também é muito parecido *. Os prints * abstraem a operação de escrever
+na tela.
+De novo, o print é uma função. E de novo os detalhes estão escondidos. Pra onde
+ele escreve? É pra tela? Print em inglês significa imprimir, então daria a
+entender que é pra impressora, que também é um dispositivo de saída.
+Esse nome "print" sobreviveu às geraçẽs e remete ao passado quando a saída ia
+realmente pra impressora pq não era tão comum ter um monitor.
+
+A memória do computador * a gente tem uma abstração muito boa que são as
+variáveis * *.
+Não importa muito onde exatamente os dados vão ficar na memória.
+O que importa é a gente ter um símbolo, nesse caso aqui o nome da variável
+"frase", que facilite a gente se referir àquele dado de maneira única.
+
+Por fim, as instruções da CPU também são abstraídas em construções mais ricas.
+Por exemplo, o "for", ele inicializa a variável i, faz um loop de execução.
+Testa o valor do "i" pra saber se chegou no fim e terminar. Senão, incrementa
+o "i" e repete o comando de dentro.
+Essa é uma abstração de controle que o Python oferece pra gente pronta e com
+um vocabulário intuitivo pra gente usar.
+
+===
+
+Agora vamos olhar as linguagens de novo sob a perspectiva de sintaxe e
+semântica.
+---
+A gente já falou que a sintaxe é a forma, os símbolos e como eles se ligam no
+programa.  E a semântica é o significado, o que o programa faz e como ele opera.
+A sintaxe é estática e é verificada antes do programa executar.
+A semântica é dinâmica com base nas operações que ocorrem durante a execução do
+programa.
+
+Um exemplo aqui *. Se eu perguntar: "Como é o comando while em C"?
+O que você responderia. Dê uma pausa no vídeo e responda...
+
+Repare que tem duas respostas possíveis.
+Você pode me responder como é a sintaxe * do while:
+É a palavra "while" * seguida de um abre parênteses, seguida de uma expressão
+de teste, seguida de um fecha parênteses, seguida de um bloco de comandos.
+Essa resposta está correta, mas ela não diz nada sobre o que o "while" faz ou
+como ele opera.
+
+A resposta semântica * é muito mais complexa. Com certeza cada um aqui iria me
+responder de um jeito. E provavelmente todas as respostas estariam erradas
+ou pelo menos incompletas. Não é à tôa que a gente tem cursos de programação.
+Entender um while por exemplo leva um bom tempo.
+
+Vamos pegar aqui o manual de Lua * pra ver como ele explica o while...
+Olha aqui a sintaxe *. Pronto, é isso.
+Agora a semântica *, aqui ele assume que você já sabe. Não tem uma forma fácil
+de um manual de referência te ensinar a semântica de uma abstração. Pra isso
+você vai precisar de um livro ou de um curso.
+
+Bom, no fim das contas *, a sintaxe tem uma forma bem formalizada de descrever.
+A gente vê aqui que o while de C é explicado usando a mesma notação que o while
+de Lua. É esse formato BNF pra descrever a sintaxe de linguagens de programação.
+Já pra semântica, é bem mais complicado descrever um comando. Em geral a
+explicação usa a linguagem natural mesmo e é longa e muitas vezes ambíguas ou
+incompletas.
+
+Fiquem atentos, o trabalho que eu vou passar vocês vão ter que explicar a
+semântica de uma parte da linguagem. Então é importante ser bem claro nas
+explicações.
+
+===
+
+Vamos ver uns casos similares de sintaxe e semântica.
+
+Pensando em linguagens diferentes que vocês conheçam.
+Por exemplo C e Python ou Java.
+É possível ter comandos com sintaxes diferentes mas semântica igual?
+Parem o vídeo e pensem se isso é possível? Vocês podem me dar exemplos?
+
+Vamos pegar esse programa em Lua:
+- na primeira linha eu crio uma lista com 3 elementos
+- na segunda linha eu exibo o tamanho da lista
+- o resultado 3 é exibido na tela
+
+Agora esse programa em Python:
+- na primeira linha eu crio uma lista com 3 elementos
+- na sgunda linha eu exibo o tamanho da lista
+- o resultado também é 3.
+
+Se eu comparo aqui * linha a linha, a gente vê que a sintaxe é diferente, mas
+a semântica das listas é a mesma. Pelo menos para esse caso simples aqui.
+
+E agora * eu quero o oposto. Dois programas com a mesma sintaxe, mas semânticas
+diferentes.
+Parem o vídeo e pensem um pouco se é possível...
+
+Esse parece mais difícil de achar.
+Mas olha esse código * em Python 2 e esse outro código * em Python 3:
+Nos dois eu faço a divisão de 1 por 2 e os resultados são diferentes.
+Aqui dá pra ver que no python2, a divisão é inteira e no 3 a divisão é real,
+
+===
+
+Uma pergunta que eu já ouvi bastante é essa aqui...
+Por quê as linguagens não podem ter uma sintaxe básica igual?
+Parem o vídeo e pensem nessa possiblidade e nas consequências?
+
+É muito difícil chegar a um denominador comum, primeiro * porque as linguagens
+fazem escolhas antagonicas já no projeto da linguagem.
+Por exemplo, Python e Haskell tem regras rígidas de indentação no código.
+Isso é uma escolha e tem vantagens e desvantagens. Não há uma opção certa ou
+errada.
+Uma outra decisão com prós e contras é se a sintaxe vai ser mais concisa ou
+mais verbosa. Perl por exemplo é uma linguagem que você escreve muito menos do
+que em comparação a Java. Só que isso afeta a legibilidade do código. Às vezes
+um código com mais informação ajuda no seu entendimento.
+
+Uma outra razão * é que as funcionalidades importantes das linguages também
+influenciam a sua sintaxe. Por exemplo *, a gente viu que o LISP usa parênteses
+pra agrupar as suas expressões pra ficar fácil de identificar a estrutura de
+árvore do programa. Essa sintaxe tem os seus problemas também. A gente vê
+aqui que os operadores são pré-fixados, eles tem que ficar na raiz das
+subárvores e a gente acha mais natural a notação infixada, com o operador entre
+os operadores.
+Um outro exemplo * é uma notação mais compacta pra funções. Isso é importante
+em linguagens funcionais, já que novas funções aparecem muitas vezes no meio de
+outras expressões.
+Essa barra invertida aqui em Haskell significa: cria uma nova função que recebe
+x e retorna x*2.
+É uma sintaxe mais leve pra um mecanismo que é muito usado e super otimizado.
+Não faz muito sentido um sintaxe dessa em C que só permite criar funções no
+escopo mais global.
+
+===
+
+...
+
+===
+
+Em particular, não é um curso de compiladores.
+Na disciplina de compiladores, vocês vão ver o processo completo de transformar
+um programa em código fonte até um executável.
+Aqui a figura mostra que são várias etapas.
+Já nesse curso, a gente vai se preocupar mais em entender a execução dos
+programas, o que já é suficientemente complicado por si só...
+
+===
+
+Exercícios:
+
+- Explique com as suas próprias palavras o que você entende por semântica no
+  contexto de linguagens de programação.
+- Dê outros exemplos de abstrações que escondam os detalhes de entrada, saída,
+  memória e CPU (pelo menos um exemplo pra cada).
