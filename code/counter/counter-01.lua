@@ -1,8 +1,10 @@
-local cur = 0
+local v = 0
 
 function inc ()
-    cur = cur + 1
-    return cur
+    v = v + 1
+    return v
 end
 
-print(inc(), inc(), inc())
+print(inc())
+print(inc())
+print(inc())
