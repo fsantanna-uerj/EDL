@@ -1,0 +1,967 @@
+$ melt edl-02-a-*.mkv -consumer avformat:X-edl-02-a.mkv acodec=libmp3lame vcodec=libx264
+
+Nessa aula a gente vai falar sobre "Amarração de Nomes" em linguagens de
+programação.
+
+===
+
+A amarração de nome, ela associa ou vincula um nome a uma entidade num programa.
+---
+Por exemplo, aqui a gente tá associando o nome "a" a um espaço de memória que
+vai inicialmente guardar o valor inteiro 1.
+--
+E aqui a gente tá usando o nome "print" que está associado a um trecho de
+código, uma função, que a gente quer executar. E a gente novamente usa o nome
+"a" pra se referir ao mesmo espaço de memória da linha de cima.
+Tem um outro nome aqui que é esse "int", ele também é um nome, ele também se
+refere a uma entidade, nesse caso um tipo pré definido pela própria linguagem.
+
+---
+
+Acredito que não haja nenhma supresa aqui.
+É uma ideia presente em todas as linguagens e a na prática a gente já usa nomes
+pra se referenciar a coisas, o tempo todo, não só em programação.
+Um nome ele simboliza algo complexo e sempre que a gente quiser se referir a
+essa coisa, a gente simplesmente usa um nome, desde que esteja pré-estabelecido
+entre os interlocutores.
+
+Mas mesmo esse conceito bastante simples tem algumas nuances que a gente vai
+aproveitar aqui nessa aula.
+
+===
+
+Vamos voltar aqui pra um slide do módulo anterior sobre linguagens de alto
+nível em que a gente vê uma linguagem como uma abstração sobre a máquina
+propriamente dita.
+---
+A gente separou entrada * saida * cpu * e memoria em cores e pintou o código
+com essas cores pra identificar que nomes estão associados a que entidades no
+programa.
+Então a gente vê que basicamente são nomes que a gente usa como abstrações.
+
+===
+
+A entidade de um programa que a gente vai de cara pensar como exemplo de
+amarração de nomes... vão ser as variáveis.
+O que é uma variável? * Uma variável é uma etiqueta que representa uma região
+de memória do computador.
+
+Aqui * a gente tem essa ilustração de uma região de memória com uma etiqueta.
+Sempre que a gente quiser se referir a esse frasco, a essa memória, a gente
+vai usar essa etiqueta aqui.
+Essa etiqueta vai ser uma abstração, pra gente não ter que lidar com o endereço
+de memória exato *, ou em que posição esse frasco fica na prateleira, que pra
+gente é um detalhe irrelevante.
+
+Bom, agora começam as nuances. Esse nome, ele tá abstraindo o endereço físico *,
+com certeza. Mas é só isso? Existem outras coisas ou entidades ou propriedades
+amarradas a esse nome?
+Parem o vídeo agora e pensem um pouco sobre isso. O nome de uma variável é
+somente uma amarração com um endereço físico?
+
+Tem várias outras coisas...
+O nome de uma variável também é amarrado a outras entidades, ou outras
+propriedades da memória.
+
+Por exemplo, a mais óbvia * é o valor que está armazenado na memória.
+Aqui nesse caso, o nome "guess" está amarrado ao valor 3.
+Aí, a gente pode questionar, bom mas esse valor pode mudar a qualquer momento,
+basta eu atribuir um novo valor à variável.
+Sim, tá certo, mas não deixa de ser uma amarração, ela só é uma amarração bem
+mais temporária do que o endereço. O próprio endereço, se eu executar o
+programa de novo, será que vai ser exatamente o mesmo endereço? Provavelmente
+não. Então a amarração, esse vínculo do nome com uma entidade não é permanente
+e vai ter um tempo de amarração que a gente vai discutir ainda...
+
+Uma outra amarração é o tipo * da variável. Se esse programa aqui fosse em C,
+ao declarar a variável, eu tô amarrando um endereço e um tipo àquele nome da
+variável. Durante toda a execução do programa o tipo vai estar amarrado àquele
+nome.
+
+E tem pelo menos mais duas propriedades, que a gente ainda vai discutir mais
+sobre. Que é o escopo * da o variável e o tempo * de vida dela.
+
+===
+
+A gente tá falando de nomes, em particular nomes de variáveis.
+E esses nomes tem que respeitar uma sintaxe.
+--
+O nome de uma variável é uma string, uma cadeia de caracteres que deve
+respeitar uma regra. Essa regra pode varia de linguagem pra linguagem.
+Aqui tem dois exemplos: uma variável "i" e outra de nome "minha_variavel".
+Aqui tem outros exemplos... Será que são exemplos válidos?
+Eu posso ter uma variável que começa por um número?
+Ou por um caractere especial?
+Eu posso ter uma acento no nome da variável?
+Eu posso usar um nome que tipicamente é uma palavra chave na linguagem *, tipo
+"if"? Tem linguagem que não tem palavras reservadas, então seria possível usar
+o "if" como nome de uma variável, LISP por exemplo.
+---
+Faz diferença usar um nome em maiúsculas ou minúsculas? Eles se referenciam a
+mesma variável? No VisualBasic sim, mas a maioria das linguagens diferenciam os
+nomes.
+---
+Tem linguagens que prefixam o nome das variáveis com um caractere especial.
+Por exemplo, em Perl e PHP, o nome das variáveis tem que começar com o dólar.
+Isso facilita o uso de variáveis dentro de strings *.
+Aqui ele vai exibir uma mensagem de Olá para o conteúdo da variável "nome".
+Esse conceito se chama "interpolação de strings" e é muito comum em linguagens
+que trabalham muito com strings.
+
+Mas como regra geral, * os nomes de variáveis começam com uma letra seguidas
+de outras letras, dígitos, e underscore.
+
+===
+
+Ainda nesse tema de nomes de variáveis, vamos ver esse exemplo aqui de Ruby.
+Repara como esse nome "age" aparece de várias formas.
+Aqui com esse @, aqui com esse :, aqui com o self...
+
+Pára o vídeo agora e tenta identificar os usos e as definicoes de AGE e quais
+se referem a quais.
+Por exemplo, aqui tem uma variável local AGE. Aqui tá a definição e aqui tem um
+uso dela. E os outros usos? A que definições eles se referem.
+Qual a diferença entre esse "def age" e esse @AGE?
+Pára o vídeo e tenta achar uma lógica entre esses ages, mesmo sem conhecer
+Ruby.
+
+Eu nunca programei em Ruby, então precisei fazer algumas buscas pra entender.
+O @ é o prefixo de membros de um objeto.
+Aqui ele diz que esse membro é protegido.
+Ele também define um método AGE que simplesmente retorna o valor atual do
+membro, mas poderia fazer algum cálculo aqui, por exemplo, mentir a idade
+subtraindo 5, ou lendo a idade de um arquivo, ou seja lá o que for.
+Esses usos aqui com o self se referem ao método age e não diretamente ao campo
+AGE. Então aqui ele tá executando o método pra calcular o AGE.
+
+Bom, eu acho que é isso... Eu não conheço Ruby e esse exemplo mostra como é
+importante conhecer bem as regras de nomes da linguagem.
+Ou claro, escolher nomes menos ambíguos pra facilitar a leitura do código.
+A gente já falou bastante sobre legibilidade.
+A escolha dos nomes muitas vezes pode facilitar ou nesse caso dificultar o
+entendimento do programa.
+
+===
+
+Aqui tem outro exemplo, agora em Perl.
+Novamente, é o mesmo nome da variável, agora com prefixos diferentes.
+O que seria esse @ e esse $. Será que é a mesma variável?
+
+Para o video e tenta entender o código.
+O que você acha que o print vai exibir?
+Você acha que é a mesma variável ou são variáveis diferentes?
+Para o video e tenta respodner...
+
+Bom, não deve ser a mesma variável, não faria sentido eu atribuir ela a ela
+mesmo.
+O Perl usa prefixos diferentes pra variáveis de array com o @ e variáveis de
+valor único, que ele chama de valores escalares, com o $.
+Aqui eu tenho um array com (0,1,2), por isso eu uso o @ pra armazenar.
+Mas aqui é estranho eu quero um valor escalar com o dólar, mas a partindo de um
+array, o que parece incompatível.
+A gente já viu que o Perl usa muito a ideia de contexto. Aqui eu to lendo esse
+array, mas no contexto de um escalar. Nesse caso o Perl vai entender que eu
+quero o tamanho do array, que é um valor escalar.
+Então * esse programa vai exibir o tamanho do array "3", seguido dos valores do
+array, 0 1 2.
+
+===
+
+Exercícios...
+
+Agora os exercícios dessa aula...
+
+O primeiro, vamos pegar a linguagem LISP, ou alguma derivada tipo Scheme ou
+Clojure. A gente já discutiu que elas tem uma sintaxe pouco convencional.
+E se você olhar os programas, os identificadores, os nomes que aparecem nos
+programas também são pouco convencionais.
+Então, o primeiro item é quais são os caracteres que podem ser usados, por
+exemplo em nomes de variáveis. E qual a conclusao que voce tira sobre porque
+as linguagens mais convencionais nao permitem esses caracteres em
+identificadores?
+E olhando os programas ou pesquisando que usos incomuns e interessantes você
+encontrou?
+
+O segundo exercício, novamente vamos pensar em LISP, mas também Erlang e Ruby.
+Essas linguagens tem o conceito de átomos ou símbolos que também são nomes, mas
+não são variáveis. Então, o que são esses átomos? Pra que eles servem? E de novo
+que tipo de uso interessante você conseguiu achar?
+
+E o terceiro exercício, a gente já viu aquele exemplo de Perl com o dólar e o
+arroba como prefixo dos nomes das variáveis. Eu quer que vocês busquem sobre
+todos esses prefixos e descrevam o que eles representam, que tipo de dados eles
+representam. E também quais são as regras de conversão. Por exemplo se eu
+definir um nome inicialmente com um @, mas depois usar esse nome com um dólar.
+Qual é o comportamento...
+
+=================
+=================
+=================
+
+Essa é a continuação da aula de Amarração de Nomes.
+
+===
+
+Amarração também é conhecido como "Binding" que é o termo em inglês.
+---
+No vídeo passado, a gente definiu a amarração como a associação ou vinculação
+de um nome a alguma entidade do programa.
+A gente começou falando sobre variáveis *, que um nome de uma variável está
+vinculado a uma memória, o seu endereço, o tipo de valores que ela guarda,
+e um valor específico em determinado momento do programa.
+---
+Mas existem nomes para outros conceitos nas linguagens.
+Por exemplo, a gente pode vincular um nome a um trecho de código *, ou seja,
+um nome a uma função ou a um operador na linguagem
+Aqui o nome "print" está amarrado a um trecho de código que exibe um texto na
+tela. Toda vez que eu invocar esse nome, o trecho associado vai ser executado.
+O nome "+", a gente também pode considerar um símbolo qualquer como um nome,
+o nome "+" está vinculado a operação usual de somar números.
+Tem linguagens que eu consigo vincular esse nome, esse símbolo da soma, a
+outras operações. Vocês conhecem? Qual linguagem?
+Para o vídeo um pouquinho e pensa também no que significa vincular esse nome a
+uma outra operação...
+
+Em C++ tem o conceito de overloading de operadores.
+Eu posso redefinir o que que a operação de + vai fazer dependendo do contexto
+em que ela é usada. Por exemplo, se eu tentar somar dois objetos que
+representam matrizes, eu posso definir uma operação de soma de matrizes e
+vincular ao símbolo da soma.
+
+
+Um outro conceito de linguagens em que aparecem nomes são nos próprios
+comandos * primitivos da linguagem que estão vinculados ao que a linguagem
+determina que eles façam, ou seja, vinculado à semântica da linguagem.
+Por exemplo, * o "if" é um nome e ele está vinculado ao comportamento de testar
+uma condição e executar um ou outro caminho no código.
+O "if" não deixa de ser um nome. A gente como programador não pode alterar o
+comportamento dele, mas existe um vínculo que foi determinado por quem criou a
+linguagem...
+O "while" também é um nome que está vinculado/amarrado a um comportamento pré
+determinado da linguagem.
+
+Reparem aqui como essas amarrações acontecem em momentos completamente
+diferentes. Por exemplo o tipo de uma variável é amarrado ao nome da variável
+na hora que o programador escreve o código fonte do programa.
+Já a função "print", quem que escreveu esse código? Quando houve essa
+amarração? Para o vídeo um pouco e pensa sobre isso... Quem escreveu esse
+código e quando ficou determinado que ele ia se chamar "print"?
+E por fim, quando ficou decidido a semântica do "if", ou seja, quando ficou
+determinado o comportamento exato do que o "if" faz na linguagem C por exemplo?
+
+Essas perguntas se referem ao que a gente chama de "tempo de amarração" ou
+"binding time" que a gente vai discutir agora mais a fundo...
+
+===
+
+A gente chama de tempo de amarração * ou o termo em inglês binding time, o
+momento em que fica determinado o vínculo entre um nome e uma entidade do
+programa.
+
+E tem vários tempos diferentes que a gente vai discutir um a um. *
+Vamos usar aqui o termo em inglês que é mais comum de encontrar.
+
+Especificação da linguagem, quais nomes são definidos nesse momento?
+Implementação da linguagem, eu posso ter diferentes implementaçãoes da mesma
+linguagem. Será que tem alguns vínculos que acontecem nesse momento?
+Esses dois * acontecem bem antes de você escrever o seu programa.
+A gente não tem controle sobre esses nomes.
+
+Depois são os tempos que dizem respeito a um programa que a gente escreve.
+Pré-processamento de um programa, compliação de um programa e ligação com
+bibliotecas.
+
+E também tem os tempos * que acontecem na hora do usuário final usar o
+programa.
+O carregamento pra memória e finalmente tempo de execução do programa.
+
+===
+
+O tempo de design da linguagem é o primeiro momento em que alguns nomes passam
+a ter um significado particular.
+Por exemplo *, aqui são determinadas as palavras reservadas de comandos, tipo
+"if", "for", os tipos primitivos, algumas funções da biblioteca padrão da
+linguagem...
+Basicamente *, tudo o que vai aparecer no manual da linguagem vão ser nomes
+que estão amarrados a alguma entidade da linguagem, seja um comando, um tipo ou
+uma função.
+
+===
+
+Depois vem o tempo de implementação da linguagem.
+O mais comum é uma linguagem ter uma implmentação única que é feita pela
+própria equipe que projetou a linguagem, mas nem sempre é assim.
+
+Por exemplo, a lingaugem C é padronizada e tem várias * implementações
+diferentes. O Visual Studio da Microsoft, o GCC, o CLang, tem várias outras...
+
+Bom, mas como o C é padronizado, essas implementações tem que seguir os mesmos
+nomes que estão pré-determinados. Ela não pode mudar o que o "if" faz por
+exemplo.
+Certo! Mas essas implementações podem adicionar coisas a mais que não estão no
+padrão. O GCC por exemplo tem várias dezenas ou talvez centenas de extensões.
+E tem uma outra coisa mais importante até.
+É que o padrão não determina algumas coisas.
+Por exemplo. Quantos bytes tem um int? * Isso é uma amarração, o int é um nome
+e o tamanho da memória é uma entidade, um atributo do programa.
+Essa amarração não é determinada pelo padrão de C. Se eu tiver um compilador de
+C pra um Arduino por exemplo, o tamanho do int vai ser diferente de uma
+arquitetura de 64 bits da intel.
+
+===
+
+Como a gente já falou, esses dois tempos de design e implementação acontecem
+bem antes da gente escrever o nosso programa.
+Agora * vamos começar com os tempos de quando a gente tá programando, mas antes
+de executar o programa.
+
+Algumas linguagens tem uma fase de preprocessamento do código fonte, que
+basicamente faz substituições bem simples no código, sem olhar muito a sintaxe
+da linguagem.
+C * tem essa fase. Todos aqueles comandos que começam com o caractere hash, o
+jogo da velha, eles dizem respeito a essa fase de compilação.
+E nessa fase, o programador pode definir novos nomes. Aqui por exemplo, eu to
+determinando que daqui pra frente o nome PI está amarrado ao valor 3.14.
+
+Quando a gente compila um programa em C, essa fase de preprocessamento acontece
+por debaixo dos panos, parece que ela não existe em separado da compilação,
+mas na verdade ela existe sim.
+Tem o comando * gcc -E que a gente pode exefutar essa fase sem compilar o
+programa até o fim.
+Vamos ver um exemplo aqui.
+Vou criar um programa que eu vou definir esse PI e vou exibir ele...
+Só isso. Vamos compilar. ok. E executar. Beleza, tá mostrando 3,14.
+Agora, em vez de compilar inteiramente, eu vou chamar esse gcc -E. Olha só o
+que vai acontecer... Viu que o PI que eu tinha escrito aqui foi substituido
+pelo 3,14. Ou seja, na fase seguinte de compilação, esse nome PI nem existe
+mais...
+E eu disse que essa fase de preprocessamento nem olha muito pra sintaxe de C.
+E é verdade. Se eu alterar esse programa aqui pra uma sintaxe errada.
+Por, exemplo vou apagar essa chave aqui, tirar esse ; e usar uma funcao que nao
+existe. Esse programa agora tá errado, vai dar erro de compilacao...
+Mas se eu chamar esse gcc -E tudo vai funcionar, pq nessa fase eu to só fazendo
+substituicoes simples de texto, sem olhar a sintaxe de C.
+
+===
+
+Depois vem o tempo de compilação.
+Aqui é o momento que o nosso programa é analizado de maneira mais completa.
+A gente escreve um programa e define novas classes se for em Java ou novas
+structs se for em C. A gente declara as variáveis e funções do programa.
+Esses novos nomes que são determinados por nós são analisados nessa fase.
+O nome de uma variável vai ser vinculada a um tipo, uma função vai ser
+vinculada a uma declaração com argumentos e retorno. 
+É aqui que o compliador vai analizar o nosso programa de maneira mais completa.
+* Vai pegar um programa, por exemplo .c e compilar para um código objeto .o.
+O compilador vai verificar se os nomes são usados de forma correta, respeitando
+os vínculos que a gente determinou. Por exemplo, se eu usar o nome de uma
+variável inteira e tentar somar com uma função, o compilador vai gerar um erro.
+Mas nem todos os vínculos são determinados nessa fase.
+
+Vamos ver um exemplo aqui em C de novo. Eu tô usando o C nos exemplos porque é
+uma linguagem que tem todos essas fases que nem sempre existem nas outras
+linguagens...
+Esse programa vai exibir o resultado de F(10)...
+Só que aqui tá faltando da definição de F, o F não está vinculado ainda a uma
+função.
+Aqui nesse exemplo eu vou usar uma característica de C que vocês já devem
+conhecer. Eu vou declarar a assinatura de F, mas não vou implementar a função.
+Ou seja, eu tô falando aqui que "existe uma função com o nome F que tem essa
+assinatura". E aqui embaixo, se eu tiver respeitando essa assinatura, então
+tudo bem. Bom, mas eu ainda não tenho como executar esse programa porque ainda
+não tem nenhum código associado ao F.
+Vamos ver... Se eu tentar compilar o código... Aqui, ele tá dizendo que tem uma
+referência não definida ao F.
+Mas em C eu posso compilar um programa ser ter todos os nomes vinculados às
+implementações. Assim com tinha o "gcc -E", eu posso usar o "gcc -c" * pra
+não considerar ainda as implementações, que vão ser amarradas em uma outra fase
+que a gente chama de linkedição.
+Se eu compliar o código com esse -c, a gente vai ter um arquivo .o como resposta
+que é o programa já compilado, mas ainda incompleto. A gente chama esse .o de
+código objeto.
+Mas porque eu faria isso? Bom, às vezes tem uma biblioteca externa que eu não
+tenho o código fonte, somente esse código objeto. Eu ainda preciso da
+assinatura da função já que o compilador precisa verificar se os usos tão
+corretos... Em geral onde estão essas assinaturas? Para o vídeo e me responde...
+Isso com certeza vocês já viram em LP1.
+
+Bom, em geral as assinaturas das funções estão no arquivo .h.
+O printf por exemplo. A gente não escreve a implementação, mas a gente precisa
+incluir o stdio.h pra ter acesso a assinatura dele, já que esse uso aqui precisa
+ser verificado. O código objeto do printf vai ser amarrado depois na fase
+de linkedição.
+
+Voltando ao nosso programa... Eu vou escrever a implementação de F em um outro
+arquivo.
+Depois vou fazer a mesma coisa... Vou compilar ele com o -o.
+Agora eu tenho dois código-objeto .o. Não uso mais os fontes deles.
+E eu posso ligar eles de novo com o GCC pra gerar o executável final.
+
+===
+
+Depois vem o tempo de linkedição ou ligação que a gente acabou de falar.
+É nessa hora que os nomes de diversos arquivos são referenciados entre si
+pra formar o programa final.
+É aqui * também que a gente pode ligar bibliotecas pré-compliadas.
+Nesse exemplo o meu programa usa threads, então eu preciso ligar essa
+biblioteca no executável final.
+Essas três * fases são executadas pelo programador, até gerar o executável
+que os usuários finais vão poder usar...
+
+===
+
+Por fim vem as duas últimas fases *, já na máquina do usuário final.
+Quando a gente executa * o programa, primeiro ele é carregado * pra memória.
+Aqui ainda tem algumas amarrações. Por exemplo, sendo um pouco simplista, aqui
+o sistema operacional vai vincluar um endereço físico às variáveis globais.
+Também vai inicializar os valores com zeros se for o caso.
+E na última fase o programa executa. Aqui os valores das variáveis vão ser
+alterados várias vezes. Os endereços de objetos na pilha ou na memória heap
+também vão ser amarradas em tempo de execução.
+
+===
+
+Vamos ver um exemplo completo agora.
+Eu tenho esse programa em C eu quero determinar os vínculos dos nomes às
+entidades. Quando esses vínculos ocorrem...
+
+=================
+=================
+=================
+
+Essa é a continuação da aula de Amarração de Nomes.
+
+===
+
+Vamos voltar aqui pras variáveis.
+A gente viu que o nome de uma variável tá vinculado * ao seu endereço, valor e
+tipo.
+E tinham duas outras propriedades que a gente deixou pra discutir depois.
+O escopo e o tempo de vida. São dois conceitos parecidos mas com um diferença
+sutil.
+
+===
+
+O escopo * de uma variável diz respeito ao trecho de código onde ela é visível.
+Por exemplo, uma variável local * só é visível, só é acessível, só é
+referenciável, dentro de um trecho de código delimitado, por exemplo dentro de
+uma função ou um bloco de código.
+#O escopo é uma característica que a gente identifica visualmente ou
+#espacialmente, olhando o código fonte o trecho onde a variável foi declarada.
+
+===
+
+E o tempo de vida de uma variável diz respeito ao período em que a variável
+existe na memória. Ou seja o período entre quando ela é alocada e desalocada.
+
+===
+
+Mas será que isso não são duas formas de falar sobre a mesma coisa?
+O escopo e tempo de vida de uma variável não são sempre coincidentes?
+Olhando esse exemplo aqui. O escopo e o tempo de vida de "a" não estão
+igualmente limitados ao bloco entre as chaves?
+
+Então agora dá uma pausa no vídeo e tenta pensar em exemplos mais sofisticados
+do que esse pra você ver se é possível haver uma diferença entre escopo e
+tempo de vida...
+
+===
+
+Vamos mostrar um exemplo aqui, que é bem particular de C, mas que ilustra essa
+distinção entre escopo e tempo de vida...
+
+Eu tenho uma função F que é chamada várias vezes.
+E o que a função F faz é inverter o valor da variável "v" que vale "0"
+inicialmente e retornar. É só isso que ela faz.
+
+Agora, eu tenho aqui duas variações dessa função. Uma com esse "static" e outra
+sem esse "static".
+Então agora dá uma pausa no vídeo e responde qual vai ser a saída desse
+programa pra essas duas variações, com e sem o "static".
+
+Bom, nos dois casos, o escopo da variável é local, com visibilidade limitada
+dentro da função f. Por exemplo, eu não posso usar o nome "v" aqui na função
+"main" porque esse nome não está declarado aqui. Eu só consigo usar o "v"
+dentro de "f" onde ele está declarado. É uma variável com o escopo local.
+
+A diferença está no tempo de vida da variável "v".
+Sem o static, que é o caso mais comum, como eu disse, esse static é bem
+particular de C, sem o static, o tempo de vida de "v" também vai estar limitado
+ao tempo de vida de "f", ou seja, o "v" vai começar com 0 vai ser trocado pra
+1 e vai ser desalocado porque a função vai terminar.... Toda vez que eu chamar
+a "F", o mesmo comportamento vai se repetir. Por isso, a saída aqui sempre vai
+ser 1. 1, 1, 1, e 1.
+
+Quando eu uso o "static", aqui tá dizendo que o tempo de vida é estático e vale
+por todo o tempo em que o *programa* está ativo.
+E nesse caso, a inicialização só ocorre uma vez, ao carregar o programa pra
+memória. E não acontece toda vez que o "F" executa. Então, como o "v" sobrevive
+a multiplas chamadas de "F", esse valor alternado vai ser pesristido, e em
+cada chamada vai retornar 0,1,0,1...
+
+Então esse exemplo mostra que nem sempre o escopo e tempo de vida são
+coincidentes.
+
+===
+
+Quando a gente fala sobre tempo de vida das variáveis.
+A gente também pode dividir entre estático, ou seja, que é determinado antes da
+execução do programa. E o tempo de vida dinâmico, que é determinado durante a
+execução do programa.
+O tempo de vida estático perdura durante toda a execução do programa e isso
+acontece com as variáveis globais * e também as variáveis locais estáticas *
+que a gente viu no slide anterior como um exemplo particular de C.
+O tempo de vida dinâmico depende da execução do programa.
+E ele aparece nas variáveis locais que são armazenadas na pilha e as variáveis
+que usam a memória heap.
+A heap pode ser manipulada explicitamente como a gente faz em C com malloc e
+free. Ou de maneira mais implícita, por exemplo em Java, quando a gente dá um
+new pra criar um objeto e o coletor é responsável por desalocá-lo da memória.
+Ou também quando a gente usa contrutores primitivos das linguagens, por exemplo
+em Python a gente aloca uma lista usando os colchetes. Esses elementos da lista
+vão todos pra memória heap.
+
+===
+
+Já falamos da região de memória * estática para as globais e também da pilha
+para as variáveis locais.
+Agora vamos alterar o exemplo pra falar da HEAP.
+
+Eu alterei o exemplo pra, em vez de usar um vetor global, aqui eu uso um vetor
+alocado dinamicamente, só pra ilustrar o uso da HEAP.
+Como não tem nenhuma global, a região estática vai ficar vazia *. Eu coloquei
+esse amarelo pequeno aqui só pra lembrar que a gente não esqueceu da região
+estática.
+Aqui eu tenho um ponteiro * pra inteiros.
+Bom, é uma variável local, então ela vai pra pilha *.
+
+E aqui tem o MALLOC. Eu quero * alocar esses 4 inteiros.
+O MALLOC é um comando de C que vai alocar memória na outra região * que a gente
+ainda não falou, que é a HEAP.
+A HEAP vai ficar entre a região estática e a pilha. Ou seja, na verdade a pilha
+vai crescer agora na direção da HEAP e a HEAP vai crescer na deireção da PILHA.
+
+
+
+ e eu aloco um espaço pra 4 inteiros.
+Pra onde vão esses 4 inteiros que eu tô alocando?
+
+
+Pra falar dessas regiões de memória: a região estática, pilha e a heap, vamos
+pegar um programa de exemplo aqui em C.
+Esse programa * calcula o fatorial de 0 até 3.
+E guarda os resultados * em um vetor global.
+A função fat * também tá aqui:
+fatorial de 0 é 1 e pros outros valores é o valor multiplicado pelo fatorial
+do antecessor.
+
+Agora *** vamos olhar as variáveis que aparecem no programa e pra onde elas vão
+na memória do computador *.
+Aqui eu tenho a memória começando em 000 e indo até FFF. Ilustrando um espaço
+de endereçamento que começa aqui embaixo e vai * até lá em cima.
+Em geral, por convenção das arquiteturas, os endereços mais baixos guardam as
+variáveis estáticas * do programa, por exemplo as variáveis globais.
+E os endereços mais altos guardam a pilha * de variáveis locais.
+Bom, então olhando aqui * pra o vetor global, ele tem que ir pra região
+estática da memória. Que vai ser aqui * embaixo.
+Aqui de novo na main * tem essa variável local "i" que eu uso no for.
+Essa vai pra pilha, aqui * no topo da memória.
+Depois eu chamo a fatorial aqui passando 0.
+O zero vai pra variável "n" * que é uma local, então ela vai pro topo * da
+pilha.
+O topo vai crescendo pro endereço mais baixo, na direção da memória estática.
+
+Bom, como o "n" é zero, eu vou cair aqui nesse primeiro caso e a função vai
+retornar. Eu não preciso mais das locais dessa função, então o "n" vai ser
+desempilhado ** e eu retorno pro "for" aqui na main.
+Agora, eu chamo a fatorial passando 1, novamente * o "n" vai ser empilhado.
+Agora eu caio aqui no segundo caso, eu vou retornar 1 vezes o fatorial de zero.
+Aqui é uma chamada recursiva.
+Dá uma pausa no vídeo e pensa sobre essa nova chamada. O que vai acontecer com
+a memória aqui?
+
+Bom, a fatorial atual continua ativa, então eu não posso desempilhar as locais
+dela. Então o que vai acontecer? Eu vou chamar a fatorial de zero e um outro
+"n" * vai ser empilhado por cima da função ativa. Eu vou chamar esse "n" de
+"n'"
+O fatorial de 0 a gente já sabe, retorna 1. Então eu posso retornar e
+desemplilhar ** o "n'", ficando só com o "n". Agora eu vou retornar de novo.
+O "n" vale 1 e eu multiplico por 1 que foi o retorno desse outro fatorial.
+E agora eu desempilho * o "n" e volto pro "for" aqui na função "main".
+
+
+Aí eu vou chamar o fatorial de 2. Vou empilhar * esse n=2. Vou cair no segundo
+caso e chamar a fatorial de novo com n=1. Então vou empilhar * esse n'=1.
+De novo caio no segundo caso e vou chamar o fatorial de 0. Então vou empilhar *
+esse n''=0. E aí vou retornar ** e retornar ** e retornar **.
+Por fim vai ter o caso do fatorial de 3. E a gente já sabe, vai empilhar agora
+o 3 * o 2 * o 1 * e o 0 *.
+
+E se eu quisesse o fatorial de números ainda maiores, a pilha ia crescendo *
+crescendo e perigosamente poderia até alcançar * o resto da memória estática.
+
+Bom, esse crescimento parece perigoso porque as duas regioes, da pilha e a
+estatica iriam entrar em conflito.
+E o que fazer nesse caso? Como evitar? Como garantir que isso não vai acontecer?
+E se acontecer, quais são as consequências?
+E qual será esse limite? Quantas locais eu posso ter até esse problema se
+manifestar?
+Dá uma pausa aí no vídeo e pensa um pouco sobre isso.
+
+Vamos ver aqui na prática o que pode acontecer...
+Esse programa em Lua calcula o fatorial de 1 milhao.
+Vamos executar aqui pra ver o que acontece...
+---
+Oh aqui deu esse erro de stack overflow.
+Stack em inglês significa pilha... E overflow significa transbordar.
+Então stack overflow signifia que o limite de memória da pilha transbordou e
+por isso ocorreu um erro.
+Ou seja, o Lua tem um mecanismo que limita o tamanho da pilha e evita que ela
+cresca indiscriminadamente.
+Lua tem um interpretador e esse modelo de memória aqui não é exatamente o que
+Lua usa.
+O interpretador de Lua separa a memória da pilha cria um limite que se for
+alcançado, o próprio interpretador detecta e evita que algo pior aconteça.
+
+---
+
+Então aqui voltando pro slide. O Lua * detecta esse crescimento indisciminado
+da pilha e gera * um erro de stack overflow.
+
+Essa técnica também pode ser adotada em linguagens com código compilado.
+Mas dependem do auxílio do sistema operacional pra segmentar a memória do
+programa e usar algum tipo de proteção por hardware mesmo.
+A gente não vai discutir esses detalhes aqui, eles tem mais a ver com
+arquitetura de computadores.
+
+Agora vamos ver o mesmo exemplo em C.
+Aqui eu exibo o fatorial de 1 milhão.
+E a função fatorial tá aqui definida novamente.
+---
+E quando eu executo esse programa, olha o que acontece...
+SEGFAULT. Ou seja, falha de segmentação. A pilha cresceu tanto que invadiu
+alguma região inválida.
+
+
+Em C, dependendo da arquitetura, esse modelo que a gente viu aqui pode ser de
+fato o que acontece na prática.
+Por exemplo, em sistemas embarcados mais simples que não tem nenhum suporte de
+proteção de memória. O Arduino é um exemplo disso.
+Nesses casos, a pilha realmente vai invadir a região estática e vai
+sobreescrever os dados que tiverem lá. Ou seja, eu posso ter escrito algum
+valor nesse vetor. A pilha vai crescer e escrever algum outro valor aqui.
+Ou seja *, a memória estática vai realmente ser invadida.
+E quando eu for ler novamente esse vetor, eu vou ler uma valor de uma variável
+local que não tem nada a ver com esse vetor.
+
+E se eu continuar com a pilha crescendo, o que vai acontecer é que eu vou chegar
+num endereço negativo que nem existe mais.
+E aí nesse caso * eu também vou ter uma falha de segmentação, um SEGFAULT.
+
+===
+
+Já falamos da região estática para as globais aqui embaixo e já falamos da
+região da pilha para as locais aqui em cima.
+Agora a gente vai falar da HEAP.
+Eu alterei o exemplo anterior pra, em vez de usar uma global pro vetor.
+Aqui eu tô alocando um buffer de 4 inteiros pra usar como um vetor.
+Agora esse programa ficou sem globais. Então a região estática vai ficar vazia
+nesse caso *. Eu coloquei aqui esse retangulo pequeno pra ilustrar isso.
+E no lugar da global, eu criei esse ponteiro aqui VEC que, sendo uma variável
+local, a gente já sabe * que vai pra pilha.
+Mas ele é só um ponteiro e não um vetor. Os valores que eu quero guardar das
+fatoriais precisam de um espaço.
+Pra isso eu uso esse MALLOC, de "memory allocation", alocação de memória, e
+peço 4 inteiros.
+O MALLOC é um comando que vai internamente alocar esse espaço, mas aonde?
+
+
+Bom, é aqui que entra a HEAP * *, que fica localizada entre a região estática
+e a pilha, logo acima da região estática. A região estática a gente sabe o
+tamanho de antemão e esse tamanho não muda. Então a HEAP pode entrar em cima da
+região estática sem problema nenhum de conflitos.
+
+E o que tá faltando aqui é ligar a local VEC com a memória que a gente alocou
+e isso * é feito através do ponteiro. Ou seja, a local VEC vai guardar ou
+apontar pra o endereço dessa memória que MALLOC alocou na HEAP.
+Continuando aqui no programa, a gente tenha esse I * aqui novamente que é
+alocado na pilha. E o N que vai ser empilhado * toda vez que a FAT for chamada.
+
+Agora, a pilha vai crescer * na direção da HEAP, que por sua vez também vai
+crescer * na direção da PILHA.
+
+A PILHA decresce quando as locais saem de escopo e a HEAP vai decrescer quando
+o programa der um FREE. Aqui * no caso eu passo o VEC que é essa local que
+aponta pro bloco que eu quero desalocar.
+
+Esse exemplo é bem artificial porque não é o uso típico da HEAP.
+A HEAP a gente vai usar pra estruturas mais dinâmicas como listas encadeadas,
+árvores e grafos, que crescem e decrescem de maneira aleatória, sem esse padrão
+bem comportado das locais que são empilhadas e desempilhadas em blocos.
+
+===
+
+Agora vamos discutir alguns problemas comuns relacionados com o uso da a HEAP.
+Olhando esse exemplo aqui bem simples que aloca um dado na HEAP, faz alguma
+coisa e depois dá FREE.
+Olhando aqui pra memória, a região estática * tá vazia.
+A HEAP * tem o dado alocado.
+O ponteiro PTR * é uma LOCAL.
+Que aponta * pra HEAP.
+
+A HEAP em qualquer programa vai ser sempre acessada através de um ponteiro.
+Nesse exemplo, como eu falei, esse ponteiro é guardado aqui nessa local.
+Então essa discussão de escopo e tempo de vida fica um pouco mais sutil porque
+o dado somente é acessível através de uma local, só que o dado propriamente
+dito não está na pilha, ele tá aqui na HEAP.
+O MALLOC e FREE que vão determinar o tempo de vida desse dado.
+
+Bom, novamente a gente só pode acessar o dado pelo ponteiro, e o ponteiro é uma
+LOCAL.
+E o escopo dessa LOCAL é esse bloco aqui.
+Fora desse bloco, eu não tenho como acessar o dado da HEAP, pois eu não tenho
+mais a variável PTR que é a única que aponta pro dado.
+Então, a gente pode concluir que o escopo do dado que está na HEAP, para esse
+exemplo específico, vai ser esse bloco.
+Fora desse bloco a gente não consegue referenciar o dado da HEAP.
+
+E o tempo de vida, como fica?
+A definição de tempo de vida é o período entre alocação e desalocação do
+dado na memória.
+Pras globais e pras locais esse gerenciamento é feito automaticamente, por
+exemplo, se uma local entre em escopo, também é alocado pra ela um espaço na
+pilha. E quando o escopo termina, o espaço na pilha é desempilhado
+automaticamente.
+Mas no caso da HEAP, esse gerenciamento é feito pelo programador.
+Aqui eu aloco o espaço, iniciando o tempo de vida do dado.
+E aqui eu desaloco o espaço, finalizando o tempo de vida do dado na HEAP.
+Veja que nesse caso, o escopo são as chaves e o tempo de vida é o MALLOC/FREE *
+que estão praticamente coincidentes.
+Nesse caso então o escopo e o tempo de vida são iguais.
+
+---
+
+Agora vamos ver outro exemplo.
+Imagina que eu esqueço de desalocar o dado da HEAP.
+O que vai acontecer?
+O que vai mudar agora, o escopo ou o tempo de vida?
+Para o vídeo e responde.
+Bom, eu consigo acessar esse dado na HEAP quando eu sair desse bloco entre as
+chaves? Tem como eu referenciar ele?
+Não. Então o escopo continua sendo igual, continua obedecendo o escopo dessa
+local aqui.
+E o tempo de vida? O que vai acontecer?
+Bom, se eu não desaloco, esse dado vai viver pra sempre na memória.
+E quando esse bloco terminar, eu nem vou ter mais como acessar esse dado.
+Em outras palavras, eu vou ficar com um dado na memória inútil porque eu não
+tenho mais como chegar até ele: O escopo acabou, mas o tempo de vida continua
+ativo.
+Alguém sabe o nome que a gente dá pra essa situação?
+Para o video e tenta lembrar...
+
+Nesse caso *, o escopo é menor que o tempo de vida. O escopo terminou, mas o
+tempo de vida continua.
+Essa situação a gente chama de vazamento de memória. O termo em inglês é mais
+usado MEMORY LEAK.
+É como se fosse um vazamento de água. É uma memória que vai ficar perdida até
+o programa terminar.
+
+---
+
+E por último, vamos ver uma situação contrária.
+Agora eu dou o FREE antes do escopo terminar.
+E ainda uso a região depois do tempo de vida terminar.
+Ou seja, aqui * o escopo do dado é maior que o tempo de vida dele.
+Quando isso acontece, a gente chama esse ponteiro PTR de um ponteiro pendente
+ou em inglês um DANGLING POINTER.
+E o que pode dar errado aqui?
+Qual é o problema de eu acessar esse ponteiro aqui no final depois de já ter
+dado FREE na região que ele aponta?
+Para o vídeo e pensa o que pode acontecer de ruim nesse programa.
+
+Bom, esse ponteiro continua em escopo, mas a memória que ele aponta * já foi
+liberada, ou seja, pode ser usada pra outros dados do programa.
+Essa cor vermelha ilustra esse conceito de um ponteiro pendente, apontando pra
+o que agora é um lixo aqui qualquer.
+
+Só que imagina que nesses 3 pontinhos aqui do meio, eu tenho um outro MALLOC
+com um ponteiro * que coincidiu * de ser no mesmo lugar de antes...
+Agora o ponteiro PTR original tá apontando na verdade pra um dado real do meu
+programa.
+E essa linha aqui vai aí sim escrever um lixo em cima do dado real.
+
+---
+
+Em resumo, o controle do tempo de vida da HEAP depende do programador e é
+suscetível a esses dois problemas: memory leak e dangling pointer
+porque o escopo e tempo de vida podem ser inconsistentes entre si.
+
+
+
+
+
+
+Imagina que 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Então a gente pode dizer que esse
+
+
+Esse exemplo aqui ilustra o escopo e tempo de vida de um dado na memória HEAP.
+Eu aloco o dado na HEAP, que é acessado através desse ponteiro PTR que é uma
+LOCAL. O escopo desse ponteiro é esse bloco entre as chaves.
+Após o uso aqui com os 3 pontinhos, eu desaloco esse dado
+
+
+casos mais interessantes 
+
+===
+
+De qualquer maneira, o objetivo nosso aqui é falar sobre essas regiões da
+memória que estão relacionados com o tempo de vida das variáveis dos programas.
+Esse é o modelo mais simples mas que ilustra bem o comportamento dos programas.
+A região estática imutável, a pilha com o comportamento previsível de empilhar
+e desempilhar variáveis e a HEAP com o uso do MALLOC e FREE em qualquer parte
+do código e portanto com um comportamento mais aleatório.
+E por fim, essa idéia de que a memória não é infinita e em alguns casos vai ser
+importante ficar atento a esse crescimento da pilha e da heap em direções
+opostas.
+
+===
+
+Exercício:
+
+Pegue um programa seu e enumere todos os usos de memória estátia, pilha e heap.
+O programa deve ter pelo menos 5 usos da pilha e da heap.
+
+Qual é o tamanho típico da pilha?
+Quantas chamadas recursivas eu posso fazer?
+Quantas locais eu posso guardar em cada chamada?
+
+
+=================
+=================
+
+Essa é a continuação da aula de Amarração de Nomes.
+
+===
+
+Vamos continuar falando sobre as regiões de memória, mas agora comparar mais
+detalhadamente em que situações eu vou usar uma ou outra...
+
+Começando aqui pela região estática.
+
+A gente já sabe * que a amarração entre o nome da variável e o endereço dela vai
+acontecer no momento que a gente carrega o programa pra memória, ou seja, antes
+de executar o programa a gente ou o compilador já tem como determinar onde as
+globais vão ficar.
+
+A gente também já sabe * que na região estática a gente guarda as variáveis
+globais (e no caso de C também as locais estáticas).
+
+O acesso às globais é bastante eficiente (eu coloquei esse + aqui pra indicar
+que é uma característica positiva das globais).
+E porque? Por duas razões, primeiro, a gente já tem o endereço dela e sabe
+exatamente onde ler e escrever os dados. É um acesso direto. E a segunda
+razão é que como ela a região estática já é pré-alocada ao carregar o programa
+e não há necessidade de desalocá-la, então não existe nenhum overhead, nenhum
+custo extra associado ao uso de globais.
+
+Por outro lado, como o espaço é pré-alocado, e como o nome diz, estático, nem
+todos os usos da memória consigo expressar através de globais.
+Um exemplo é pra expressar o padrão de recursão que a gente viu no exemplo da
+fatorial. As locais vão sendo empilhadas e eu consigo ter várias instâncias
+delas convivendo na memória.
+Como eu poderia implementar a função de fatorial só com variáveis globais?
+Para o vídeo e pensa sobre isso. Essa vai ser uma das perguntas do final do
+vídeo. Uma dica é que você vai precisar simular essa ideia da pilha só que
+usando globais.
+
+Uma outra desvantagem das globais é que elas ocupam mais espaço porque o espaco
+que elas ocupam não pode ser reaproveitado pra outras globais.
+Vamos ver esse exemplo aqui *.
+Eu tenho duas variáveis que tem um escopo delimitado por essas chaves, ou seja,
+eu só uso a variável SOMA aqui em cima e só uso a variável MEDIA aqui embaixo.
+Como um trecho executa depois do outro, essas duas variáveis não precisam
+estar na memória ao mesmo tempo, certo?
+Só que se elas fossem globais, eu reservaria 4 bytes pra cada uma delas, mesmo
+que os 8 bytes nunca sejam usados ao mesmo tempo.
+Se fossem locais, eu poderia empilhar e desempilhar ao entrar e sair dos blocos
+e no fim das contas eu só ocruparia 4 bytes pras duas variáveis.
+
+
+
+
+
+===
+
+Exercícios
+
+
+Como implementar FAT de maneira recusriva somente com variáveis globais.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
