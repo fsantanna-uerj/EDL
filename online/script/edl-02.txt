@@ -796,79 +796,9 @@ Em resumo, o controle do tempo de vida da HEAP depende do programador e é
 suscetível a esses dois problemas: memory leak e dangling pointer
 porque o escopo e tempo de vida podem ser inconsistentes entre si.
 
-
-
-
-
-
-Imagina que 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Então a gente pode dizer que esse
-
-
-Esse exemplo aqui ilustra o escopo e tempo de vida de um dado na memória HEAP.
-Eu aloco o dado na HEAP, que é acessado através desse ponteiro PTR que é uma
-LOCAL. O escopo desse ponteiro é esse bloco entre as chaves.
-Após o uso aqui com os 3 pontinhos, eu desaloco esse dado
-
-
-casos mais interessantes 
-
 ===
 
-De qualquer maneira, o objetivo nosso aqui é falar sobre essas regiões da
+O objetivo nosso aqui foi falar sobre essas regiões da
 memória que estão relacionados com o tempo de vida das variáveis dos programas.
 Esse é o modelo mais simples mas que ilustra bem o comportamento dos programas.
 A região estática imutável, a pilha com o comportamento previsível de empilhar
@@ -902,23 +832,29 @@ detalhadamente em que situações eu vou usar uma ou outra...
 
 Começando aqui pela região estática.
 
-A gente já sabe * que a amarração entre o nome da variável e o endereço dela vai
-acontecer no momento que a gente carrega o programa pra memória, ou seja, antes
-de executar o programa a gente ou o compilador já tem como determinar onde as
-globais vão ficar.
+A gente já sabe * que a amarração entre o nome da variável e o endereço dela
+vai acontecer no momento que a gente carrega o programa pra memória, ou seja,
+antes de executar o programa a gente (ou melhor, o compilador) já tem como
+determinar onde as globais vão ficar.
 
 A gente também já sabe * que na região estática a gente guarda as variáveis
 globais (e no caso de C também as locais estáticas).
 
-O acesso às globais é bastante eficiente (eu coloquei esse + aqui pra indicar
-que é uma característica positiva das globais).
+E quais são as características ou os tradeoffs da região estática das globais?
+
+As globais * não tem os problemas de acesso que a gente viu com a HEAP.
+Tanto o escopo como o tempo de vida das globais são gerenciados
+automaticamente.
+
+O acesso às globais também é bastante * eficiente e é uma característica
+positiva.
 E porque? Por duas razões, primeiro, a gente já tem o endereço dela e sabe
 exatamente onde ler e escrever os dados. É um acesso direto. E a segunda
 razão é que como ela a região estática já é pré-alocada ao carregar o programa
 e não há necessidade de desalocá-la, então não existe nenhum overhead, nenhum
 custo extra associado ao uso de globais.
 
-Por outro lado, como o espaço é pré-alocado, e como o nome diz, estático, nem
+Por outro lado *, como o espaço é pré-alocado, e como o nome diz, estático, nem
 todos os usos da memória consigo expressar através de globais.
 Um exemplo é pra expressar o padrão de recursão que a gente viu no exemplo da
 fatorial. As locais vão sendo empilhadas e eu consigo ter várias instâncias
@@ -940,28 +876,233 @@ que os 8 bytes nunca sejam usados ao mesmo tempo.
 Se fossem locais, eu poderia empilhar e desempilhar ao entrar e sair dos blocos
 e no fim das contas eu só ocruparia 4 bytes pras duas variáveis.
 
+===
 
+Na região da pilha *, a amarração entre o nome da variável e o endereço dela
+vai acontecer durante a execução quando ela entra em escopo.
+A pilha vai guardar * as variáveis locais do programa.
+E os trade-offs * são os seguintes:
 
+Assim como as globais *, as locais tem um gerenciamento seguro do escopo e
+tempo de vida e são tratados automaticamente pela linguagem.
+Por exemplo, quando o programa entra numa função, as locais entram em escopo,
+ou seja, elas podem ser usadas em expressões e atribuições e, ao mesmo tempo,
+são alocadas na pilha. E quando a função termina, o processo inverso acontece.
+As variáveis não vão mais poder ser referenciadas e o espaço delas é desalocado
+também. Então é seguro nesse sentido de que o escopo e tempo de vida são
+sempre coincidentes e gerenciados automaticamente.
 
+O desempenho * também é bom, mas agora o acesso não é direto. Eu não tenho como
+saber o endereço absoluto de uma local. O acesso vai ser sempre em relação ao
+endereço base da função. Lembram do exemplo da FATORIAL? * Eu podia ter várias
+locais de uma mesma função em chamadas recursivas. O endereço dessas locais
+não é fixo. Por exemplo esses Ns são todas locais da função FAT e não ocupam o
+mesmo endereço. Nem poderiam né? Eu preciso de todas elas quando a função é
+chamada recursivamente. Só que o endereço de cada um desses N vai ser sempre o
+mesmo em relação ao endereço base na pilha * de quando a função foi chamada.
+Esse EBP aqui é o endereço do início da pilha quando a FAT foi chamada pela 4a
+vez. E o N dela vai estar sempre no início desse EBP pq é a única local da FAT.
+Esse EBP significa endereço base e fica guardado em um registrador da CPU.
+Cada chamada vai ter um EBP diferente e o endereço das locais da função vão ser
+relativos a ele.
+Se uma função tiver 5 locais, A,B,C,D,E, então o endereço de D vai ser sempre
+o mesmo em relação a esse EBP.
+
+E as locais vão ser sempre alocadas e desalocadas em bloco.
+Quando eu entro numa função, por exemplo, o custo de alocar as locais vai ser
+simplesmente aumentar o topo da pilha de acordo com o número de locais. E
+quando eu saio da função, vai ser simplesmente diminuir o topo da pilha.
+Então o custo de alocação e desalocação é bem baixo.
+
+---
+
+As locais já são mais expressivas do que as globais.
+Ou seja, elas me dão mais poder pra expressar os meus programas.
+Em particular, como eu posso ter várias instâncias de uma mesma variável local
+como nesse exemplo aqui da fatorial, eu já consigo expressar algoritmos
+recursivos de maneira mais natural, usando a esse mecanismo de pilha que a
+linguagem já gerencia pra gente automaticamente.
+
+---
+
+E sobre o uso de espaço, como a gente falou no slide anterior comparando com as
+globais. Se duas locais não são necessárias ao mesmo tempo, então eu posso
+separar * elas em blocos de modo que elas compartilhem o mesmo espaço da memória.
+
+===
+
+Vamos olhar mais uma vez como funciona a pilha com um exemplo diferente, agora
+em Lua...
+
+Eu começo aqui embaixo * chamando a funcao A.
+Aqui * tem um diagrama de como a pilha vai crescer e decrescer.
+Agora a orientação * tá ao contrário. Nesse desenho, o endereço maior tá
+embaixo e a pilha vai pra cima na direção da HEAP e da região estática.
+Então eu começo com a função A que vai ser alocada na base da pilha.
+A gente chama de FRAME que seria traduzida pelo QUADRO ou CARCAÇA da função.
+
+Nessa carcaça vão estar todas as locais a,b,c da função como a gente já
+discutiu nos outros exemplos.
+A função A vai executar e vai chamar * a função B e o FRAME dela vai ser
+empilhado em cima da função A que ainda está ativa.
+
+Esse FRAME da B * vai ter as suas locais d,e,f e depois eu vou chamar * a
+função C. Que também * vai ter o seu FRAME com as locais * g,h,i empilhado em
+cima da função B.
+E depois as funções vão todas retornar na ordem inversa e vão ser desempilhadas
+uma a uma.
+
+Agora * vamos olhar um FRAME desses por dentro. Não são só as locais que entram
+nessa CARCAÇA da pilha.
+As locais * a gente vê aqui no topo do FRAME e elas ficam relativas ao EBP que
+aparece aqui de novo. Então, por exemplo, a variável g vai estar logo acima do
+EBP, a variável h vai estar mais acima do EBP e assim em diante.
+Mas o FRAME tem outros dados também.
+
+Por exemplo, o que seria esse endereço de retorno.
+E o que seriam esses argumentos aqui?
+Dê-em uma pausa no vídeo e tentem entender esse diagrama do FRAME.
+
+Quando eu chamo uma função, eu vou poder passar argumentos pra ela, e a função
+vai ter que ler esses argumentos de algum lugar da memória.
+Nada mais justo do que colocar esses argumentos na pilha também.
+A função vai poder acessar eles partindo do EBP também, só que na direção
+oposta das suas locais.
+E por fim, quando uma função termina, ela precisa voltar pro ponto em que ela
+foi chamada. Esse ponto é um endereço do código que ela vai executar.
+Por exemplo, quando eu chamo a função C aqui. Eu tenho que guardar esse ponto
+pq quando a funcao C retornar, eu vou ter que voltar a esse ponto pra continuar
+a execução do meu programa.
+
+Tudo isso é feito gerenciado automaticamente pelas linguagens, mas tem muita
+coisa acontecendo por debaixo dos panos...
+
+Apesar de todas as linguagens modernas terem esse mecanismo de locais usando
+uma pilha, nem sempre foi assim...
+O FORTRAN por exemplo que a gente viu como uma das raízes das linguagens de
+alto nível, não tinha suporte a chamadas recursivas justamente pq não tinha
+esse conceito de pilha pras locais. As variáveis eram todas estáticas.
+As versões mais modernas já tem esse suporte, mas é interessante que o que a
+gente tem hoje como dado, não necessariamente era.
+
+===
+
+Voltando pra HEAP, assim como com a pilha *, a amarração entre o nome da
+variável e o endereço dela vai acontecer durante a execução do programa.
+A HEAP * vai ser usada em estruturas dinâmicas, por exemplo listas encadeadas e
+grafos. A alocação e a desalocação vai ser explícita por exemplo com MALLOC e
+FREE. A desalocação pode ser automática se houver um coletor de lixo.
+
+E os trade-offs * são os seguintes:
+
+--
+
+A gente discutiu dois problemas típicos de gerenciamento da HEAP: o vazamento
+de memória e ponteiros pendentes.
+São problemas relacionados com o gerenciamento manual de memória.
+Linguagens com um coletor de lixo podem contornar, em alguns casos, esses
+problemas de segurança.
+
+--
+
+O desempenho da HEAP também é pior: primeiro porque os acessos são sempre
+indiretos através de ponteiros, então para achar um dado é preciso ir à memória
+duas vezes. E além disso, a alocação e desalocação de cada dado é feito
+individualmente. Ao contrário da pilha que aloca todas as locais de uma vez só.
+A gente vai falar mais desse overhead a seguir.
+
+--
+
+Em termos de expressividade, a HEAP oferece a maior flexibilidade.
+Por exemplo, um grafo pode ser construído durante a execução de um programa
+adicionando e removendo nós e arestas de maneira totalmente arbitrária.
+
+--
+
+E sobre o uso de espaço, por um lado, o programador tem total controle sobre
+a alocação e desalocação dos dados.
+Mas por outro lado, tipicamente os dados ficam dispersos na memória, o que
+dificulta uma organização compacta dos dados.
+Por exemplo, um VETOR estático é guardado em um bloco único com todas as
+posições contíguas na memória.
+Comparando com uma lista encadeada que vai ser criada de maneira dispersa na
+memória.
+
+===
+
+Agora vamos olhar a HEAP mais de perto...
+Aquie a gente tem de novo o nosso modelo das regiões de memória com a PILHA e
+a HEAP indo em direções opostas.
+
+Vamos focar nessa afirmação aqui *:
+A HEAP tem um padrão de alocação "aleatório".
+Aleatório aqui não quer dizer que a gente vai sortear quando a gente aloca um
+dado...
+... Aqui é mais no sentido que não é possível determinar quando as alocações
+vão acontecer de antemão.
+A gente sabe que os programas tem IFs e o fluxo vai depender da entrada do
+usuário, que nesse caso, pelo menos pra gente, vai se comportar de maneira
+aleatória, a gente não tem como prever.
+Então, dependendo do fluxo que o programa segue toma, ele pode por exemplo
+chamar um MALLOC em um determinado ponto e um outro MALLOC em um outro ponto,
+sem que a gente tenha como determinar essa ordem antes de executar o programa.
+
+Vamos separar * a HEAP aqui e vamos simular * a execução de várias alocações e
+desalocações que ocorreram de maneira aleatória, no sentido que a gente acabou
+de discutir.
+Então meu programa * executou essa alocação aqui: 10 bytes pro ponteiro A.
+O sistema de alocação da linguagem vai alocar essa memória * aqui embaixo e eu
+identifiquei aqui o ponteiro que tá apontando pra cá.
+Depois *, em algum outro ponto, o meu programa aloca mais 20 bytes pro ponteiro
+B. Idealmente, o sistema vai reservar a memória * logo acima do A pra otimizar
+o uso da HEAP.
+Em seguida, o programa * deasloca a memória apontada por A.
+O sistema vai marcar então * que aquela região está liberada.
+Repare que agora eu tenho espaços livres de memória separados por espaços
+ocupados. Isso é o que a gente chama de * fragmentação da memória e torna o
+uso do espaço disponível menos eficiente.
+Continuando *, agora eu quero alocar 15 bytes. Só que esses 15 bytes não cabem
+aqui embaixo, aqui só tem 10 bytes livres.
+Então *, o sistema vai alocar esse espaço aqui em cima.
+
+Seguindo *, agora eu desaloco o B e libero * essa região aqui. Por consequência,
+* essa região inteira aqui embaixo fica livre.
+Por fim, eu aloco 40 bytes. Repara que aqui embaixo eu só tenho 30 bytes livres
+que era o espaço ocupado pelo A e pelo B.
+Então * o D vem aqui pra cima. Só que essa alocação pode invaidr * a região da
+pilha. Repara que eu tenho bastante espacço aqui embaixo, só que a fragmentação
+não tá permitindo eu usar a memória de uma maneira mais compactada.
+Esse problema é inerente ao uso da HEAP.
 
 ===
 
 Exercícios
 
 
+Qual é o máximo de memória em bytes que o programa a seguir vai usar em um determinado momento? Explique como você fez o cálculo.
+
+int fat (int n) {
+   if (n == 0) {
+      return 1;
+   } else {
+      return n * fat(n-1);
+   }
+}
+
+int vec[100];
+
+void main (void) {
+   for (int i=0; i<100; i++) {
+       vec[i] = fat(i);
+   }
+}
+
 Como implementar FAT de maneira recusriva somente com variáveis globais.
 
+Quais são as regiões de memória do Java e como elas são utilizadas pela Máquina Virtual?
 
+===
 
+Exercícios
 
-
-
-
-
-
-
-
-
-
-
-
+- Tratamento de exceções é léxico ou dinâmico?
