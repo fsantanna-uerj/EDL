@@ -1,42 +1,34 @@
 #include <stdio.h>
 
-namespace Geometria
-{
-    int x = 10;
+namespace Geometria {
+    int OFF = 0;           // deslocamento padrao
 
     class Retangulo {
     public:
-        //static int x;
-        int x, y, w, h;
-        Retangulo () {
-            this->x = Geometria::x;
-            this->w = 0;
-        }
-        void setX (int x) {
+        static int WIDTH;  // comprimento padrao
+        int x, y, width, height;
+        Retangulo (int x) {
             this->x = x;
+            this->width = WIDTH;
         }
-        void setWfromX () {
-            this->w = x;
+        int getX () {
+            return OFF + x;
         }
     };
+    int Retangulo::WIDTH = 100;
 }
 
 int main (void) {
     using namespace Geometria;
 
-    Retangulo r1;
-    printf(">>> R1: x=%d w=%d\n", r1.x, r1.w);
+    Retangulo r1(10);
+    printf(">>> R1: x=%d w=%d\n", r1.getX(), r1.width);
 
-    x = 5;
+    OFF = 50;
+    r1.WIDTH = 10;
 
-    Retangulo r2;
-    printf(">>> R2: x=%d w=%d\n", r2.x, r2.w);
-
-    r1.setX(100);
-    printf(">>> R1: x=%d w=%d\n", r1.x, r1.w);
-
-    r2.setWfromX();
-    printf(">>> R2: x=%d w=%d\n", r2.x, r2.w);
+    Retangulo r2(20);
+    printf(">>> R2: x=%d w=%d\n", r2.getX(), r2.width);
 
     return 0;
 }

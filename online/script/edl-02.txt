@@ -425,21 +425,6 @@ Vamos ver um exemplo completo agora.
 Eu tenho esse programa em C eu quero determinar os vínculos dos nomes às
 entidades. Quando esses vínculos ocorrem...
 
-=================
-=================
-=================
-
-Essa é a continuação da aula de Amarração de Nomes.
-
-===
-
-Vamos voltar aqui pras variáveis.
-A gente viu que o nome de uma variável tá vinculado * ao seu endereço, valor e
-tipo.
-E tinham duas outras propriedades que a gente deixou pra discutir depois.
-O escopo e o tempo de vida. São dois conceitos parecidos mas com um diferença
-sutil.
-
 ===
 
 O escopo * de uma variável diz respeito ao trecho de código onde ela é visível.
@@ -1101,8 +1086,345 @@ Como implementar FAT de maneira recusriva somente com variáveis globais.
 
 Quais são as regiões de memória do Java e como elas são utilizadas pela Máquina Virtual?
 
+=================
+=================
+=================
+
+Essa é a continuação da aula de Amarração de Nomes.
+
+===
+
+A gente falou no último vídeo sobre das regiões de memória e tempo de vida das
+variáveis e então vamos falar mais agora sobre o escopo de variáveis.
+
+===
+
+O escopo se refere ao trecho de código em que o nome de uma variável está
+amarrado a um endereço na memória.
+Em geral *, o escopo e o tempo de vida vão ser coincidentes, mas a gente viu que
+tem algumas sutilezas, principalmente com o uso da HEAP.
+Mas essa ideia aqui da declaração de uma variável com escopo e tempo de vida
+dentro de um bloco é o caso mais comum.
+
+===
+
+Agora então vamos destrinchar melhor quais são as possibilidades de escopo de
+variáveis.
+Pelo menos em teoria *, e nos livros sobre linguagens de programação, existem
+dois tipos de escopo: o estático e o dinâmico.
+Na prática o escopo estático é o único usado e pouquíssimas linguagens oferecem
+suporte ao escopo dinâmico.
+
+Vamos começar pelo estático, que também é chamado de escopo léxico.
+Esse termo "léxico" sugere alguma relação com o texto do programa.
+E é por aí.
+O escopo estático * é determinado com base no texto do programa, não sendo
+necessário executá-lo pra determinar o escopo de uma variável.
+
+Vamos pegar * aqui um exemplo.
+A variável X aparece duas vezes no programa e eu quero determinar a que
+declaração as duas se referem.
+Ou seja eu quero achar uma declaração e ver se o escopo da declaração incui
+esses dois X do programa.
+Bom, se eu encontrar essa * declaração no programa, então qual dos dois X se
+refere a ele?
+Eu preciso executar o programa pra determinar quais usos de X se referem a essa
+declaração?
+
+Não. Eu sei * que esse uso de X em verde está dentro do escopo da declaração e
+esse * outro uso em vermelho está fora do escopo daquela declaração.
+E como eu identifico isso?
+Basta eu olhar o texto do programa, eu não preciso executar ele.
+Basicamente, eu vou andando pra trás * nos blocos entre as chaves, até achar
+uma declaração com o mesmo nome da variável.
+O outro uso * na main não esbarra com essa declaração, o uso do X aqui não
+está no escopo dessa declaração.
+
+Essa regra é bem simples e todas as linguagens que a gente viu, seja Python,
+C ou Java, usam essa mesma regra estática pra determinar o escopo das variáveis.
+
+O outro tipo de escopo é o escopo dinâmico que vai depender da execução do
+programa.
+A gente vai ver mais como uma curiosidade, que até tem alguns usos
+interessantes, mas que não é usado pelas linguagens mais populares de hoje em
+dia.
+
+===
+
+Vamos começar com uma classificação bem simples entre as variáveis locais e as
+não locais.
+Aqui * tem um programa em C que declara a variável X e usa as variáveis X e Y.
+Se eu olhar pra esse código, quais são as minhas locais *?
+Aqui eu uso o X que tá declarada * no mesmo bloco. Então o X é uma local.
+O Y * não tá declarado no mesmo bloco, então, nesse contexto, ela é uma
+"não local".
+Se o Y não é uma variável local, o que ela pode ser?
+
+Tem várias possibilidadades de não locais...
+Ela pode ser uma * global, pode ser uma variável de um * pacote ou namespace,
+se for uma linguagem OO *, pode ser uma variável * de classe ou * de instância.
+Ou pode ainda uma variável * capturada por uma closure. A gente viu esse caso
+no vídeo sobre LUA. Era aquela variável que guardava o valor de um contador.
+Em Lua, esse tipo de variável é chamado de UPVALUE.
+Voltando aqui a esse Y. Basicamente ele pode se enquadrar em qualquer um desses
+casos aqui. Eu teria que ver o que está em volta desse código pra determinar.
+
+===
+
+Vamos ver um exemplo em C++ pra exercitar os escopos dessas não locais...
+
+Aqui embaixo, eu declaro 2 retangulos e eu vou exibir a posicao deles X e o
+comprimento WIDTH em ingles.
+Aqui tá a class RETANGULO. Ela fica dentro do que chama de um NAMESPACE de C++,
+ou seja, um espaço de nomes.
+Nesse exemplo, é um NAMESPACE pra declarar classes relacionadas a geometria.
+Por exemplo, retângulo, triangulo, elipse, etc.
+Um NAMESPACE serve pra organizar o seu programa em módulos.
+E um namespace pode ter suas próprias variáveis também que são compartilhadas
+por todas as classes definidas dentro dele.
+
+Essa variável OFF define um offset, ou seja, um deslocamento padrão que eu
+quero que todos os meus objetos geométricos tenham.
+Por isso ela está declarada nesse namespace.
+Então, esse offset vai ser usado aqui quando eu acesso a posição X de um objeto.
+Eu sempre vou acrescentar esse deslocamento a minha posição atual, ou seja,
+todos os objetos vão ter esse deslocamento aplicados.
+
+A classe do Retangulo tem os campos X e width que é o comprimento.
+Eu simplifiquei o exemplo, teria que ter o Y e a largura também.
+O construtor aqui só recebe X pra simplificar também.
+E eu também só tenho o método getX().
+Imaginem que essa classe estaria completa.
+Uma outra coisa que eu tenho aqui é uma variável estática de classe WIDTH toda
+em maiúsculo. Ela vai guardar a largura padrão de todos os retângulos.
+Repara aqui no construtor que sempre que eu criar um retângulo novo, a largura
+dele vai ser exatamente a largura padrão da classe.
+Inicialmente esse valor é 100.
+
+Reparem aqui como eu tô discutindo variáveis de namespace, variáveis de classe,
+variáveis de instância... Todas usando basicamente a mesma regra de escopo
+estático, ou seja, basta eu analisar o texto do código pra identificar qual
+declaração se refere aos usos das variáveis.
+
+Recapitulando aqui.
+Eu tenho variável de namespace, aqui o OFFSET,  que vale pra todas as classes
+de um pacote.
+Eu tenho variável de classe, aqui o WIDTH maiúsculo, que vale pra todas as
+instâncias de uma classe.
+Eu também tenho variáveis de instância, aqui o x e width minúsculo, cada objeto
+tem as sua.
+
+Agora vamos olhar o programa principal.
+Essa primeira linha aqui diz que eu quero ter acesso aos nomes que estiverem
+amarrados dentro do namespace Geometria.
+Sem isso, eu teria um problema aqui. Aqui eu quero declarar um Retangulo, mas
+essa classe foi declarada one? Ela está em escopo? Eu teria que olhar aqui
+pra trás pra determinar... E eu não ia achar certo? Não tem uma declaração
+global dessa classe. Na verdade, essa classe é LOCAL a esse namespace aqui.
+É como se fosse uma variável local. Ela não é visível aqui fora.
+Então, esse comando aqui de C++ tá estendendo o escopo de tudo que tá aqui
+nesse namespace pra também estar em escopo dentro da função main.
+Por isso que eu consigo usar o Retangulo aqui dentro.
+
+Vamos ver esse primeiro retangulo R1.
+Eu passei o valor 10 pro construtor.
+Então, a posição X dele vai ser 10 e o comprimento vai ser 100, que é o valor
+padrão.
+E aqui eu vou exibir o getX() e o comprimento.
+O getX() vai retornar 10 * mesmo porque o OFF está zerado aqui em cima.
+E o comprimento vai ser o valor padrão 100 * que a gente acabou de falar.
+
+Agora, eu mudo o OFFSET do namespace pra 50 e a partir do R1 eu também mudo o
+valor padrão do comprimento WIDTH pra 10.
+Só que esse WIDTH maiúsculo é uma variável estática que vai valer pra todas as
+minhas instâncias de retângulos, incluindo os que eu criar em seguida.
+
+Agora eu crio um novo retângulo passando o valor 20.
+Então, a posição dele vais ser essa e agora o comprimento vai ser 10 pq eu
+acabei de mudar o valor padrão.
+Por fim, eu exibo os valores... O getX() vai retornar 70 * que é o 20 mais o
+deslocamento de 50 que mudou. E o width vai ser o 10 * que a gente acabou de
+mudar.
+
+Acredito que essas regras de escopo, de como determinar a amarração entre os
+usos das variáveis e suas declarações não seja muito complicado, exatamente
+porque todas as linguagens usam as mesmas regras estáticas com poucas
+diferenças.
+A gente viu aqui o C++ que tem essa particularidade dos namespaces * * e
+variáveis estáticas *. Mas o resto é bem parecido, por exemplo, com Java no que
+se refere às variáveis dos objetos * e as locais *.
+
+===
+
+O escopo estático ele vai sempre respeitar essa proximidade textual entre os
+usos e as declarações das variáveis com essa * prioridade.
+Ou seja se eu pegar o uso de uma variável e encontrar uma declaração dentro do
+bloco logo acima, então essa declaração que vai ser a considerada em escopo.
+Se eu não encontrar eu vou ir me afastando até a declaração da função ou rotina,
+até os parâmetros dela.
+Se eu não encontrar, então eu vou ver a classe pra ver se tem campos ou
+propriedades com o nome da variável.
+Se não eu procuro no namespace, ou no arquivo atual ou até o nível mais
+acima possível que são as globais.
+
+Aqui * eu tenho o exemplo de um uso da variável X e eu vou percorrer o texto
+com essa ordem de prioridade até esbarrar com a sua declaração.
+A que eu esbarrar primeiro vai ser a declaração correspondente ao uso.
+
+Uma questão * que vai aparecer é que pode acontecer de eu ter várias
+declarações usando o mesmo nome.
+Aqui por exemplo eu tenho 4 declarações do X, mas a gente já sabe que a vigente
+é essa aqui que tá mais próxima.
+Mas esse conceito de HIDING (de esconder) ou SHADOW (de sombra) é razoavelmente
+comum.
+Aqui, essa declaração tá escondendo essa outra.
+Eu não tenho mais como me referenciar a esse X de fora pq sempre que eu usar
+um X a partir dessa declaração, eu sempre vou estar me referedindo a esse X e
+nunca mais a esse, ou esse ou esse.
+
+===
+
+Uma das perguntas no fim desse vídeo é se essa possibilidade de esconder a
+declaração de variáveis é benéfica ou não.
+Porque as linguagens permitem isso? Se não permitissem, o que deveria acontecer?
+Essa pergunta é uma dúvida comum e você pode pesquisar sobre as vantagens e
+desvantagens de permitir ou não esconder a declaração de variáveis com o mesmo
+nome.
+
+===
+
+Vamos ver aqui um exemplo em Python.
+Para o vídeo agora e me responde.
+Quais vão ser os resultados dos 2 prints?
+E se fosse a sua linguagem, quais os resultados você acha que deveria ser?
+
+Vamos executar esse código agora...
+$ vi /tmp/x.py
+$ python3 /tmp/x.py
+
+Dentro da função deu 2. Só pode ser né? Eu acabei de atribuir o 2 ao X.
+Mas e fora? Fora deu o resultado 1.
+Só que eu chamei a função F que mudou o valor de X pra 2.
+Então porque deu 1 aqui fora?
+Qual seria a resposta que você daria usando o vocabulário de escopo que a gente
+já discutiu nesse vídeo?
+Para o video agora e responde...
+
+Pro python, essas duas variáveis aqui são diferentes.
+O símbolo do IGUAL significa duas coisas em Python.
+Que eu tô declarando uma LOCAL nova e ao mesmo tempo inicializando ela com um
+valor.
+Então aqui em cima é uma GLOBAL X e aqui embaixo é uma LOCAL X.
+Como é uma local, ela tá escondendo a global com o mesmo nome, então eu não
+consigo mais me referir a global.
+Aí eu atribuo o valor 2 a essa LOCAL, exibo o valor e termino a função.
+Então a LOCAL sai de escopo.
+Aqui fora esse X volta a se referir a essa global pq a LOCAL já era.
+
+Esse mesmo exemplo em LUA, tem um comportamento diferente...
+$ vi /tmp/x.lua
+$ lua5.3 /tmp/x.lua
+
+Aqui deu o valor 2 nos dentro e fora.
+Nos dois casos, eu tô acessando essa global aqui de fora.
+Viram, esse é mais um exemplo de programas com sintaxes praticamente idênticas,
+mais com semântica diferente que a gente viu em um dos outros vídeos..
+Em Lua, pra eu declarar uma LOCAL, eu preciso ser mais explícito.
+Olha aqui, se eu agora declaro esse X de dentro como uma LOCAL, então o
+programa vai se comportar igual ao Python.
+E como eu faço pro programa em Python se comportar igual ao Lua?
+Em Python *, eu posso fazer o contrário. Aqui dentro da função, eu aviso que
+essa variável é uma global. Então agora esse comando aqui de atribuição não
+vai mais declarar um X novo, ele vai só alterar o valor do X global.
+
+E agora? Olhando esses exemplos, qual semântica você acha mais racional?
+A de Python ou a de Lua?
+
+Voltando aqui pro slide *, a confusão de Python é que ele usa o símbolo do
+IGUAL pra fazer duas coisas ao mesmo tempo: pra amarrar o nome a um escopo e
+pra amarrar o nome a um valor.
+Na minha opinião, que é compartilhada por esse comentário aqui feito em um
+contexto parecido é que as linguagem devem sempre distinguir explicitamente
+declaração e atribuição.
+
+===
+
+Agora vamos falar brevemente sobre Escopo Dinâmico.
+Como eu falei no início do vídeo, poucas linguagens tem suporte a escopo
+dinâmico.
+Uma coisa importante * é que o escopo dinâmico só se aplica a variáveis não
+locais. A regra * básica de escopo local se mantém. Se eu usar o A aqui dentro
+do 3 pontinhos, essa declaração aqui do A tá em escopo, então vou estar me
+referindo a ela.
+
+Vamos olhar * esse código aqui em Perl.
+Aqui eu declaro um X no escopo de fora. E aqui eu tenho uma função que usa o X.
+Essa função PRINT_X exibe o valor de X.
+Esse X é uma não local, certo? Eu não tenho uma declaração aqui dentro desse
+bloco pra ela. Então agora eu tenho que descobrir que X é esse.
+
+Bom, normalmente, usando escopo estático, se eu traçasse uma linha aqui pra
+trás procurando uma declaração, eu ia esbarrar com essa declaração aqui de
+fora.
+Mas no escopo dinâmico, não é assim que funciona.
+No escopo dinâmico * eu vou buscar a declaração ativa mais recente na pilha, NA
+HORA QUE EU EXECUTO O CÓDIGO.
+Então, só olhando pro código, eu não consigo determinar a que declaração esse
+X se refere.
+
+Vamos continuar aqui.
+Eu tenho uma outra função F que define uma LOCAL X e depois chama a função
+PRINT_X.
+Repara que eu não uso essa local X dentro da função F. Então pra que eu declaro
+ela?
+
+Acho que já dá pra ter uma ideia do que vai acontecer aqui embaixo nessas duas
+chamadas: print_x e f.
+Para o video agora e me diz o que vai ser exibido na dela pra essas duas
+chamadas.
+
+Então no escopo dinâmico eu busco a declaracao mais recente que esitver ativa
+na pilha na hora de executar o código.
+O programa começa aqui em cima e eu começo com essa local X aqui ativa.
+Depois eu sigo pra essa declaração de função, mas não estou executando ela,
+depois tenho essa outra declaração e finalmente aqui eu executo a PRINT_X.
+Então eu vou aqui pra cima e exibo o valor atual de X.
+Nesse momento, o único X que eu tinha ativo era esse aqui de cima.
+Entao, esse primeiro print vai exibir * GLOBAL.
+
+Depois eu executo esse F daqui.
+Então eu entro nessa outra função que agora vai ativar um outro X na pilha.
+Esse passa a ser o X mais recente. Aí eu chamo o print_x e agora eu vou exibir
+esse * X daqui que é o que está ativo.
+Depois disso, o PRINT_X vai retornar pro F e o F vai retornar aqui pro fim.
+Esse retorno vai desempilhar esse X aqui. O X ativo vai voltar a ser esse
+global aqui do topo.
+
+Então, com o escopo dinâmico, a gente vê que é possível que o uso de uma
+variável se refira a duas declarações diferentes, dependendo da execução do
+programa e de acordo com o estado atual da pilha.
+
+Essa linguagem aqui * é Perl. Perl suporta os dois tipos de escopo e usa esse
+LOCAL pra declarar locais com escopo dinâmico e a palavra MY pra locais com
+escopo estático.
+
+===
+
+Escopo dinâmico é um mecanismo obscuro de linguagens de programação, mas * nem
+por isso ficou totalmente esquecido.
+É comum achar perguntas e comentários na internet.
+Então mesmo * sendo considerado um acidente histórico. De verdade, o primeiro
+LISP * implementou escopo dinâmico sem querer, foi um BUG.
+Mesmo assim *, tem usos interessantes que vai ser uma das perguntas do fim do
+vídeo.
+
 ===
 
 Exercícios
 
 - Tratamento de exceções é léxico ou dinâmico?
+- Regras de hiding. escolha uma linguagem, varie exs de hiding. o que acontece?
+- Hide/shadow é bom?
+- Quais linguagens possuem escopo dinamico. Além de estático? Como funciona?
+  Dê um exemplo interessante. Não vale Perl.
+
