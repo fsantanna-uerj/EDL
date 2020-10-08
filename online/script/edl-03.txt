@@ -1,0 +1,468 @@
+- Forúns, exemplos dos arranjos
+- tres slides de excesso
+
+
+$ melt edl-03-a-*.mkv -consumer avformat:X-edl-03-a.mkv acodec=libmp3lame vcodec=libx264
+
+Nesse módulo, a gente vai falar sobre "Programação Funcional".
+
+===
+
+Não existe uma definição absoluta ou decisiva sobre o que é programação
+funcional.
+Então aqui eu extraí a definição da Wikipedia como um senso comum.
+Ela diz o seguinte:
+...
+Na ciência da computação, a programação funcional é um paradigma de programação,
+ou seja, um estilo de contruir a estrutura e os elementos dos programas de
+computador.
+A programação funcional trata a computação como a avaliação de funções
+matemáticas e evita a mudança de estados e mutação dos dados do programa.
+A programação funcional é um paradigma declarativo, o que significa que a
+programação é feita de expressões ou declarações e não de comandos.
+Em um código funcional, o valor de saída de uma função depende somente dos
+argumentos de entrada de uma função.
+Assim, se eu chamo uma função F duas vezes com os mesmos argumentos, a função
+vai produzir os mesmos resultados cada vez.
+Ao eliminar efeitos colaterais, isto é ao eliminar mudanças de estado que não
+dependem dos argumentos das funções, isso torna mais fácil o entendimento e
+previsão do comportamento do programa.
+E isso é uma das principais motivações do desenvolvimento da programação
+funcional.
+
+Vamos marcar aqui algumas partes dessa definição:
+* Evita a mudança de estado e dados mutáveis.
+  Na prática o que isso significa?
+  Basicamente que a sua memória vai ser imutável.
+  Uma vez que você atribui um valor a uma variável ou região de memória, aquele
+  valor permanece o mesmo até o fim da execução do programa.
+  Bom, isso parece impossível na prática né? Como eu vou fazer um programa util
+  sem alterar o valor de uma variável?
+  Qualquer programa minimamente complexo que a gente faz, vai ter um loop que
+  eu vou incrmentar o valor do I até um valor pra repetir uma operação...
+  Também é comum eu usar uma variável pra acumular uma soma por exemplo, pra
+  calcular uma média ou coisas do tipo.
+  Mas a gente vai ver que é possível sim programar desse jeito, sem alterar as
+  variáveis.
+
+* Declarações e não comandos.
+  Uma declaração vai basicamente associar valores e expressões a nomes e esses
+  nomes vão poder se relacionar em outras declarações e assim em diante.
+  Não existe uma ordem de comandos uma vez que os valores não mudam. O que
+  ainda vai existir é que uma expressão pode depender de outra que pode
+  depender de outra, então vai existir uma ordem implícita por essas
+  dependências. Mas, por exemplo, a ordem exata em que essas declarações
+  aparecem no código fonte vai ser irrelevante.
+  Aqui tem um exemplo disso. *
+  Levando em consideração que um programa é feito de declarações e expressões
+  que possuem dependências entre si, qual vai ser o valor de X nesse programa?
+  Para o vídeo e responde.
+  Só pode ser 30 né? O X depende de A e de B, só que o A depende de B que vale
+  10. Então o A vale 20 e o X vai valer 30.
+  Aqui não existe uma ordem explícita de avaliação. A avaliação é feita com
+  base nas dependências entre as declarações.
+
+  Uma pergunta aqui. Esse raciocínio também poderia valer pra programação
+  imperativa que a gente já está acostumado? Sim ou não? Para o vídeo e pensa
+  se esse tipo de avaliação do programa faria sentido pra programas
+  imperativos?
+
+  A resposta é não. Por quê?
+  Muito simples. Na programação imperativa o estado das variáveis pode ser
+  alterado *. Por exemplo, aqui o B é alterado pra 10 e pra 0, mas quando?
+  Na programação imperativa a ordem de execução é determinante e é o
+  programador que precisa especificar essa ordem, senão o programa se torna
+  ambíguo.
+  Essa ambiguidade * não existe na programação funcional, porque cada variável
+  assume exatamente 1 valor só. São declarações fixas, então a ordem de
+  avaliação vai depender somente das dependências entre elas.
+
+* O outro destaque aqui é que o valor de saída de uma função vai depender
+  somente dos argumentos de entrada da função.
+  Ótimo, eu passo argumentos pra uma função e ela vai me devolver uma resposta.
+  Se eu passo sempre os mesmos argumentos, eu recebo sempre a mesma resposta.
+  Mas não é assim também na programação imperativa?
+  Pára o vídeo agora um pouco e me diz se é verdade.
+  É possível eu ter uma função que me devolve valores diferentes mesmo quando
+  eu passo sempre os mesmos argumentos?
+
+  Na programação imperativa é possível sim...
+  Vou dar dois exemplos aqui *. O primeiro é esse, eu tenho essa função INPUT
+  que aqui eu não passo nenhum argumento. Bom, pela definição de função da
+  programação funcional, essa função deveria retornar sempre o mesmo valor...
+  Só que a gente sabe que não. Essa função vai retornar o que o usuário digitar.
+  Aqui * tem outro exemplo...
+  Eu tenho uma função F que altera o valor de uma global e retorna a soma dessa
+  global com o valor do argumento.
+  Aqui eu chamo F(0) duas vezes. Novamente, pela definição de função, o
+  resultado deveria ser sempre o mesmo. Mas não é. O primeiro F(0) vai retornar
+  1 e o segundo vai retornar 2.
+
+  E nesse ponto que a gente diferencia as funções que a gente aprende na
+  matemática e as funções que a gente aprende em programação.
+  Parece que a gente perde um pouco essa referência quando a gente começa a
+  programar.
+  Mas voltando pra matemática, qualquer função matemática sempre vai respeitar
+  essa regra de que dado uma entrada eu sempre obtenho a mesma saída.
+  Por exemplo, f(x) = x2, f(2) sempre vai ser 4, f(10) sempre vai ser 100 e
+  assim em diante.
+  Seno de 90 sempre vai ser 1, Cosseno de 90 sempre vai ser 0.
+  As funções de programação funcional são as funções matemáticas.
+  Não existe essa ideia de estado global, sistema operacional, etc.
+  Pelo menos a programação funcional pura, que é a que a gente vai focar nesse
+  módulo de programação funcional.
+
+* Por último, eu vou destacar essa outra parte da definição que diz que a
+  programação funcional pode facilitar o entendimento do comportamento do
+  programa, pode facilitar eu prever o comportamento do programa dadas certas
+  condições. Essa afirmação é muito forte né, sem dizer isso explicitamente,
+  basicamente ela dando a entender que programação funcional no fim das contas
+  é melhor do que programação imperativa, né? Se eu consigo entender e prever
+  melhor o comportamento de um programa, o que mais a gente pode querer?
+  Bom, eu não concordo inteiramente com essa afirmação, mas uma coisa que é
+  inegável é que eu posso olhar qualquer trecho de código de um programa
+  funcional e ter a certeza de que aquele comportamento localizado naquela
+  porção do código não vai sofrer qualquer tipo de efeito colateral de outros
+  trechos do código. Como a gente discutiu, as declarações são fixas, as saídas
+  dependem somente das entradas, então essa afirmação é verdadeira pelo menos
+  no que diz respeito ao entendimento das funções e pequenos trechos de código.
+
+---
+
+Agora como contraponto, vamos ver a definição de programação imperativa também
+extraída do Wikipedia:
+A programação imperativa muda o estado através de comandos no código, sendo o
+mais simples o comando de atribuição. Linguagens imperativas não tem
+funções no sentido matemático, mas sim no sentido de subrotinas.
+As funções podem ter efeitos colaterais que podem alterar o estado do programa.
+Assim, funções que não retornam valores fazem sentido (por exemplo print).
+Por causa disso, as funções não respeitam o conceito de transparencia
+referencial, que é exatamente a ideia de que uma expressao pode ter resultados
+diferentes em momentos diferentes dependendo do estado do programa.
+
+Então a programação imperativa é fundamentada na ideia de mudança * de estado
+através de comandos. E o comando mais característico da programação imperativa
+é o comando * de atribuição.
+A gente chama comumente de funções, mas o nome subrotinas é o mais correto.
+As funções são subprogramas que também podem alterar o estado da memória.
+E esse conceito de "transparência referencial", é interessante que vocês leiam
+mais sobre ele. Vai ser uma das perguntas do vídeo.
+
+===
+
+Vamos colocar aqui lado a lado as principais diferenças entre imperativo e
+funcional que a gente discutiu.
+
+Primeiro * é essa diferença entre comandos e expressões.
+Expressões matemáticas são combinações de números, operadores e variáveis.
+Na matemática, uma dada expressão sempre vai avaliar pro mesmo valor.
+Já os comandos sugerem mudança de estado, entào a ordem em que eles executam
+é importante.
+
+Entãu *, essa diferença entre sequência de execução e dependência entre as
+expressões vai ser importante. Na programação imperativa, o programador vai
+determinar a sequencia exata em que os comandos devem executar.
+Na programação funcional, o programador vai determinar somente as dependencias
+entre as expressões, e a linguagem vai determinar a ordem exata da execução.
+Um programa vai ser um conjunto de expressões que são avaliados de maneira a
+satisfazer as relações de dependência entre elas.
+Existe uma ordem implícita nessas dependências, mas o código não precisa de uma
+ordem porque não há ambiguidade nessa ordem.
+
+E por fim *, na programação imperativa o comando de atribuição é fundamental
+já que é o responsável por mudar o estado do programa.
+Uma mesma variável vai poder assumir valores diferentes durante a execução.
+Já na programação funcional, eu vou trabalhar com definições que não variam
+durante a execução do programa.
+
+===
+
+E pra finalizar esse vídeo, vamos falar sobre as funções propriamente ditas.
+Quais são as principais características das funções no contexto de programação
+funcional?
+
+A primeira * é essa aqui.
+As funções são consideradas valores comuns.
+A gente não tem números, strings, booleanos como valores?
+Então, as funções também são valores como esses.
+E o que isso significa?
+Significa * que a gente pode criar funções, passar funções pra outras funções,
+retornar funções, guardar funções em variáveis. Ou seja, tudo o que a gente
+pode fazer com os outros tipos de valores, a gente também vai poder fazer com
+funções.
+A gente falou sobre isso rapidamente no vídeo sobre Lua no módulo 1 do curso.
+
+A outra característica * é esse conceito de funções de alta ordem.
+Funções de alta ordem são funções que, por exemplo, recebem * como argumento
+outras funções.
+A gente também falou sobre isso no vídeo sobre Lua.
+Lá eu dei o exemplo da função SORT * que recebe como argumento uma outra
+função. A SORT é considerada uma função de 2a ordem, ou seja, uma função que
+recebe uma outra função.
+
+A terceira característica * são as funções puras.
+Pura aqui é no sentido de não * ter efeitos colaterais.
+A gente falou sobre isso já. Não mexer em globais, não usar operações do
+sistema operacional tipo printf ou input e assim em diante.
+Ou seja, as funções puras são exatamente as funções no sentido matemático que
+a gente discutiu.
+Sem efeitos colaterais, essas funções só dependem dos argumentos de entrada e
+assim podem ser executadas * em qualquer ordem, somente respeitando as suas
+dependências como a gente falou.
+Uma vantagem é que é possível executar funções puras sem dependência em
+paralelo, pq o resultado de uma não vai afetar o resultado da outra.
+Nesse módulo, a gente vai usar Haskell como linguagem de programação e em
+Haskell a gente só tem funções puras. É uma linguagem bem radical nesse sentido
+e por isso mesmo é valiosa pra gente desenvolver o raciocínio de programação
+dentro do paradigma funcional.
+
+Por último, as funções de programação funcional vão poder ser recursivas.
+Ou seja, vão poder se auto-referenciar * no ser próprio corpo.
+Isso não deve ser nenhuma surpresa porque até linguagens imperativas têm esse
+suporte.
+Mas o que a gente vai ver na prática é que a gente vai usar funções recursivas
+o tempo inteiro.
+Em programação funcional, e em particular em Haskell, a gente não tem loops no
+estilo de WHILE ou FOR que a gente usa variáveis de incremento ou acumuladores.
+A gente não tem comandos nem atribuição, então qualquer tipo de repetição vai
+ser feita com funções recursivas.
+
+
+===
+
+1. Pesquise sobre o conceito de "tranparência referncial" no contexto de
+   programação funcional. Explique esse conceito em uma frase com suas próprias
+   palavras. Quais são as principais vantagens de transparência referncial?
+   Por quê?
+
+===
+===
+===
+
+Essa é a continuação do módulo sobre "Programação Funcional".
+
+===
+
+Vamos começar a atacar a programação funcional de uma maneira bem prática
+usando Haskell desde já.
+O principal mecanismo estrutural de linguagens funcionais são as listas
+encadeadas.
+Vocês devem lembrar bem de listas encadeadas do curso de LP1, quando a gente
+começou a trabalhar com ponteiros e o MALLOC.
+Uma lista encadeada * era representado por uma STRUCT que guarda o valor de um
+elemento da lista e um ponteiro pro próximo elemento da lista.
+Quando a gente criava um nó, a gente usava um ponteiro e alocava um novo nó com
+o MALLOC.
+O que a gente vai ver em Haskell é que as listas encadeadas são tão bem
+integradas na linguagem, que nem parece que por debaixo dos panos, essa
+complexidade toda que a gente via em C continua existindo.
+Só que Haskell vai oferecer isso num nível de abstração muito mais elevado.
+
+Vamos abrir aqui um exemplo em Haskell.
+Olha só a dificuldade de criar uma lista encadeada.
+Vamos supor que eu queira uma lista, vou chamar de L1, com o 10 apontando pro
+20 apontando pro 30 apontando pro 40.
+Pronto é isso. Isso é uma lista encadeada em Haskell.
+A gente usa aqui uma sintaxe extremamente leve pra lidar com listas.
+Mas a gente não deve se esquecer de que isso é uma lista encadeada e que aquela
+complexidade de trabalhar com listas encadeadas em C está, de algum maneira,
+escondida aqui atrás dessa sintaxe.
+
+A minha main vai exibir essa lista.
+Eu posso executar esse programa aqui... E ele exibe a lista usando essa mesma
+notação que a gente usou aqui no código fonte.
+
+Lembra que eu disse que em Haskell eu só tinha funções puras e portanto eu não
+poderia usar a printf, input, etc? Bom, aqui eu tô usando né?
+Só que esse vai ser o único lugar, aqui na MAIN, que eu vou poder usar esse
+tipo de função.
+Fora daqui, vai dar erro.
+
+---
+
+Vamos voltar aqui pros slides.
+Esse foi o nosso primeiro exemplo com listas *.
+
+E continuando com o básico de programação funcional, agora vamos falar de
+funções de alta ordem.
+Tem três funções que em geral são as que a gente vê primeiro, porque elas
+funcionam com listas.
+As funções são a MAP, a FILTER e a FOLD que também é conhecida como REDUCE.
+
+---
+
+A função MAP serve pra transformar uma lista.
+Aqui nesse desenho, eu tô transformando uma lista de frutas em uma lista de
+pedaços.
+O que é importante aqui é que é uma transformação uniforme nos elementos, ou
+seja, cada elemento da lista original vai ser transformado ou mapeado usando
+a mesma operação. Aqui no caso seria a operação de cortar uma fruta.
+
+Vamos ler aqui a definição.
+Na MAP você tem uma lista de itens (aqui ele está usando o termo array) mas
+em Haskell vamos sempre estar falando de listas.
+Então, você tem uma lista de itens e quer transformar cada um deles.
+O resultado vai ser uma nova lista, aqui é importante ressaltar esse NOVA lista.
+Lembrem que a nossa memória é imutável, ou seja, eu não posso alterar os
+elementos de uma lista. Eu preciso criar uma nova lista.
+Então, o resultado vai ser uma nova lista com exatamente o mesmo tamanho
+contendo os elementos manipulados.
+A lista de retorno vai ter exatamente o mesmo tamanho.
+Faz sentido né? Eu quero transformar cada item usando uma operação uniforme,
+então o resultado final tem que ter o mesmo número de itens.
+
+---
+
+Então vamos voltar aqui pro código pra ver como usar a função MAP em Haskell
+
+Esse é exatamente o caso em que a MAP se aplica, porque eu quero fazer
+exatamente a mesma operação em todos os elementos da lista.
+Eu poderia fazer um loop pra percorrer a lista e duplicar cada elemento.
+Ou eu poderia fazer a mesma coisa usando uma função recursiva.
+
+Ou eu posso usar a MAP que é uma função de alta ordem que por debaixo dos panos
+vai fazer esse LOOP pra mim. A única coisa que a MAP precisa é saber qual
+transformação eu quero fazer.
+
+Então aqui eu quero duplicar cada elemento.
+Vamos chamar a MAP passando a operação de duplicar e a lista que eu quero
+transformar.
+
+E agora eu quero exibir a L2
+
+...
+...
+...
+
+---
+
+Essa foi a MAP.
+Agora vamos falar da função FILTER *.
+Como nome diz, ela serve pra filtrar uma lista.
+Aqui nesse desenho, eu to filtrando uma lista, deixando que apenas alguns itens
+estejam na lista de retorno.
+Aqui, os valores da lista original não são transformados, eles são apenas
+aceitos ou rejeitados na lista de retorno seguindo algum critério.
+Assim como na MAP, o critério tem que ser uniforme, ou seja, eu vou usar o
+mesmo critério para todos os elementos da lista.
+Aqui qual seria o critério? Por exemplo, poderia ser pela cor laranja ou pelo
+sabor cítrico ou pela forma esféria. Enfim, algum critério que filtre ou aceite
+somente a laranja.
+
+Vamos ler aqui a definição.
+Na filter você tem uma lista e quer filtrar certos itens.
+O resultado vai ser uma nova lista com os mesmos itens, sendo que alguns vão
+ser excluídos. O tamanho da nova lista vai ser igual ou menor que o original.
+
+---
+
+===
+===
+===
+
+
+Essa é a continuação do módulo sobre "Programação Funcional".
+
+===
+
+No último vídeo a gente viu a MAP e FILTER e faltou a FOLD que a gente vai
+ver agora.
+Vamos ver aqui a definição.
+Com a fold ou reduce, a gente tem uma lista de itens e a gente quer computar ou
+calcular algum valor qualquer iterando sobre cada item da lista.
+O resultado pode ser qualquer coisa: uma nova lista, um objeto, um valor
+booleano, etc.
+Na ilustração, a gente parte de uma lista de frutas e termina com um prato
+com as frutas picadas como uma salada de frutas.
+Acredito que a MAP e a FILTER sejam mais fáceis de entender com as analogias
+que a gente usou.
+Mas essa analogia da FOLD ficou um pouco abstrata demais.
+Então vamos discutir ela um pouco mais antes de um exemplo em Haskell.
+
+===
+
+FOLD do inglês significa DOBRAR. Dobrar no sentido de embrulhar mesmo a lista.
+A analogia é que a gente vai pegar uma lista e a gente vai ir dobrando * ou
+embrulhando ela item a item.
+Só que quando agente faz uma dobra unindo dois itens, a gente vai usar uma
+operação *.
+Por exemplo, aqui quando eu for dobrar o 10 em cima do 7, eu vou usar essa
+operação entre eles. O resultado vai ser 17 e esse 17 vai substituir * os dois
+itens.
+Aí eu dobro * de novo. E aplico * a operação e substituo * os dois pelo
+resultado.
+
+===
+
+Então agora vamos ver esse último exemplo em Haskell.
+
+- foldr
+- acc
+
+- lista vazia
+- resultado não numérico
+
+Entao vamo ver um outro exemplo aqui, que o resultado final da fold nao vai ser umumero. Eu tenho uma lista de numeros mas eu quero fazer alguma operacao aqui que no final me de um outro tipo de valor.
+Por exemplo, imagin
+
+===
+===
+===
+
+++  last  null  length  reverse  take  drop  elem  sort  ...
+
+Exercício
+    - sort
+    - Sobre Haskell e Python...
+        - Considere os critérios externos e internos do vídeo 1.5.
+        - Considere os tempos de amarração do vídeo 2.2.
+        1 Compare a inferência de tipos de Haskell com a tipagem dinâmica de Python.
+          Python possui tipagem dinâmica.
+        2 Compare a tipagem paramétrica de Haskell com a tipagem "pato" de Python
+          ("duck typing").
+    - Quais são os problemas do tipo String de Haskell?
+
+Essa é a continuação do módulo sobre "Programação Funcional".
+
+https://hackage.haskell.org/package/base-4.14.0.0/docs/Data-List.html
+
+++
+last
+null
+length
+reverse
+take
+drop
+elem
+sort
+
+
+E quando a gente dobra
+
+- não é um curso de haskell, mas sim de programaçao funcional, usando haskell,
+  tudo dentro de um curso maior sobre estruturas de linguagens.
+  entao nao vamos nos ater aos detalhes de sintaxe, cobrir todas as
+  funcionalidades exaustivamente. pra isso vamos contar com a maturidade que a
+  maioria de vcs ja tem pra se virarem com manuais, tutorials, videos, etc que
+  estao na internet.
+
+- escreva em tópicos os xxx que você vai discutir sobre a sua funcionalidade
+- quais sao complicados?
+
+
+- como construir a lista [1,2,3,4] partindo da lista vazia [] e usando o
+  operador : de construção
+- usando somente head/tail, como extrair o valor c da lista [a,b,c,d,e]
+
+
+
+- heap
+- coletor de lixo
+- memoization
+- olhar pra frente vs olhar pra trás
+- compartilhamento de dados na lista encadeada
+
+- pq lista encadeada
+    - facil incluir
+    - facil compartilhar
+    - estrutura recursiva, recursao estrutural
