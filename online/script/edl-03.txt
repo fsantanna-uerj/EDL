@@ -409,8 +409,6 @@ Por exemplo, imagin
 ===
 ===
 
-++  last  null  length  reverse  take  drop  elem  sort  ...
-
 Exercício
     - sort
     - Sobre Haskell e Python...
@@ -424,20 +422,13 @@ Exercício
 
 Essa é a continuação do módulo sobre "Programação Funcional".
 
+TUPLAS
+- mas antes relembrar que pode escrever em qq ordem e tb as 3 difs de imperativo
+
 https://hackage.haskell.org/package/base-4.14.0.0/docs/Data-List.html
 
-++
-last
-null
-length
-reverse
-take
-drop
-elem
-sort
-
-
-E quando a gente dobra
+- lembrar expressao, dependencia, definicao
+          primeira classe, alta ordem, puras, recursivas
 
 - não é um curso de haskell, mas sim de programaçao funcional, usando haskell,
   tudo dentro de um curso maior sobre estruturas de linguagens.
@@ -454,6 +445,11 @@ E quando a gente dobra
   operador : de construção
 - usando somente head/tail, como extrair o valor c da lista [a,b,c,d,e]
 
+EDL - Módulo 03 - Programação Funcional - Parte 4/?
+
+Tipagem estática
+Inferência de tipos
+Tipos paramétricos
 
 
 - heap
