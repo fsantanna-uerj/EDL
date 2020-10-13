@@ -1,20 +1,22 @@
-l :: [Int]
-l = [1, 2, 3, 4]
+l1 = [10, 20, 30, 40]
 
+m1 = filter (>25) l1
 
+type Pessoa = (String,Int,Bool)
+nome  (x,_,_) = x
+idade (_,y,_) = y
+masc  (_,_,z) = z
 
-f1 :: Int -> Bool
-f1 x = ((mod x 2) == 1)
-m1 = filter f1 l
+maior_18 :: Pessoa -> Bool
+maior_18 p = (idade p) >= 18
 
+ps = [("Joao",25,True), ("Maria",10,False), ("Jose",70,True)]
 
+ps2 = filter maior_18 ps
 
-f2 :: Int -> Bool
-f2 x = (x > 2)
-m2 = filter f2 l
+-- Qual é o tipo da FILTER ??
 
+filter :: (a -> Bool) -> [a] -> [a]
+              f           l      m
 
-
-main = print l
---main = print m1
---main = print m2
+main = print ps2
