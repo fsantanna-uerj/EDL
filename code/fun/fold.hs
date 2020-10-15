@@ -1,25 +1,11 @@
-l :: [Int]
-l = [1, 2, 3, 4]
+l1 = [10,7,4,14,1,6]   -- "10741416"
 
+v1 = foldr (+) 0 l1
 
+v2 = foldr (\atual acuml -> (show atual) ++ acuml) "" l1
 
-f1 :: Int -> Int -> Int
-f1 x y = (x + y)
-m1 = foldr f1 0 l
+-- Qual é o tipo da FOLDR ??
 
+foldr :: (a -> b -> b) -> b -> [a] -> b
 
-
-f2 :: Int -> Int -> Int
-f2 x y = (x * y)
-m2 = foldr f2 1 l
-
-
-
-f3 :: Int -> Bool -> Bool
-f3 i b = b || (i == 10)
-b = foldr f3 False [1,2,10,3,4]
-
-main = print l
---main = print m1
---main = print m2
---main = print b
+main = print v2

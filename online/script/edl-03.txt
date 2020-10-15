@@ -451,6 +451,13 @@ Tipagem estática
 Inferência de tipos
 Tipos paramétricos
 
+- Função map
+
+- vamos voltar agora a falar sobre a filter
+- a filter
+
+- videos dos exemplos relembrar fundamentos de PF
+
 
 - heap
 - coletor de lixo
@@ -462,3 +469,11 @@ Tipos paramétricos
     - facil incluir
     - facil compartilhar
     - estrutura recursiva, recursao estrutural
+
+- vamos falar de assuntos um pouco desconexos, mas que vao ser importantes pra
+  os exemplos que a gente quer usar
+
+
+
+
+
