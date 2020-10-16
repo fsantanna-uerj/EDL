@@ -14,9 +14,4 @@ ps = [("Joao",25,True), ("Maria",10,False), ("Jose",70,True)]
 
 ps2 = filter maior_18 ps
 
--- Qual é o tipo da FILTER ??
-
-filter :: (a -> Bool) -> [a] -> [a]
-              f           l      m
-
 main = print ps2

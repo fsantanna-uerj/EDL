@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.presentation">
- <office:meta><meta:generator>LibreOffice/6.0.7.3$Linux_X86_64 LibreOffice_project/00m0$Build-3</meta:generator><meta:creation-date>2011-05-24T14:40:40</meta:creation-date><dc:language>fi-FI</dc:language><meta:editing-cycles>1183</meta:editing-cycles><meta:editing-duration>P68DT4H39M7S</meta:editing-duration><meta:initial-creator>chico </meta:initial-creator><dc:date>2020-10-02T10:49:38.106621975</dc:date><meta:document-statistic meta:object-count="455"/><meta:user-defined meta:name="Info 1"/><meta:user-defined meta:name="Info 2"/><meta:user-defined meta:name="Info 3"/><meta:user-defined meta:name="Info 4"/><meta:template xlink:type="simple" xlink:actuate="onRequest" xlink:title="" xlink:href="../usr/lib/openoffice/basis3.2/share/template/en-US/presnt/Orange.otp"/></office:meta>
+ <office:meta><meta:generator>LibreOffice/6.0.7.3$Linux_X86_64 LibreOffice_project/00m0$Build-3</meta:generator><meta:creation-date>2011-05-24T14:40:40</meta:creation-date><dc:language>fi-FI</dc:language><meta:editing-cycles>1184</meta:editing-cycles><meta:editing-duration>P71DT22H41M32S</meta:editing-duration><meta:initial-creator>chico </meta:initial-creator><dc:date>2020-10-15T18:53:41.126322731</dc:date><meta:document-statistic meta:object-count="448"/><meta:user-defined meta:name="Info 1"/><meta:user-defined meta:name="Info 2"/><meta:user-defined meta:name="Info 3"/><meta:user-defined meta:name="Info 4"/><meta:template xlink:type="simple" xlink:actuate="onRequest" xlink:title="" xlink:href="../usr/lib/openoffice/basis3.2/share/template/en-US/presnt/Orange.otp"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
    <config:config-item config:name="VisibleAreaTop" config:type="int">-1958</config:config-item>
@@ -29,15 +29,15 @@
      <config:config-item config:name="NoColors" config:type="boolean">true</config:config-item>
      <config:config-item config:name="RulerIsVisible" config:type="boolean">false</config:config-item>
      <config:config-item config:name="PageKind" config:type="short">0</config:config-item>
-     <config:config-item config:name="SelectedPage" config:type="short">0</config:config-item>
+     <config:config-item config:name="SelectedPage" config:type="short">30</config:config-item>
      <config:config-item config:name="IsLayerMode" config:type="boolean">false</config:config-item>
      <config:config-item config:name="IsDoubleClickTextEdit" config:type="boolean">true</config:config-item>
      <config:config-item config:name="IsClickChangeRotation" config:type="boolean">true</config:config-item>
      <config:config-item config:name="SlidesPerRow" config:type="short">4</config:config-item>
      <config:config-item config:name="EditMode" config:type="int">0</config:config-item>
      <config:config-item config:name="VisibleAreaTop" config:type="int">-1958</config:config-item>
-     <config:config-item config:name="VisibleAreaLeft" config:type="int">-8043</config:config-item>
-     <config:config-item config:name="VisibleAreaWidth" config:type="int">44054</config:config-item>
+     <config:config-item config:name="VisibleAreaLeft" config:type="int">-3704</config:config-item>
+     <config:config-item config:name="VisibleAreaWidth" config:type="int">35349</config:config-item>
      <config:config-item config:name="VisibleAreaHeight" config:type="int">24951</config:config-item>
      <config:config-item config:name="GridCoarseWidth" config:type="int">2540</config:config-item>
      <config:config-item config:name="GridCoarseHeight" config:type="int">2540</config:config-item>
@@ -116,7 +116,7 @@
    <config:config-item config:name="PrintQuality" config:type="int">0</config:config-item>
    <config:config-item config:name="PrinterIndependentLayout" config:type="string">low-resolution</config:config-item>
    <config:config-item config:name="PrinterName" config:type="string">HP_LaserJet_M203dw_ABDF0C_</config:config-item>
-   <config:config-item config:name="PrinterSetup" config:type="base64Binary">uQH+/0hQX0xhc2VySmV0X00yMDNkd19BQkRGMENfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ1VQUzpIUF9MYXNlckpldF9NMjAzZHdfQUJERjBDXwAWAAMA2gAAAAAAAAAEAAhSAAAEdAAASm9iRGF0YSAxCnByaW50ZXI9SFBfTGFzZXJKZXRfTTIwM2R3X0FCREYwQ18Kb3JpZW50YXRpb249UG9ydHJhaXQKY29waWVzPTEKY29sbGF0ZT1mYWxzZQptYXJnaW5kYWp1c3RtZW50PTAsMCwwLDAKY29sb3JkZXB0aD0yNApwc2xldmVsPTAKcGRmZGV2aWNlPTEKY29sb3JkZXZpY2U9MApQUERDb250ZXhEYXRhClBhZ2VTaXplOkE0AElucHV0U2xvdDpBdXRvAER1cGxleDpOb25lAAASAENPTVBBVF9EVVBMRVhfTU9ERQ8ARHVwbGV4TW9kZTo6T2Zm</config:config-item>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary">uQH+/0hQX0xhc2VySmV0X00yMDNkd19BQkRGMENfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ1VQUzpIUF9MYXNlckpldF9NMjAzZHdfQUJERjBDXwAWAAMA2gAAAAAAAAAEAAhSAAAEdAAASm9iRGF0YSAxCnByaW50ZXI9SFBfTGFzZXJKZXRfTTIwM2R3X0FCREYwQ18Kb3JpZW50YXRpb249UG9ydHJhaXQKY29waWVzPTEKY29sbGF0ZT1mYWxzZQptYXJnaW5kYWp1c3RtZW50PTAsMCwwLDAKY29sb3JkZXB0aD0yNApwc2xldmVsPTAKcGRmZGV2aWNlPTEKY29sb3JkZXZpY2U9MApQUERDb250ZXhEYXRhCkR1cGxleDpOb25lAFBhZ2VTaXplOkE0AElucHV0U2xvdDpBdXRvAAASAENPTVBBVF9EVVBMRVhfTU9ERQ8ARHVwbGV4TW9kZTo6T2Zm</config:config-item>
    <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
    <config:config-item config:name="SlidesPerHandout" config:type="short">6</config:config-item>
    <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
@@ -1861,9 +1861,6 @@
   <style:style style:name="pr35" style:family="presentation" style:parent-style-name="oranssi-outline1">
    <style:graphic-properties draw:auto-grow-height="true" fo:min-height="7.258cm"/>
   </style:style>
-  <style:style style:name="pr36" style:family="presentation" style:parent-style-name="oranssi-outline1">
-   <style:graphic-properties draw:auto-grow-height="true" fo:min-height="13.859cm"/>
-  </style:style>
   <style:style style:name="P1" style:family="paragraph">
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-indent="0cm"/>
    <style:text-properties fo:font-size="14pt" style:font-size-asian="14pt" style:font-size-complex="14pt"/>
@@ -2273,9 +2270,6 @@
   <style:style style:name="T65" style:family="text">
    <style:text-properties fo:font-size="18pt" fo:language="pt" fo:country="BR" fo:font-weight="bold" style:font-size-asian="18pt" style:font-weight-asian="bold" style:font-size-complex="18pt" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="T66" style:family="text">
-   <style:text-properties style:font-name="FreeMono" fo:language="pt" fo:country="BR"/>
-  </style:style>
   <text:list-style style:name="L1">
    <text:list-level-style-bullet text:level="1" text:bullet-char="●">
     <style:list-level-properties/>
@@ -2541,22 +2535,22 @@
   <style:handout-master presentation:presentation-page-layout-name="AL0T31" style:page-layout-name="PM0" draw:style-name="dp3">
    <draw:frame draw:style-name="gr1" draw:text-style-name="P2" draw:layer="backgroundobjects" svg:width="12.889cm" svg:height="1.048cm" svg:x="0cm" svg:y="0cm" presentation:class="header">
     <draw:text-box>
-     <text:p text:style-name="P1"><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span></text:p>
+     <text:p text:style-name="P1"><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><presentation:header/></text:p>
     </draw:text-box>
    </draw:frame>
    <draw:frame draw:style-name="gr1" draw:text-style-name="P4" draw:layer="backgroundobjects" svg:width="12.889cm" svg:height="1.048cm" svg:x="16.811cm" svg:y="0cm" presentation:class="date-time">
     <draw:text-box>
-     <text:p text:style-name="P3"><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span></text:p>
+     <text:p text:style-name="P3"><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><presentation:date-time/></text:p>
     </draw:text-box>
    </draw:frame>
    <draw:frame draw:style-name="gr2" draw:text-style-name="P2" draw:layer="backgroundobjects" svg:width="12.889cm" svg:height="1.048cm" svg:x="0cm" svg:y="19.94cm" presentation:class="footer">
     <draw:text-box>
-     <text:p text:style-name="P1"><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span></text:p>
+     <text:p text:style-name="P1"><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><presentation:footer/></text:p>
     </draw:text-box>
    </draw:frame>
    <draw:frame draw:style-name="gr2" draw:text-style-name="P4" draw:layer="backgroundobjects" svg:width="12.889cm" svg:height="1.048cm" svg:x="16.811cm" svg:y="19.94cm" presentation:class="page-number">
     <draw:text-box>
-     <text:p text:style-name="P3"><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span></text:p>
+     <text:p text:style-name="P3"><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:page-number>&lt;number&gt;</text:page-number></text:p>
     </draw:text-box>
    </draw:frame>
    <draw:page-thumbnail draw:layer="backgroundobjects" svg:width="6.616cm" svg:height="4.962cm" svg:x="1.975cm" svg:y="2.049cm"/>
@@ -2577,6 +2571,9 @@
     <draw:text-box>
      <text:p text:style-name="P6">Muokkaa otsikon tekstimuotoa napsauttamalla</text:p>
     </draw:text-box>
+   </draw:frame>
+   <draw:frame presentation:style-name="oranssi-outline1" draw:layer="backgroundobjects" svg:width="25.199cm" svg:height="12.18cm" svg:x="1.4cm" svg:y="4.914cm" presentation:class="outline" presentation:placeholder="true">
+    <draw:text-box/>
    </draw:frame>
    <draw:frame presentation:style-name="oranssi-outline1" draw:layer="backgroundobjects" svg:width="25.199cm" svg:height="12.18cm" svg:x="1.4cm" svg:y="4.914cm" presentation:class="outline" presentation:placeholder="true">
     <draw:text-box/>
@@ -2659,17 +2656,17 @@
    </draw:frame>
    <draw:frame presentation:style-name="pr4" draw:text-style-name="P2" draw:layer="backgroundobjects" svg:width="6.523cm" svg:height="1.448cm" svg:x="1.4cm" svg:y="19.131cm" presentation:class="date-time">
     <draw:text-box>
-     <text:p text:style-name="P1"><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span></text:p>
+     <text:p text:style-name="P1"><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><presentation:date-time/></text:p>
     </draw:text-box>
    </draw:frame>
    <draw:frame presentation:style-name="pr4" draw:text-style-name="P18" draw:layer="backgroundobjects" svg:width="8.875cm" svg:height="1.448cm" svg:x="9.576cm" svg:y="19.131cm" presentation:class="footer">
     <draw:text-box>
-     <text:p text:style-name="P17"><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span></text:p>
+     <text:p text:style-name="P17"><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><presentation:footer/></text:p>
     </draw:text-box>
    </draw:frame>
    <draw:frame presentation:style-name="pr4" draw:text-style-name="P4" draw:layer="backgroundobjects" svg:width="6.523cm" svg:height="1.448cm" svg:x="20.075cm" svg:y="19.131cm" presentation:class="page-number">
     <draw:text-box>
-     <text:p text:style-name="P3"><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span></text:p>
+     <text:p text:style-name="P3"><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:page-number>&lt;number&gt;</text:page-number></text:p>
     </draw:text-box>
    </draw:frame>
    <presentation:notes style:page-layout-name="PM2">
@@ -2707,24 +2704,27 @@
     <draw:frame presentation:style-name="oranssi-notes" draw:layer="backgroundobjects" svg:width="16.79cm" svg:height="13.364cm" svg:x="2.098cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true">
      <draw:text-box/>
     </draw:frame>
+    <draw:frame presentation:style-name="oranssi-notes" draw:layer="backgroundobjects" svg:width="16.79cm" svg:height="13.364cm" svg:x="2.098cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true">
+     <draw:text-box/>
+    </draw:frame>
     <draw:frame presentation:style-name="pr5" draw:text-style-name="P2" draw:layer="backgroundobjects" svg:width="9.108cm" svg:height="1.484cm" svg:x="0cm" svg:y="0cm" presentation:class="header">
      <draw:text-box>
-      <text:p text:style-name="P1"><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span></text:p>
+      <text:p text:style-name="P1"><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><presentation:header/></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame presentation:style-name="pr5" draw:text-style-name="P4" draw:layer="backgroundobjects" svg:width="9.108cm" svg:height="1.484cm" svg:x="11.88cm" svg:y="0cm" presentation:class="date-time">
      <draw:text-box>
-      <text:p text:style-name="P3"><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span></text:p>
+      <text:p text:style-name="P3"><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><presentation:date-time/></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame presentation:style-name="pr6" draw:text-style-name="P2" draw:layer="backgroundobjects" svg:width="9.108cm" svg:height="1.484cm" svg:x="0cm" svg:y="28.216cm" presentation:class="footer">
      <draw:text-box>
-      <text:p text:style-name="P1"><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span></text:p>
+      <text:p text:style-name="P1"><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><presentation:footer/></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame presentation:style-name="pr6" draw:text-style-name="P4" draw:layer="backgroundobjects" svg:width="9.108cm" svg:height="1.484cm" svg:x="11.88cm" svg:y="28.216cm" presentation:class="page-number">
      <draw:text-box>
-      <text:p text:style-name="P3"><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span></text:p>
+      <text:p text:style-name="P3"><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:page-number>&lt;number&gt;</text:page-number></text:p>
      </draw:text-box>
     </draw:frame>
    </presentation:notes>
@@ -2786,17 +2786,17 @@
    </draw:frame>
    <draw:frame presentation:style-name="pr9" draw:text-style-name="P2" draw:layer="backgroundobjects" svg:width="6.523cm" svg:height="1.448cm" svg:x="1.4cm" svg:y="19.131cm" presentation:class="date-time">
     <draw:text-box>
-     <text:p text:style-name="P1"><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span></text:p>
+     <text:p text:style-name="P1"><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><presentation:date-time/></text:p>
     </draw:text-box>
    </draw:frame>
    <draw:frame presentation:style-name="pr9" draw:text-style-name="P18" draw:layer="backgroundobjects" svg:width="8.875cm" svg:height="1.448cm" svg:x="9.576cm" svg:y="19.131cm" presentation:class="footer">
     <draw:text-box>
-     <text:p text:style-name="P17"><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span></text:p>
+     <text:p text:style-name="P17"><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><presentation:footer/></text:p>
     </draw:text-box>
    </draw:frame>
    <draw:frame presentation:style-name="pr9" draw:text-style-name="P4" draw:layer="backgroundobjects" svg:width="6.523cm" svg:height="1.448cm" svg:x="20.075cm" svg:y="19.131cm" presentation:class="page-number">
     <draw:text-box>
-     <text:p text:style-name="P3"><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span></text:p>
+     <text:p text:style-name="P3"><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:page-number>&lt;number&gt;</text:page-number></text:p>
     </draw:text-box>
    </draw:frame>
    <presentation:notes style:page-layout-name="PM2">
@@ -2806,22 +2806,22 @@
     </draw:frame>
     <draw:frame presentation:style-name="pr10" draw:text-style-name="P2" draw:layer="backgroundobjects" svg:width="9.107cm" svg:height="1.484cm" svg:x="0.001cm" svg:y="0cm" presentation:class="header">
      <draw:text-box>
-      <text:p text:style-name="P1"><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span></text:p>
+      <text:p text:style-name="P1"><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><text:span text:style-name="T1"><presentation:header/></text:span><presentation:header/></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame presentation:style-name="pr10" draw:text-style-name="P4" draw:layer="backgroundobjects" svg:width="9.107cm" svg:height="1.484cm" svg:x="11.88cm" svg:y="0cm" presentation:class="date-time">
      <draw:text-box>
-      <text:p text:style-name="P3"><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span></text:p>
+      <text:p text:style-name="P3"><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><text:span text:style-name="T1"><presentation:date-time/></text:span><presentation:date-time/></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame presentation:style-name="pr11" draw:text-style-name="P2" draw:layer="backgroundobjects" svg:width="9.107cm" svg:height="1.484cm" svg:x="0.001cm" svg:y="28.215cm" presentation:class="footer">
      <draw:text-box>
-      <text:p text:style-name="P1"><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span></text:p>
+      <text:p text:style-name="P1"><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><text:span text:style-name="T1"><presentation:footer/></text:span><presentation:footer/></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame presentation:style-name="pr11" draw:text-style-name="P4" draw:layer="backgroundobjects" svg:width="9.107cm" svg:height="1.484cm" svg:x="11.88cm" svg:y="28.215cm" presentation:class="page-number">
      <draw:text-box>
-      <text:p text:style-name="P3"><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span></text:p>
+      <text:p text:style-name="P3"><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:span text:style-name="T1"><text:page-number>&lt;number&gt;</text:page-number></text:span><text:page-number>&lt;number&gt;</text:page-number></text:p>
      </draw:text-box>
     </draw:frame>
    </presentation:notes>
@@ -11592,6 +11592,7 @@
     </presentation:notes>
    </draw:page>
    <draw:page draw:name="page10" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr17" draw:text-style-name="P31" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p><text:span text:style-name="T11">Linguagem de Programação</text:span></text:p>
@@ -12173,6 +12174,7 @@
     </presentation:notes>
    </draw:page>
    <draw:page draw:name="page11" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL3T3">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr17" draw:text-style-name="P31" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.402cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p><text:span text:style-name="T11">Linguagem como Abstração</text:span></text:p>
@@ -12544,6 +12546,7 @@
     </presentation:notes>
    </draw:page>
    <draw:page draw:name="page12" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr17" draw:text-style-name="P31" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p><text:span text:style-name="T26">Sintaxe</text:span><text:span text:style-name="T11"> vs </text:span><text:span text:style-name="T27">Semântica</text:span></text:p>
@@ -13323,6 +13326,7 @@
     </presentation:notes>
    </draw:page>
    <draw:page draw:name="page13" draw:style-name="dp5" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr17" draw:text-style-name="P31" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p><text:span text:style-name="T26">Sintaxe</text:span><text:span text:style-name="T11"> vs </text:span><text:span text:style-name="T27">Semântica</text:span></text:p>
@@ -14618,6 +14622,7 @@
     </presentation:notes>
    </draw:page>
    <draw:page draw:name="page14" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr17" draw:text-style-name="P31" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p><text:span text:style-name="T26">Sintaxe</text:span><text:span text:style-name="T11"> vs </text:span><text:span text:style-name="T27">Semântica</text:span></text:p>
@@ -15670,6 +15675,7 @@
     </presentation:notes>
    </draw:page>
    <draw:page draw:name="page15" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr17" draw:text-style-name="P31" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p><text:span text:style-name="T26">Sintaxe</text:span><text:span text:style-name="T11"> vs </text:span><text:span text:style-name="T27">Semântica</text:span></text:p>
@@ -16091,6 +16097,7 @@
     </presentation:notes>
    </draw:page>
    <draw:page draw:name="page16" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr17" draw:text-style-name="P31" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p><text:span text:style-name="T26">Sintaxe</text:span><text:span text:style-name="T11"> vs </text:span><text:span text:style-name="T27">Semântica</text:span></text:p>
@@ -16100,7 +16107,7 @@
      <draw:text-box>
       <text:list text:style-name="L2">
        <text:list-item>
-        <text:p><text:span text:style-name="T37">O curso aborda, principalmente, </text:span><text:span text:style-name="T31">semântica</text:span><text:span text:style-name="T37"> de linguagens.</text:span></text:p>
+        <text:p><text:span text:style-name="T37">O curso aborda, principalmente, </text:span><text:span text:style-name="T31">semântica</text:span><text:span text:style-name="T37"> de </text:span><text:span text:style-name="T37">linguagens.</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
@@ -16113,6 +16120,7 @@
     </presentation:notes>
    </draw:page>
    <draw:page draw:name="page17" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr17" draw:text-style-name="P31" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p><text:span text:style-name="T11">Compiladores</text:span></text:p>
@@ -20240,6 +20248,7 @@
     </presentation:notes>
    </draw:page>
    <draw:page draw:name="page18" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr15" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p>Exercícios</text:p>
@@ -20249,19 +20258,19 @@
      <draw:text-box>
       <text:list text:style-name="L5">
        <text:list-item>
-        <text:p><text:span text:style-name="T5">Explique com suas próprias palavras o que você entende por </text:span><text:span text:style-name="T45">semântica</text:span><text:span text:style-name="T5"> no contexto de linguagens de programação.</text:span></text:p>
+        <text:p><text:span text:style-name="T5">Explique com suas próprias palavras o que você entende </text:span><text:span text:style-name="T5">por </text:span><text:span text:style-name="T45">semântica</text:span><text:span text:style-name="T5"> no contexto de linguagens de programação.</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p><text:span text:style-name="T5">Dê outros exemplos de abstrações que escondem detalhes da entrada, saída, memória e CPU (pelo menos um exemplo de cada).</text:span></text:p>
+        <text:p><text:span text:style-name="T5">Dê outros exemplos de abstrações que escondem detalhes </text:span><text:span text:style-name="T5">da entrada, saída, memória e CPU (pelo menos um exemplo </text:span><text:span text:style-name="T5">de cada).</text:span></text:p>
        </text:list-item>
        <text:list-item>
         <text:p><text:span text:style-name="T5">Descreva a sintaxe e semântica do comando </text:span><text:span text:style-name="T46">for</text:span><text:span text:style-name="T5"> de C.</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p><text:span text:style-name="T5">Descreva a sintaxe e semântica de chamada de funções em Python.</text:span></text:p>
+        <text:p><text:span text:style-name="T5">Descreva a sintaxe e semântica de chamada de funções em </text:span><text:span text:style-name="T5">Python.</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p><text:span text:style-name="T5">Pesquise e descreva as principais diferenças semânticas entre Python 2 e Python 3.</text:span></text:p>
+        <text:p><text:span text:style-name="T5">Pesquise e descreva as principais diferenças semânticas </text:span><text:span text:style-name="T5">entre Python 2 e Python 3.</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
@@ -20273,486 +20282,8 @@
      </draw:frame>
     </presentation:notes>
    </draw:page>
-   <draw:page draw:name="page19" draw:style-name="dp5" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
-    <draw:frame presentation:style-name="pr17" draw:text-style-name="P31" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
-     <draw:text-box>
-      <text:p><text:span text:style-name="T26">Sintaxe</text:span><text:span text:style-name="T11"> vs </text:span><text:span text:style-name="T27">Semântica</text:span></text:p>
-     </draw:text-box>
-    </draw:frame>
-    <draw:frame presentation:style-name="pr23" draw:text-style-name="P32" draw:layer="layout" svg:width="25.199cm" svg:height="13.859cm" svg:x="1.4cm" svg:y="4.914cm" presentation:class="outline" presentation:user-transformed="true">
-     <draw:text-box>
-      <text:list text:style-name="L2">
-       <text:list-item>
-        <text:p><text:span text:style-name="T37">O curso aborda, principalmente, </text:span><text:span text:style-name="T31">semântica</text:span><text:span text:style-name="T37"> de linguagens.</text:span></text:p>
-       </text:list-item>
-      </text:list>
-     </draw:text-box>
-    </draw:frame>
-    <draw:frame draw:style-name="gr6" draw:text-style-name="P25" xml:id="id91" draw:id="id91" draw:layer="layout" svg:width="19.736cm" svg:height="3.919cm" svg:x="3.95cm" svg:y="9.602cm">
-     <draw:image xlink:href="" loext:mime-type="image/png">
-      <office:binary-data>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
-       /bhx4+zs7EaMGCFaYPfu3RkZGZGRkbNnz2aWODg4TJkyJSEhYdGiRcwST0/POXPmqKio+Pn5
-       LVu2zMnJ6erVq+zlqX79+l27dq1///7MWx8fHzU1tR07dpSUlAwaNIhtaOTIkUyOZ21tnZub
-       GxMTU1FRoaOjw3xERKqqqkRkamra4nogY+jQoUSkpNTqzr9s2bLnz59nZGRYWVkxS5YsWfL4
-       8WPmtVAozMjImDlz5tq1a9lPGxoaOA8kAAAAAABXuMLWTQiFQmb+jEuXLlVXV1+5coVJWkTv
-       J5SSpaXl2bNnPT098/LygoODx48f/9577506dYotkJyc3Lt3b3d3d+FLI0aM0NDQEL36xCRj
-       mpqaRKSlpUVE/fr1q6qqYj5VU1Njs7X6+nqhUGhjY0NERUVFopE4ODiwr83MzIjo3r17surm
-       /fv3c3JyXFxc2GyNiJSUlNjAlJWVlZWV8/Ly2Ls9SWz6BwAAAADQbjjL7CbU1NRevHhBRD//
-       /LOnp+f48ePv3LnDLJdhK0ZGRv/+97+bmpry8/PT09O3bNni7u5++vRpc3NzIiosLKyurtbT
-       02uxlujzY0xiw/zLZJjKyspM5IzffvstJibmypUroqlmXV2daIVs7kQvL6aJ1iCl4uJiIrKw
-       sGitgKKi4rp16wIDAy0sLCwtLUeMGOHk5PTRRx/JKgAAAAAAABYStm5CR0enoaGhsrJSU1OT
-       SR4qKiqISFdXV+ZtKSgoDB48ePDgwSNGjPj444+TkpK+//575iMjI6Pt27e3KN+7d2/xFTY3
-       NzMv9uzZ4+fnZ29vv3XrVn19fUVFxaysrJCQELYAg8fjyagr7TRv3jwnJ6f09PRz586lpKTs
-       3Llz+fLl7CAAAAAAAMgKErZuwsrK6o8//sjLy5swYQKz5L///S+9fF6rgzCXodjH5IyNjS9f
-       vjx8+PB2/7jZnj17BAJBcnIye4dhdnZ2O+qRJqMzMjIiohs3bogvpqur6+Pj4+Pj8/z588mT
-       J2/btu27777r8kwSAAAAALoZPMPWTTg7OxPRzp07mbcNDQ0JCQk9e/YUfdyLERkZOXfu3IMH
-       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
-       Tf0fMvhLS4K11FoAAAAASUVORK5CYII=
-      </office:binary-data>
-      <text:p/>
-     </draw:image>
-    </draw:frame>
-    <anim:par presentation:node-type="timing-root">
-     <anim:seq presentation:node-type="main-sequence">
-      <anim:par smil:begin="next">
-       <anim:par smil:begin="0s">
-        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
-         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id91" smil:attributeName="visibility" smil:to="visible"/>
-        </anim:par>
-       </anim:par>
-      </anim:par>
-     </anim:seq>
-    </anim:par>
-    <presentation:notes draw:style-name="dp3">
-     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="19" presentation:class="page"/>
-     <draw:frame presentation:style-name="pr14" draw:text-style-name="P28" draw:layer="layout" svg:width="16.79cm" svg:height="13.364cm" svg:x="2.098cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true" presentation:user-transformed="true">
-      <draw:text-box/>
-     </draw:frame>
-    </presentation:notes>
-   </draw:page>
-   <draw:page draw:name="page20" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL1T32">
+   <draw:page draw:name="page19" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL1T32">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr12" draw:text-style-name="P20" draw:layer="layout" svg:width="25.199cm" svg:height="4.78cm" svg:x="1.501cm" svg:y="3.205cm" presentation:class="subtitle" presentation:user-transformed="true">
      <draw:text-box>
       <text:p><text:span text:style-name="T2">Linguagens de Alto Nível</text:span></text:p>
@@ -21080,13 +20611,14 @@
      </draw:text-box>
     </draw:frame>
     <presentation:notes draw:style-name="dp3">
-     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="20" presentation:class="page"/>
+     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="19" presentation:class="page"/>
      <draw:frame presentation:style-name="pr13" draw:text-style-name="P24" draw:layer="layout" svg:width="16.79cm" svg:height="13.364cm" svg:x="2.098cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true" presentation:user-transformed="true">
       <draw:text-box/>
      </draw:frame>
     </presentation:notes>
    </draw:page>
-   <draw:page draw:name="page21" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL1T32">
+   <draw:page draw:name="page20" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL1T32">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame draw:style-name="gr8" draw:text-style-name="P25" draw:layer="layout" svg:width="14.215cm" svg:height="20.999cm" svg:x="2.13cm" svg:y="0.01cm">
      <draw:image xlink:href="" loext:mime-type="image/jpeg">
       <office:binary-data>/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgK
@@ -23846,25 +23378,25 @@
      <draw:text-box>
       <text:list text:style-name="L2">
        <text:list-item>
-        <text:p xml:id="id100" text:id="id100"><text:span text:style-name="T47">Computação Científica</text:span></text:p>
+        <text:p xml:id="id99" text:id="id99"><text:span text:style-name="T47">Computação Científica</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id101" text:id="id101"><text:span text:style-name="T47">Empresas e Negócios</text:span></text:p>
+        <text:p xml:id="id100" text:id="id100"><text:span text:style-name="T47">Empresas e Negócios</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id102" text:id="id102"><text:span text:style-name="T47">Inteligência Artificial</text:span></text:p>
+        <text:p xml:id="id101" text:id="id101"><text:span text:style-name="T47">Inteligência Artificial</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id103" text:id="id103"><text:span text:style-name="T47">Software Básico</text:span></text:p>
+        <text:p xml:id="id102" text:id="id102"><text:span text:style-name="T47">Software Básico</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id104" text:id="id104"><text:span text:style-name="T47">Redes e Protocolos</text:span></text:p>
+        <text:p xml:id="id103" text:id="id103"><text:span text:style-name="T47">Redes e Protocolos</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id105" text:id="id105"><text:span text:style-name="T47">Internet / Web</text:span></text:p>
+        <text:p xml:id="id104" text:id="id104"><text:span text:style-name="T47">Internet / Web</text:span></text:p>
         <text:list>
          <text:list-item>
-          <text:p xml:id="id106" text:id="id106" text:style-name="P46"><text:span text:style-name="T48">front/back</text:span></text:p>
+          <text:p xml:id="id105" text:id="id105" text:style-name="P46"><text:span text:style-name="T48">front/back</text:span></text:p>
          </text:list-item>
         </text:list>
        </text:list-item>
@@ -23875,16 +23407,16 @@
      <draw:text-box>
       <text:list text:style-name="L2">
        <text:list-item>
-        <text:p xml:id="id92" text:id="id92"><text:span text:style-name="T47">Imperativa</text:span></text:p>
+        <text:p xml:id="id91" text:id="id91"><text:span text:style-name="T47">Imperativa</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id93" text:id="id93"><text:span text:style-name="T47">Funcional</text:span></text:p>
+        <text:p xml:id="id92" text:id="id92"><text:span text:style-name="T47">Funcional</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id94" text:id="id94"><text:span text:style-name="T47">Lógica</text:span></text:p>
+        <text:p xml:id="id93" text:id="id93"><text:span text:style-name="T47">Lógica</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id95" text:id="id95"><text:span text:style-name="T47">Orientada a Objetos</text:span></text:p>
+        <text:p xml:id="id94" text:id="id94"><text:span text:style-name="T47">Orientada a Objetos</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
@@ -23893,20 +23425,20 @@
      <draw:text-box>
       <text:list text:style-name="L2">
        <text:list-item>
-        <text:p xml:id="id97" text:id="id97"><text:span text:style-name="T47">Interpretada vs Compilada</text:span></text:p>
+        <text:p xml:id="id96" text:id="id96"><text:span text:style-name="T47">Interpretada vs Compilada</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id98" text:id="id98"><text:span text:style-name="T47">Dinâmica vs Estática</text:span></text:p>
+        <text:p xml:id="id97" text:id="id97"><text:span text:style-name="T47">Dinâmica vs Estática</text:span></text:p>
         <text:list>
          <text:list-item>
-          <text:p xml:id="id99" text:id="id99" text:style-name="P48"><text:span text:style-name="T49">REPL/eval</text:span><text:span text:style-name="T50">, tipagem, listas, GC</text:span></text:p>
+          <text:p xml:id="id98" text:id="id98" text:style-name="P48"><text:span text:style-name="T49">REPL/eval</text:span><text:span text:style-name="T50">, tipagem, listas, GC</text:span></text:p>
          </text:list-item>
         </text:list>
        </text:list-item>
       </text:list>
      </draw:text-box>
     </draw:frame>
-    <draw:frame draw:style-name="gr4" draw:text-style-name="P23" xml:id="id96" draw:id="id96" draw:layer="layout" svg:width="14.245cm" svg:height="20.999cm" svg:x="2.147cm" svg:y="-0.023cm">
+    <draw:frame draw:style-name="gr4" draw:text-style-name="P23" xml:id="id95" draw:id="id95" draw:layer="layout" svg:width="14.245cm" svg:height="20.999cm" svg:x="2.147cm" svg:y="-0.023cm">
      <draw:image xlink:href="" loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAA7EAAAVxCAIAAADeeZyAAAAABmJLR0QA/wD/AP+gvaeTAAAg
        AElEQVR4nOzdd5xkZZU38N85z/PcW9VhIsMMIBlRJEdJQ1JJCrq6ZjGn1V19fXdXX1fRXcOK
@@ -30142,6 +29674,9 @@
       <anim:par smil:begin="next">
        <anim:par smil:begin="0s">
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id91" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
+        </anim:par>
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
          <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id92" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
@@ -30150,15 +29685,26 @@
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
          <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id94" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
-        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
-         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id95" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
-        </anim:par>
        </anim:par>
       </anim:par>
       <anim:par smil:begin="next">
        <anim:par smil:begin="0s">
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
-         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id96" smil:attributeName="visibility" smil:to="visible"/>
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id95" smil:attributeName="visibility" smil:to="visible"/>
+        </anim:par>
+       </anim:par>
+      </anim:par>
+      <anim:par smil:begin="next">
+       <anim:par smil:begin="0s">
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="1">
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id96" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
+        </anim:par>
+       </anim:par>
+      </anim:par>
+      <anim:par smil:begin="next">
+       <anim:par smil:begin="0s">
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="emphasis" presentation:preset-id="ooo-emphasis-font-color" presentation:preset-sub-type="2" presentation:preset-property="CharColor;ColorStyle;Accelerate;Decelerate;AutoReverse" presentation:text-only="true">
+         <anim:animateColor smil:dur="0s" smil:fill="hold" smil:targetElement="id96" anim:sub-item="text" smil:attributeName="color" smil:to="#cccccc" anim:color-interpolation="rgb" anim:color-interpolation-direction="clockwise"/>
         </anim:par>
        </anim:par>
       </anim:par>
@@ -30171,28 +29717,17 @@
       </anim:par>
       <anim:par smil:begin="next">
        <anim:par smil:begin="0s">
-        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="emphasis" presentation:preset-id="ooo-emphasis-font-color" presentation:preset-sub-type="2" presentation:preset-property="CharColor;ColorStyle;Accelerate;Decelerate;AutoReverse" presentation:text-only="true">
-         <anim:animateColor smil:dur="0s" smil:fill="hold" smil:targetElement="id97" anim:sub-item="text" smil:attributeName="color" smil:to="#cccccc" anim:color-interpolation="rgb" anim:color-interpolation-direction="clockwise"/>
-        </anim:par>
-       </anim:par>
-      </anim:par>
-      <anim:par smil:begin="next">
-       <anim:par smil:begin="0s">
-        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="1">
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
          <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id98" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
        </anim:par>
       </anim:par>
       <anim:par smil:begin="next">
        <anim:par smil:begin="0s">
-        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="2">
          <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id99" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
-       </anim:par>
-      </anim:par>
-      <anim:par smil:begin="next">
-       <anim:par smil:begin="0s">
-        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="2">
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="2">
          <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id100" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="2">
@@ -30204,27 +29739,25 @@
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="2">
          <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id103" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
-        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="2">
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
          <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id104" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
          <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id105" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
-        </anim:par>
-        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
-         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id106" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
        </anim:par>
       </anim:par>
      </anim:seq>
     </anim:par>
     <presentation:notes draw:style-name="dp3">
-     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="21" presentation:class="page"/>
+     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="20" presentation:class="page"/>
      <draw:frame presentation:style-name="pr14" draw:text-style-name="P28" draw:layer="layout" svg:width="16.79cm" svg:height="13.364cm" svg:x="2.098cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true" presentation:user-transformed="true">
       <draw:text-box/>
      </draw:frame>
     </presentation:notes>
    </draw:page>
-   <draw:page draw:name="page22" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+   <draw:page draw:name="page21" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr15" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p>Exercícios</text:p>
@@ -30234,25 +29767,25 @@
      <draw:text-box>
       <text:list text:style-name="L5">
        <text:list-item>
-        <text:p xml:id="id107" text:id="id107"><text:span text:style-name="T16">Pesquise e explique com suas próprias palavras a diferença fundamental entre linguagens imperativas e linguagens funcionais. Use exemplos de código.</text:span></text:p>
+        <text:p xml:id="id106" text:id="id106"><text:span text:style-name="T16">Pesquise e explique com suas próprias palavras a diferença fundamental entre linguagens imperativas e linguagens funcionais. Use exemplos de código.</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id108" text:id="id108"><text:span text:style-name="T16">Na sua opinião, por quê o paradigma de orientação a objetos se tornou tão popular?</text:span></text:p>
+        <text:p xml:id="id107" text:id="id107"><text:span text:style-name="T16">Na sua opinião, por quê o paradigma de orientação a objetos se tornou tão popular?</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id109" text:id="id109"><text:span text:style-name="T16">Explique com suas próprias palavras a função &quot;eval&quot; de Python 3. Dê exemplos interessantes do seu uso.</text:span></text:p>
+        <text:p xml:id="id108" text:id="id108"><text:span text:style-name="T16">Explique com suas próprias palavras a função &quot;eval&quot; de Python 3. Dê exemplos interessantes do seu uso.</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id110" text:id="id110"><text:span text:style-name="T16">Dê exemplos de outras características de linguagens dinâmicas (além das exibidas nos slides anteriores).</text:span></text:p>
+        <text:p xml:id="id109" text:id="id109"><text:span text:style-name="T16">Dê exemplos de outras características de linguagens dinâmicas (além das exibidas nos slides anteriores).</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id111" text:id="id111"><text:span text:style-name="T16">Escolha três áreas da computação (ex., computação científica, software básico, etc) e defenda o uso de uma linguagem para cada uma delas (além das já discutidas nos slides anteriores).</text:span></text:p>
+        <text:p xml:id="id110" text:id="id110"><text:span text:style-name="T16">Escolha três áreas da computação (ex., computação científica, software básico, etc) e defenda o uso de uma linguagem para cada uma delas (além das já discutidas nos slides anteriores).</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id112" text:id="id112"><text:span text:style-name="T16">Leia o artigo “Beating the Averages” de Paul Graham e explique com suas próprias palavras o “Paradoxo de Blub”:</text:span></text:p>
+        <text:p xml:id="id111" text:id="id111"><text:span text:style-name="T16">Leia o artigo “Beating the Averages” de Paul Graham e explique com suas próprias palavras o “Paradoxo de Blub”:</text:span></text:p>
         <text:list>
          <text:list-header>
-          <text:p xml:id="id113" text:id="id113" text:style-name="P49"><text:span text:style-name="T51">http://www.paulgraham.com/avg.html</text:span></text:p>
+          <text:p xml:id="id112" text:id="id112" text:style-name="P49"><text:span text:style-name="T51">http://www.paulgraham.com/avg.html</text:span></text:p>
          </text:list-header>
         </text:list>
        </text:list-item>
@@ -30261,6 +29794,13 @@
     </draw:frame>
     <anim:par presentation:node-type="timing-root">
      <anim:seq presentation:node-type="main-sequence">
+      <anim:par smil:begin="next">
+       <anim:par smil:begin="0s">
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id106" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
+        </anim:par>
+       </anim:par>
+      </anim:par>
       <anim:par smil:begin="next">
        <anim:par smil:begin="0s">
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
@@ -30291,31 +29831,25 @@
       </anim:par>
       <anim:par smil:begin="next">
        <anim:par smil:begin="0s">
-        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
          <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id111" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
-       </anim:par>
-      </anim:par>
-      <anim:par smil:begin="next">
-       <anim:par smil:begin="0s">
-        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
-         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id112" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
-        </anim:par>
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
-         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id113" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id112" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
        </anim:par>
       </anim:par>
      </anim:seq>
     </anim:par>
     <presentation:notes draw:style-name="dp3">
-     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="22" presentation:class="page"/>
+     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="21" presentation:class="page"/>
      <draw:frame presentation:style-name="pr14" draw:text-style-name="P37" draw:layer="layout" svg:width="16.79cm" svg:height="13.364cm" svg:x="2.098cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true" presentation:user-transformed="true">
       <draw:text-box/>
      </draw:frame>
     </presentation:notes>
    </draw:page>
-   <draw:page draw:name="page23" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL1T32">
+   <draw:page draw:name="page22" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL1T32">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr12" draw:text-style-name="P20" draw:layer="layout" svg:width="25.199cm" svg:height="4.78cm" svg:x="1.501cm" svg:y="3.205cm" presentation:class="subtitle" presentation:user-transformed="true">
      <draw:text-box>
       <text:p><text:span text:style-name="T2">Linguagens de Alto Nível</text:span></text:p>
@@ -30643,19 +30177,20 @@
      </draw:text-box>
     </draw:frame>
     <presentation:notes draw:style-name="dp3">
-     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="23" presentation:class="page"/>
+     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="22" presentation:class="page"/>
      <draw:frame presentation:style-name="pr13" draw:text-style-name="P24" draw:layer="layout" svg:width="16.79cm" svg:height="13.364cm" svg:x="2.098cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true" presentation:user-transformed="true">
       <draw:text-box/>
      </draw:frame>
     </presentation:notes>
    </draw:page>
-   <draw:page draw:name="page24" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+   <draw:page draw:name="page23" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr17" draw:text-style-name="P50" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p><text:span text:style-name="T52">Avaliando Linguages</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame draw:style-name="gr6" draw:text-style-name="P25" xml:id="id114" draw:id="id114" draw:layer="layout" svg:width="17.103cm" svg:height="16.379cm" svg:x="0.319cm" svg:y="3.953cm">
+    <draw:frame draw:style-name="gr6" draw:text-style-name="P25" xml:id="id113" draw:id="id113" draw:layer="layout" svg:width="17.103cm" svg:height="16.379cm" svg:x="0.319cm" svg:y="3.953cm">
      <draw:image xlink:href="" loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAtwAAAK9CAYAAAAXAbuWAAAABHNCSVQICAgIfAhkiAAAABl0
        RVh0U29mdHdhcmUAZ25vbWUtc2NyZWVuc2hvdO8Dvz4AACAASURBVHic7N13fFRV+vjxz52W
@@ -32652,7 +32187,7 @@
       <text:p/>
      </draw:image>
     </draw:frame>
-    <draw:frame draw:style-name="gr6" draw:text-style-name="P25" xml:id="id115" draw:id="id115" draw:layer="layout" svg:width="16.362cm" svg:height="11.632cm" svg:x="11.2cm" svg:y="8.065cm">
+    <draw:frame draw:style-name="gr6" draw:text-style-name="P25" xml:id="id114" draw:id="id114" draw:layer="layout" svg:width="16.362cm" svg:height="11.632cm" svg:x="11.2cm" svg:y="8.065cm">
      <draw:image xlink:href="" loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAsUAAAH4CAIAAAAtpQehAAAAA3NCSVQICAjb4U/gAAAAGXRF
        WHRTb2Z0d2FyZQBnbm9tZS1zY3JlZW5zaG907wO/PgAAIABJREFUeJzsnXlYFMfW8KsZdgaB
@@ -33914,16 +33449,23 @@
       <text:p/>
      </draw:image>
     </draw:frame>
-    <draw:custom-shape draw:style-name="gr38" draw:text-style-name="P35" xml:id="id116" draw:id="id116" draw:layer="layout" svg:width="10.591cm" svg:height="1.843cm" svg:x="11.371cm" svg:y="11.288cm">
+    <draw:custom-shape draw:style-name="gr38" draw:text-style-name="P35" xml:id="id115" draw:id="id115" draw:layer="layout" svg:width="10.591cm" svg:height="1.843cm" svg:x="11.371cm" svg:y="11.288cm">
      <text:p/>
      <draw:enhanced-geometry svg:viewBox="0 0 21600 21600" draw:type="rectangle" draw:enhanced-path="M 0 0 L 21600 0 21600 21600 0 21600 0 0 Z N"/>
     </draw:custom-shape>
-    <draw:custom-shape draw:style-name="gr39" draw:text-style-name="P35" xml:id="id117" draw:id="id117" draw:layer="layout" svg:width="13.8cm" svg:height="0.955cm" svg:x="11.371cm" svg:y="16.588cm">
+    <draw:custom-shape draw:style-name="gr39" draw:text-style-name="P35" xml:id="id116" draw:id="id116" draw:layer="layout" svg:width="13.8cm" svg:height="0.955cm" svg:x="11.371cm" svg:y="16.588cm">
      <text:p/>
      <draw:enhanced-geometry svg:viewBox="0 0 21600 21600" draw:type="rectangle" draw:enhanced-path="M 0 0 L 21600 0 21600 21600 0 21600 0 0 Z N"/>
     </draw:custom-shape>
     <anim:par presentation:node-type="timing-root">
      <anim:seq presentation:node-type="main-sequence">
+      <anim:par smil:begin="next">
+       <anim:par smil:begin="0s">
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id113" smil:attributeName="visibility" smil:to="visible"/>
+        </anim:par>
+       </anim:par>
+      </anim:par>
       <anim:par smil:begin="next">
        <anim:par smil:begin="0s">
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
@@ -33945,23 +33487,17 @@
         </anim:par>
        </anim:par>
       </anim:par>
-      <anim:par smil:begin="next">
-       <anim:par smil:begin="0s">
-        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
-         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id117" smil:attributeName="visibility" smil:to="visible"/>
-        </anim:par>
-       </anim:par>
-      </anim:par>
      </anim:seq>
     </anim:par>
     <presentation:notes draw:style-name="dp3">
-     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="24" presentation:class="page"/>
+     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="23" presentation:class="page"/>
      <draw:frame presentation:style-name="pr14" draw:text-style-name="P28" draw:layer="layout" svg:width="16.79cm" svg:height="13.364cm" svg:x="2.098cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true" presentation:user-transformed="true">
       <draw:text-box/>
      </draw:frame>
     </presentation:notes>
    </draw:page>
-   <draw:page draw:name="page25" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+   <draw:page draw:name="page24" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr17" draw:text-style-name="P50" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p><text:span text:style-name="T26">Readability</text:span><text:span text:style-name="T52"> vs </text:span><text:span text:style-name="T26">Writability</text:span></text:p>
@@ -33972,7 +33508,7 @@
       <text:p text:style-name="P26"><text:span text:style-name="T53">Readability</text:span><text:span text:style-name="T54"> vs </text:span><text:span text:style-name="T53">Writability</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame draw:style-name="gr4" draw:text-style-name="P25" xml:id="id118" draw:id="id118" draw:layer="layout" svg:width="9.326cm" svg:height="3.356cm" svg:x="0.718cm" svg:y="4.418cm">
+    <draw:frame draw:style-name="gr4" draw:text-style-name="P25" xml:id="id117" draw:id="id117" draw:layer="layout" svg:width="9.326cm" svg:height="3.356cm" svg:x="0.718cm" svg:y="4.418cm">
      <draw:image xlink:href="" loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAARMAAABjCAIAAAA3nnOaAAAAA3NCSVQICAjb4U/gAAAAGXRF
        WHRTb2Z0d2FyZQBnbm9tZS1zY3JlZW5zaG907wO/PgAADiBJREFUeJzt3XlYE2caAPBvJpkc
@@ -34047,7 +33583,7 @@
       <text:p/>
      </draw:image>
     </draw:frame>
-    <draw:frame draw:style-name="gr4" draw:text-style-name="P25" xml:id="id119" draw:id="id119" draw:layer="layout" svg:width="15.585cm" svg:height="4.113cm" svg:x="0.699cm" svg:y="7.882cm">
+    <draw:frame draw:style-name="gr4" draw:text-style-name="P25" xml:id="id118" draw:id="id118" draw:layer="layout" svg:width="15.585cm" svg:height="4.113cm" svg:x="0.699cm" svg:y="7.882cm">
      <draw:image xlink:href="" loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAi0AAACTCAIAAADN1L4JAAAAA3NCSVQICAjb4U/gAAAAGXRF
        WHRTb2Z0d2FyZQBnbm9tZS1zY3JlZW5zaG907wO/PgAAIABJREFUeJztnXlcDfv/x+d0dCo7
@@ -34298,7 +33834,7 @@
       <text:p/>
      </draw:image>
     </draw:frame>
-    <draw:frame draw:style-name="gr4" draw:text-style-name="P25" xml:id="id120" draw:id="id120" draw:layer="layout" svg:width="8.715cm" svg:height="4.73cm" svg:x="17.384cm" svg:y="5.043cm">
+    <draw:frame draw:style-name="gr4" draw:text-style-name="P25" xml:id="id119" draw:id="id119" draw:layer="layout" svg:width="8.715cm" svg:height="4.73cm" svg:x="17.384cm" svg:y="5.043cm">
      <draw:image xlink:href="" loext:mime-type="image/jpeg">
       <office:binary-data>/9j/4AAQSkZJRgABAQAAAQABAAD/4gxYSUNDX1BST0ZJTEUAAQEAAAxITGlubwIQAABtbnRy
        UkdCIFhZWiAHzgACAAkABgAxAABhY3NwTVNGVAAAAABJRUMgc1JHQgAAAAAAAAAAAAAAAAAA
@@ -34621,7 +34157,7 @@
       <text:p/>
      </draw:image>
     </draw:frame>
-    <draw:frame draw:style-name="gr6" draw:text-style-name="P25" xml:id="id121" draw:id="id121" draw:layer="layout" svg:width="6.349cm" svg:height="8.872cm" svg:x="20.751cm" svg:y="4.391cm">
+    <draw:frame draw:style-name="gr6" draw:text-style-name="P25" xml:id="id120" draw:id="id120" draw:layer="layout" svg:width="6.349cm" svg:height="8.872cm" svg:x="20.751cm" svg:y="4.391cm">
      <draw:image xlink:href="" loext:mime-type="image/jpeg">
       <office:binary-data>/9j/4AAQSkZJRgABAQEAlgCWAAD/4hD4SUNDX1BST0ZJTEUAAQEAABDoYXBwbAIAAABtbnRy
        UkdCIFhZWiAH1gAHAAwAFAAOABxhY3NwQVBQTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -36287,7 +35823,7 @@
       <text:p/>
      </draw:image>
     </draw:frame>
-    <draw:frame draw:style-name="gr4" draw:text-style-name="P25" xml:id="id122" draw:id="id122" draw:layer="layout" svg:width="10.134cm" svg:height="4.432cm" svg:x="0.357cm" svg:y="13.465cm">
+    <draw:frame draw:style-name="gr4" draw:text-style-name="P25" xml:id="id121" draw:id="id121" draw:layer="layout" svg:width="10.134cm" svg:height="4.432cm" svg:x="0.357cm" svg:y="13.465cm">
      <draw:image xlink:href="" loext:mime-type="image/jpeg">
       <office:binary-data>/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRof
        Hh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwh
@@ -36564,7 +36100,7 @@
       <text:p/>
      </draw:image>
     </draw:frame>
-    <draw:frame draw:style-name="gr6" draw:text-style-name="P25" xml:id="id123" draw:id="id123" draw:layer="layout" svg:width="6.929cm" svg:height="8.287cm" svg:x="11.422cm" svg:y="12.531cm">
+    <draw:frame draw:style-name="gr6" draw:text-style-name="P25" xml:id="id122" draw:id="id122" draw:layer="layout" svg:width="6.929cm" svg:height="8.287cm" svg:x="11.422cm" svg:y="12.531cm">
      <draw:image xlink:href="" loext:mime-type="image/jpeg">
       <office:binary-data>/9j/4AAQSkZJRgABAQEASABIAAD//gBlQ1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJ
        SkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gOTIKCk9wdGltaXplZCBieSBKUEVHbWluaSAzLjEy
@@ -37035,7 +36571,7 @@
       <text:p/>
      </draw:image>
     </draw:frame>
-    <draw:frame draw:style-name="gr6" draw:text-style-name="P25" xml:id="id124" draw:id="id124" draw:layer="layout" svg:width="11.022cm" svg:height="7.223cm" svg:x="14.049cm" svg:y="13.595cm">
+    <draw:frame draw:style-name="gr6" draw:text-style-name="P25" xml:id="id123" draw:id="id123" draw:layer="layout" svg:width="11.022cm" svg:height="7.223cm" svg:x="14.049cm" svg:y="13.595cm">
      <draw:image xlink:href="" loext:mime-type="image/jpeg">
       <office:binary-data>/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBAQFBAYFBQYJBgUGCQsIBgYICwwKCgsKCgwQ
        DAwMDAwMEAwODxAPDgwTExQUExMcGxsbHCAgICAgICAgICD/2wBDAQcHBw0MDRgQEBgaFREV
@@ -37535,11 +37071,11 @@
       <text:p/>
      </draw:image>
     </draw:frame>
-    <draw:custom-shape draw:style-name="gr41" draw:text-style-name="P35" xml:id="id125" draw:id="id125" draw:layer="layout" svg:width="5.07cm" svg:height="1.333cm" svg:x="17.162cm" svg:y="0.287cm">
+    <draw:custom-shape draw:style-name="gr41" draw:text-style-name="P35" xml:id="id124" draw:id="id124" draw:layer="layout" svg:width="5.07cm" svg:height="1.333cm" svg:x="17.162cm" svg:y="0.287cm">
      <text:p text:style-name="P26"><text:span text:style-name="T55">Prototipação</text:span></text:p>
      <draw:enhanced-geometry svg:viewBox="0 0 21600 21600" draw:type="rectangle" draw:enhanced-path="M 0 0 L 21600 0 21600 21600 0 21600 0 0 Z N"/>
     </draw:custom-shape>
-    <draw:custom-shape draw:style-name="gr41" draw:text-style-name="P35" xml:id="id126" draw:id="id126" draw:layer="layout" svg:width="5.07cm" svg:height="1.333cm" svg:x="6.241cm" svg:y="0.287cm">
+    <draw:custom-shape draw:style-name="gr41" draw:text-style-name="P35" xml:id="id125" draw:id="id125" draw:layer="layout" svg:width="5.07cm" svg:height="1.333cm" svg:x="6.241cm" svg:y="0.287cm">
      <text:p text:style-name="P26"><text:span text:style-name="T55">Manutenção</text:span></text:p>
      <draw:enhanced-geometry svg:viewBox="0 0 21600 21600" draw:type="rectangle" draw:enhanced-path="M 0 0 L 21600 0 21600 21600 0 21600 0 0 Z N"/>
     </draw:custom-shape>
@@ -38088,6 +37624,13 @@
       <anim:par smil:begin="next">
        <anim:par smil:begin="0s">
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id117" smil:attributeName="visibility" smil:to="visible"/>
+        </anim:par>
+       </anim:par>
+      </anim:par>
+      <anim:par smil:begin="next">
+       <anim:par smil:begin="0s">
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
          <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id118" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
        </anim:par>
@@ -38141,23 +37684,17 @@
         </anim:par>
        </anim:par>
       </anim:par>
-      <anim:par smil:begin="next">
-       <anim:par smil:begin="0s">
-        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
-         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id126" smil:attributeName="visibility" smil:to="visible"/>
-        </anim:par>
-       </anim:par>
-      </anim:par>
      </anim:seq>
     </anim:par>
     <presentation:notes draw:style-name="dp3">
-     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="25" presentation:class="page"/>
+     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="24" presentation:class="page"/>
      <draw:frame presentation:style-name="pr14" draw:text-style-name="P28" draw:layer="layout" svg:width="16.79cm" svg:height="13.364cm" svg:x="2.098cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true" presentation:user-transformed="true">
       <draw:text-box/>
      </draw:frame>
     </presentation:notes>
    </draw:page>
-   <draw:page draw:name="page26" draw:style-name="dp4" draw:master-page-name="oranssi">
+   <draw:page draw:name="page25" draw:style-name="dp4" draw:master-page-name="oranssi">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr17" draw:text-style-name="P50" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p><text:span text:style-name="T26">Readability</text:span><text:span text:style-name="T52"> vs </text:span><text:span text:style-name="T26">Writability</text:span></text:p>
@@ -38180,7 +37717,7 @@
       <text:p text:style-name="P40"><text:span text:style-name="T25"/></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame presentation:style-name="pr32" draw:text-style-name="P41" xml:id="id127" draw:id="id127" draw:layer="layout" svg:width="10.725cm" svg:height="6.617cm" svg:x="14.699cm" svg:y="5.603cm">
+    <draw:frame presentation:style-name="pr32" draw:text-style-name="P41" xml:id="id126" draw:id="id126" draw:layer="layout" svg:width="10.725cm" svg:height="6.617cm" svg:x="14.699cm" svg:y="5.603cm">
      <draw:text-box>
       <text:p text:style-name="P40"><text:span text:style-name="T25">// Java</text:span></text:p>
       <text:p text:style-name="P40"><text:span text:style-name="T25"/></text:p>
@@ -38197,20 +37734,21 @@
       <anim:par smil:begin="next">
        <anim:par smil:begin="0s">
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
-         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id127" smil:attributeName="visibility" smil:to="visible"/>
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id126" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
        </anim:par>
       </anim:par>
      </anim:seq>
     </anim:par>
     <presentation:notes draw:style-name="dp3">
-     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="26" presentation:class="page"/>
+     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="25" presentation:class="page"/>
      <draw:frame presentation:style-name="pr14" draw:text-style-name="P28" draw:layer="layout" svg:width="16.79cm" svg:height="13.364cm" svg:x="2.098cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true" presentation:user-transformed="true">
       <draw:text-box/>
      </draw:frame>
     </presentation:notes>
    </draw:page>
-   <draw:page draw:name="page27" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+   <draw:page draw:name="page26" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr15" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p>Exercícios</text:p>
@@ -38220,32 +37758,32 @@
      <draw:text-box>
       <text:list text:style-name="L5">
        <text:list-item>
-        <text:p xml:id="id128" text:id="id128"><text:span text:style-name="T16">Descreva em linhas gerais um trabalho ou projeto que você tenha participado.</text:span></text:p>
+        <text:p xml:id="id127" text:id="id127"><text:span text:style-name="T16">Descreva em linhas gerais um trabalho ou projeto que você tenha participado.</text:span></text:p>
         <text:list>
          <text:list-item>
-          <text:p xml:id="id129" text:id="id129" text:style-name="P49"><text:span text:style-name="T57">Quais seriam os 2 critérios </text:span><text:span text:style-name="T58">externos</text:span><text:span text:style-name="T57"> mais importantes para esse projeto? Justifique.</text:span></text:p>
+          <text:p xml:id="id128" text:id="id128" text:style-name="P49"><text:span text:style-name="T57">Quais seriam os 2 critérios </text:span><text:span text:style-name="T58">externos</text:span><text:span text:style-name="T57"> mais importantes para esse projeto? Justifique.</text:span></text:p>
          </text:list-item>
          <text:list-item>
-          <text:p xml:id="id130" text:id="id130" text:style-name="P49"><text:span text:style-name="T57">Qual linguagem foi usada no projeto e qual seria a melhor? Justifique.</text:span></text:p>
+          <text:p xml:id="id129" text:id="id129" text:style-name="P49"><text:span text:style-name="T57">Qual linguagem foi usada no projeto e qual seria a melhor? Justifique.</text:span></text:p>
          </text:list-item>
         </text:list>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id131" text:id="id131" text:style-name="P52"><text:span text:style-name="T16">Descreva em linhas gerais um trabalho ou projeto que você tenha participado.</text:span></text:p>
+        <text:p xml:id="id130" text:id="id130" text:style-name="P52"><text:span text:style-name="T16">Descreva em linhas gerais um trabalho ou projeto que você tenha participado.</text:span></text:p>
         <text:list>
          <text:list-item>
-          <text:p xml:id="id132" text:id="id132" text:style-name="P49"><text:span text:style-name="T57">Quais seriam os 2 critérios </text:span><text:span text:style-name="T58">internos</text:span><text:span text:style-name="T57"> mais importantes para esse projeto? Justifique.</text:span></text:p>
+          <text:p xml:id="id131" text:id="id131" text:style-name="P49"><text:span text:style-name="T57">Quais seriam os 2 critérios </text:span><text:span text:style-name="T58">internos</text:span><text:span text:style-name="T57"> mais importantes para esse projeto? Justifique.</text:span></text:p>
          </text:list-item>
          <text:list-item>
-          <text:p xml:id="id133" text:id="id133" text:style-name="P49"><text:span text:style-name="T57">Qual linguagem foi usada no projeto e qual seria a melhor? Justifique.</text:span></text:p>
+          <text:p xml:id="id132" text:id="id132" text:style-name="P49"><text:span text:style-name="T57">Qual linguagem foi usada no projeto e qual seria a melhor? Justifique.</text:span></text:p>
          </text:list-item>
         </text:list>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id134" text:id="id134" text:style-name="P52"><text:span text:style-name="T16">Escolha uma linguagem de sua preferência. Dê dois exemplos de inconsistência ou não ortogonalidade entre as funcionalidades da linguagem.</text:span></text:p>
+        <text:p xml:id="id133" text:id="id133" text:style-name="P52"><text:span text:style-name="T16">Escolha uma linguagem de sua preferência. Dê dois exemplos de inconsistência ou não ortogonalidade entre as funcionalidades da linguagem.</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id135" text:id="id135" text:style-name="P52"><text:span text:style-name="T16">Pesquise dois códigos que façam a mesma coisa, mas duas linguagens diferentes, e discuta sobre a legibilidade e redigibilidade de ambos.</text:span></text:p>
+        <text:p xml:id="id134" text:id="id134" text:style-name="P52"><text:span text:style-name="T16">Pesquise dois códigos que façam a mesma coisa, mas duas linguagens diferentes, e discuta sobre a legibilidade e redigibilidade de ambos.</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
@@ -38255,25 +37793,32 @@
       <anim:par smil:begin="next">
        <anim:par smil:begin="0s">
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="1">
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id127" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
+        </anim:par>
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="1">
          <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id128" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="1">
          <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id129" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
-        </anim:par>
-        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="1">
-         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id130" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
        </anim:par>
       </anim:par>
       <anim:par smil:begin="next">
        <anim:par smil:begin="0s">
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="1">
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id130" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
+        </anim:par>
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="1">
          <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id131" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="1">
          <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id132" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
-        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="1">
+       </anim:par>
+      </anim:par>
+      <anim:par smil:begin="next">
+       <anim:par smil:begin="0s">
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="1">
          <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id133" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
        </anim:par>
@@ -38285,23 +37830,17 @@
         </anim:par>
        </anim:par>
       </anim:par>
-      <anim:par smil:begin="next">
-       <anim:par smil:begin="0s">
-        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="1">
-         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id135" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
-        </anim:par>
-       </anim:par>
-      </anim:par>
      </anim:seq>
     </anim:par>
     <presentation:notes draw:style-name="dp3">
-     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="27" presentation:class="page"/>
+     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="26" presentation:class="page"/>
      <draw:frame presentation:style-name="pr14" draw:text-style-name="P37" draw:layer="layout" svg:width="16.79cm" svg:height="13.364cm" svg:x="2.098cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true" presentation:user-transformed="true">
       <draw:text-box/>
      </draw:frame>
     </presentation:notes>
    </draw:page>
-   <draw:page draw:name="page28" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL1T32">
+   <draw:page draw:name="page27" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL1T32">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr12" draw:text-style-name="P20" draw:layer="layout" svg:width="25.199cm" svg:height="4.78cm" svg:x="1.501cm" svg:y="3.205cm" presentation:class="subtitle" presentation:user-transformed="true">
      <draw:text-box>
       <text:p><text:span text:style-name="T2">Linguagens de Alto Nível</text:span></text:p>
@@ -38629,13 +38168,14 @@
      </draw:text-box>
     </draw:frame>
     <presentation:notes draw:style-name="dp3">
-     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="28" presentation:class="page"/>
+     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="27" presentation:class="page"/>
      <draw:frame presentation:style-name="pr13" draw:text-style-name="P24" draw:layer="layout" svg:width="16.79cm" svg:height="13.364cm" svg:x="2.098cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true" presentation:user-transformed="true">
       <draw:text-box/>
      </draw:frame>
     </presentation:notes>
    </draw:page>
-   <draw:page draw:name="page29" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+   <draw:page draw:name="page28" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr17" draw:text-style-name="P50" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p><text:span text:style-name="T52">Avaliando Linguages</text:span></text:p>
@@ -41904,7 +41444,7 @@
      <text:p/>
      <draw:enhanced-geometry svg:viewBox="0 0 21600 21600" draw:type="rectangle" draw:enhanced-path="M 0 0 L 21600 0 21600 21600 0 21600 0 0 Z N"/>
     </draw:custom-shape>
-    <draw:custom-shape draw:style-name="gr39" draw:text-style-name="P35" xml:id="id136" draw:id="id136" draw:layer="layout" svg:width="13.8cm" svg:height="0.955cm" svg:x="11.371cm" svg:y="16.588cm">
+    <draw:custom-shape draw:style-name="gr39" draw:text-style-name="P35" xml:id="id135" draw:id="id135" draw:layer="layout" svg:width="13.8cm" svg:height="0.955cm" svg:x="11.371cm" svg:y="16.588cm">
      <text:p/>
      <draw:enhanced-geometry svg:viewBox="0 0 21600 21600" draw:type="rectangle" draw:enhanced-path="M 0 0 L 21600 0 21600 21600 0 21600 0 0 Z N"/>
     </draw:custom-shape>
@@ -41913,20 +41453,21 @@
       <anim:par smil:begin="next">
        <anim:par smil:begin="0s">
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
-         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id136" smil:attributeName="visibility" smil:to="visible"/>
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id135" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
        </anim:par>
       </anim:par>
      </anim:seq>
     </anim:par>
     <presentation:notes draw:style-name="dp3">
-     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="29" presentation:class="page"/>
+     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="28" presentation:class="page"/>
      <draw:frame presentation:style-name="pr14" draw:text-style-name="P28" draw:layer="layout" svg:width="16.79cm" svg:height="13.364cm" svg:x="2.098cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true" presentation:user-transformed="true">
       <draw:text-box/>
      </draw:frame>
     </presentation:notes>
    </draw:page>
-   <draw:page draw:name="page30" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+   <draw:page draw:name="page29" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr17" draw:text-style-name="P50" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p><text:span text:style-name="T52">Trabalho 1</text:span></text:p>
@@ -41936,49 +41477,56 @@
      <draw:text-box>
       <text:list text:style-name="L2">
        <text:list-item>
-        <text:p xml:id="id137" text:id="id137" text:style-name="P53"><text:span text:style-name="T59">Escolher uma linguagem com a qual você </text:span><text:span text:style-name="T60">não está familiarizado</text:span><text:span text:style-name="T59">.</text:span></text:p>
+        <text:p xml:id="id136" text:id="id136" text:style-name="P53"><text:span text:style-name="T59">Escolher uma linguagem com a qual você </text:span><text:span text:style-name="T60">não está familiarizado</text:span><text:span text:style-name="T59">.</text:span></text:p>
         <text:list>
          <text:list-item>
-          <text:p xml:id="id138" text:id="id138" text:style-name="P53"><text:span text:style-name="T47">evitar duplicatas com outros colegas</text:span></text:p>
+          <text:p xml:id="id137" text:id="id137" text:style-name="P53"><text:span text:style-name="T47">evitar duplicatas com outros colegas</text:span></text:p>
          </text:list-item>
          <text:list-item>
-          <text:p xml:id="id139" text:id="id139" text:style-name="P53"><text:span text:style-name="T61">instalar e escrever pequenos programas com a linguagem</text:span></text:p>
+          <text:p xml:id="id138" text:id="id138" text:style-name="P53"><text:span text:style-name="T61">instalar e escrever pequenos programas com a linguagem</text:span></text:p>
          </text:list-item>
          <text:list-item>
-          <text:p xml:id="id140" text:id="id140" text:style-name="P53"><text:span text:style-name="T47">usar pelo menos uma funcionalidade de </text:span><text:span text:style-name="T61">alta expressividade</text:span></text:p>
+          <text:p xml:id="id139" text:id="id139" text:style-name="P53"><text:span text:style-name="T47">usar pelo menos uma funcionalidade de </text:span><text:span text:style-name="T61">alta expressividade</text:span></text:p>
           <text:list>
            <text:list-item>
-            <text:p xml:id="id141" text:id="id141" text:style-name="P53"><text:span text:style-name="T62">procurar uma funcionalidade “difícil” e depois sugerir/discutir com o professor</text:span></text:p>
+            <text:p xml:id="id140" text:id="id140" text:style-name="P53"><text:span text:style-name="T62">procurar uma funcionalidade “difícil” e depois sugerir/discutir com o professor</text:span></text:p>
            </text:list-item>
           </text:list>
          </text:list-item>
         </text:list>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id142" text:id="id142" text:style-name="P53"><text:span text:style-name="T59">Escrever um pequeno artigo (estilo </text:span><text:span text:style-name="T63">Wikipedia</text:span><text:span text:style-name="T59">):</text:span></text:p>
+        <text:p xml:id="id141" text:id="id141" text:style-name="P53"><text:span text:style-name="T59">Escrever um pequeno artigo (estilo </text:span><text:span text:style-name="T63">Wikipedia</text:span><text:span text:style-name="T59">):</text:span></text:p>
         <text:list>
          <text:list-item>
-          <text:p xml:id="id143" text:id="id143" text:style-name="P53"><text:span text:style-name="T47">[0.5] origens e influências (linha do tempo)</text:span></text:p>
+          <text:p xml:id="id142" text:id="id142" text:style-name="P53"><text:span text:style-name="T47">[0.5] origens e influências (linha do tempo)</text:span></text:p>
          </text:list-item>
          <text:list-item>
-          <text:p xml:id="id144" text:id="id144" text:style-name="P53"><text:span text:style-name="T47">[0.5] classificação (imp/func/log/oo, est/din, usos)</text:span></text:p>
+          <text:p xml:id="id143" text:id="id143" text:style-name="P53"><text:span text:style-name="T47">[0.5] classificação (imp/func/log/oo, est/din, usos)</text:span></text:p>
          </text:list-item>
          <text:list-item>
-          <text:p xml:id="id145" text:id="id145" text:style-name="P53"><text:span text:style-name="T47">[5.0] avaliação comparativa (vs outras linguagens) com foco em </text:span><text:span text:style-name="T64">expressividade</text:span></text:p>
+          <text:p xml:id="id144" text:id="id144" text:style-name="P53"><text:span text:style-name="T47">[5.0] avaliação comparativa (vs outras linguagens) com foco em </text:span><text:span text:style-name="T64">expressividade</text:span></text:p>
          </text:list-item>
          <text:list-item>
-          <text:p xml:id="id146" text:id="id146" text:style-name="P53"><text:span text:style-name="T47">[4.0] exemplos de código representativos (vs outra linguagem)</text:span></text:p>
+          <text:p xml:id="id145" text:id="id145" text:style-name="P53"><text:span text:style-name="T47">[4.0] exemplos de código representativos (vs outra linguagem)</text:span></text:p>
          </text:list-item>
         </text:list>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id147" text:id="id147" text:style-name="P53"><text:span text:style-name="T59">Slides de apresentação (5-10 slides)</text:span></text:p>
+        <text:p xml:id="id146" text:id="id146" text:style-name="P53"><text:span text:style-name="T59">Slides de apresentação (5-10 slides)</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
     </draw:frame>
     <anim:par presentation:node-type="timing-root">
      <anim:seq presentation:node-type="main-sequence">
+      <anim:par smil:begin="next">
+       <anim:par smil:begin="0s">
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id136" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
+        </anim:par>
+       </anim:par>
+      </anim:par>
       <anim:par smil:begin="next">
        <anim:par smil:begin="0s">
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
@@ -41998,14 +41546,14 @@
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
          <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id139" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id140" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
+        </anim:par>
        </anim:par>
       </anim:par>
       <anim:par smil:begin="next">
        <anim:par smil:begin="0s">
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
-         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id140" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
-        </anim:par>
-        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="with-previous" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
          <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id141" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
        </anim:par>
@@ -42045,29 +41593,23 @@
         </anim:par>
        </anim:par>
       </anim:par>
-      <anim:par smil:begin="next">
-       <anim:par smil:begin="0s">
-        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
-         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id147" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
-        </anim:par>
-       </anim:par>
-      </anim:par>
      </anim:seq>
     </anim:par>
     <presentation:notes draw:style-name="dp3">
-     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="30" presentation:class="page"/>
+     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="29" presentation:class="page"/>
      <draw:frame presentation:style-name="pr14" draw:text-style-name="P28" draw:layer="layout" svg:width="16.79cm" svg:height="13.364cm" svg:x="2.098cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true" presentation:user-transformed="true">
       <draw:text-box/>
      </draw:frame>
     </presentation:notes>
    </draw:page>
-   <draw:page draw:name="page31" draw:style-name="dp4" draw:master-page-name="oranssi">
+   <draw:page draw:name="page30" draw:style-name="dp4" draw:master-page-name="oranssi">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr15" draw:text-style-name="P32" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p><text:span text:style-name="T12">Poder de Expressividade</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame draw:style-name="gr6" draw:text-style-name="P25" xml:id="id148" draw:id="id148" draw:layer="layout" svg:width="19.074cm" svg:height="4.681cm" svg:x="4.534cm" svg:y="5.72cm">
+    <draw:frame draw:style-name="gr6" draw:text-style-name="P25" xml:id="id147" draw:id="id147" draw:layer="layout" svg:width="19.074cm" svg:height="4.681cm" svg:x="4.534cm" svg:y="5.72cm">
      <draw:image xlink:href="" loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAv4AAAC8CAIAAACPCD2gAAAAA3NCSVQICAjb4U/gAAAAGXRF
        WHRTb2Z0d2FyZQBnbm9tZS1zY3JlZW5zaG907wO/PgAAIABJREFUeJzsnXdcE9kTwF8SLHCK
@@ -42567,16 +42109,16 @@
      <draw:text-box>
       <text:list text:style-name="L2">
        <text:list-item>
-        <text:p xml:id="id149" text:id="id149"><text:span text:style-name="T59">Usando A=</text:span><text:span text:style-name="T63">Python</text:span><text:span text:style-name="T59"> vs B=</text:span><text:span text:style-name="T63">C</text:span><text:span text:style-name="T59">...</text:span></text:p>
+        <text:p xml:id="id148" text:id="id148"><text:span text:style-name="T59">Usando A=</text:span><text:span text:style-name="T63">Python</text:span><text:span text:style-name="T59"> vs B=</text:span><text:span text:style-name="T63">C</text:span><text:span text:style-name="T59">...</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p xml:id="id150" text:id="id150"><text:span text:style-name="T13">Python é estritamente mais expressiva que C se as duas condições forem verdadeiras:</text:span></text:p>
+        <text:p xml:id="id149" text:id="id149"><text:span text:style-name="T13">Python é estritamente mais expressiva que C se as duas condições forem verdadeiras:</text:span></text:p>
         <text:list>
          <text:list-item>
-          <text:p xml:id="id151" text:id="id151"><text:span text:style-name="T14">Qualquer programa em C pode ser reescrito em Python mantendo a </text:span><text:span text:style-name="T65">estrutura essencial do programa</text:span><text:span text:style-name="T14"> intacta.</text:span></text:p>
+          <text:p xml:id="id150" text:id="id150"><text:span text:style-name="T14">Qualquer programa em C pode ser reescrito em Python mantendo a </text:span><text:span text:style-name="T65">estrutura essencial do programa</text:span><text:span text:style-name="T14"> intacta.</text:span></text:p>
          </text:list-item>
          <text:list-item>
-          <text:p xml:id="id152" text:id="id152"><text:span text:style-name="T14">Alguns programas em Python precisam ser violentamente reestruturados para serem escritos em C.</text:span></text:p>
+          <text:p xml:id="id151" text:id="id151"><text:span text:style-name="T14">Alguns programas em Python precisam ser violentamente reestruturados para serem escritos em C.</text:span></text:p>
          </text:list-item>
         </text:list>
        </text:list-item>
@@ -42588,7 +42130,14 @@
       <anim:par smil:begin="next">
        <anim:par smil:begin="0s">
         <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear">
-         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id148" smil:attributeName="visibility" smil:to="visible"/>
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id147" smil:attributeName="visibility" smil:to="visible"/>
+        </anim:par>
+       </anim:par>
+      </anim:par>
+      <anim:par smil:begin="next">
+       <anim:par smil:begin="0s">
+        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
+         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id148" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
         </anim:par>
        </anim:par>
       </anim:par>
@@ -42613,23 +42162,17 @@
         </anim:par>
        </anim:par>
       </anim:par>
-      <anim:par smil:begin="next">
-       <anim:par smil:begin="0s">
-        <anim:par smil:begin="0s" smil:fill="hold" presentation:node-type="on-click" presentation:preset-class="entrance" presentation:preset-id="ooo-entrance-appear" presentation:group-id="0">
-         <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="id152" anim:sub-item="text" smil:attributeName="visibility" smil:to="visible"/>
-        </anim:par>
-       </anim:par>
-      </anim:par>
      </anim:seq>
     </anim:par>
     <presentation:notes draw:style-name="dp3">
-     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="31" presentation:class="page"/>
+     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="30" presentation:class="page"/>
      <draw:frame presentation:style-name="pr14" draw:text-style-name="P55" draw:layer="layout" svg:width="16.79cm" svg:height="13.364cm" svg:x="2.098cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true" presentation:user-transformed="true">
       <draw:text-box/>
      </draw:frame>
     </presentation:notes>
    </draw:page>
-   <draw:page draw:name="page32" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL1T32">
+   <draw:page draw:name="page31" draw:style-name="dp4" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL1T32">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr12" draw:text-style-name="P20" draw:layer="layout" svg:width="25.199cm" svg:height="4.78cm" svg:x="1.501cm" svg:y="3.205cm" presentation:class="subtitle" presentation:user-transformed="true">
      <draw:text-box>
       <text:p><text:span text:style-name="T2">Linguagens de Alto Nível</text:span></text:p>
@@ -42957,38 +42500,8 @@
      </draw:text-box>
     </draw:frame>
     <presentation:notes draw:style-name="dp3">
-     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="32" presentation:class="page"/>
+     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="31" presentation:class="page"/>
      <draw:frame presentation:style-name="pr13" draw:text-style-name="P24" draw:layer="layout" svg:width="16.79cm" svg:height="13.364cm" svg:x="2.098cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true" presentation:user-transformed="true">
-      <draw:text-box/>
-     </draw:frame>
-    </presentation:notes>
-   </draw:page>
-   <draw:page draw:name="page33" draw:style-name="dp5" draw:master-page-name="oranssi" presentation:presentation-page-layout-name="AL2T1">
-    <draw:frame presentation:style-name="pr17" draw:text-style-name="P32" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
-     <draw:text-box>
-      <text:p><text:span text:style-name="T12">Poder de Expressividade</text:span></text:p>
-     </draw:text-box>
-    </draw:frame>
-    <draw:frame presentation:style-name="pr36" draw:text-style-name="P32" draw:layer="layout" svg:width="25.199cm" svg:height="13.859cm" svg:x="1.4cm" svg:y="4.914cm" presentation:class="outline" presentation:user-transformed="true">
-     <draw:text-box>
-      <text:list text:style-name="L2">
-       <text:list-item>
-        <text:p><text:span text:style-name="T12">Exemplos em Lua</text:span></text:p>
-        <text:list>
-         <text:list-item>
-          <text:p><text:span text:style-name="T12">Closures: </text:span><text:span text:style-name="T66">counter/*, fun/closures-02</text:span></text:p>
-         </text:list-item>
-         <text:list-item>
-          <text:p><text:span text:style-name="T12">Co-rotinas: </text:span><text:span text:style-name="T66">iter/*</text:span></text:p>
-         </text:list-item>
-        </text:list>
-       </text:list-item>
-      </text:list>
-     </draw:text-box>
-    </draw:frame>
-    <presentation:notes draw:style-name="dp3">
-     <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="14.848cm" svg:height="11.135cm" svg:x="3.07cm" svg:y="2.257cm" draw:page-number="33" presentation:class="page"/>
-     <draw:frame presentation:style-name="pr14" draw:text-style-name="P55" draw:layer="layout" svg:width="16.79cm" svg:height="13.364cm" svg:x="2.098cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true" presentation:user-transformed="true">
       <draw:text-box/>
      </draw:frame>
     </presentation:notes>
