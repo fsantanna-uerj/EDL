@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.presentation">
- <office:meta><meta:generator>LibreOffice/6.0.7.3$Linux_X86_64 LibreOffice_project/00m0$Build-3</meta:generator><meta:creation-date>2011-05-24T14:40:40</meta:creation-date><dc:language>fi-FI</dc:language><meta:editing-cycles>1183</meta:editing-cycles><meta:editing-duration>P65DT13H9M51S</meta:editing-duration><meta:initial-creator>chico </meta:initial-creator><dc:date>2021-01-04T18:10:21.642081892</dc:date><meta:document-statistic meta:object-count="79"/><meta:user-defined meta:name="Info 1"/><meta:user-defined meta:name="Info 2"/><meta:user-defined meta:name="Info 3"/><meta:user-defined meta:name="Info 4"/><meta:template xlink:type="simple" xlink:actuate="onRequest" xlink:title="" xlink:href="../usr/lib/openoffice/basis3.2/share/template/en-US/presnt/Orange.otp"/></office:meta>
+ <office:meta><meta:generator>LibreOffice/6.0.7.3$Linux_X86_64 LibreOffice_project/00m0$Build-3</meta:generator><meta:creation-date>2011-05-24T14:40:40</meta:creation-date><dc:language>fi-FI</dc:language><meta:editing-cycles>1184</meta:editing-cycles><meta:editing-duration>P65DT13H15M24S</meta:editing-duration><meta:initial-creator>chico </meta:initial-creator><dc:date>2021-01-04T18:17:07.834309186</dc:date><meta:document-statistic meta:object-count="79"/><meta:user-defined meta:name="Info 1"/><meta:user-defined meta:name="Info 2"/><meta:user-defined meta:name="Info 3"/><meta:user-defined meta:name="Info 4"/><meta:template xlink:type="simple" xlink:actuate="onRequest" xlink:title="" xlink:href="../usr/lib/openoffice/basis3.2/share/template/en-US/presnt/Orange.otp"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
    <config:config-item config:name="VisibleAreaTop" config:type="int">-3969</config:config-item>
-   <config:config-item config:name="VisibleAreaLeft" config:type="int">-900</config:config-item>
+   <config:config-item config:name="VisibleAreaLeft" config:type="int">-3096</config:config-item>
    <config:config-item config:name="VisibleAreaWidth" config:type="int">35322</config:config-item>
    <config:config-item config:name="VisibleAreaHeight" config:type="int">29131</config:config-item>
    <config:config-item-map-indexed config:name="Views">
@@ -36,7 +36,7 @@
      <config:config-item config:name="SlidesPerRow" config:type="short">4</config:config-item>
      <config:config-item config:name="EditMode" config:type="int">0</config:config-item>
      <config:config-item config:name="VisibleAreaTop" config:type="int">-3678</config:config-item>
-     <config:config-item config:name="VisibleAreaLeft" config:type="int">-900</config:config-item>
+     <config:config-item config:name="VisibleAreaLeft" config:type="int">-3096</config:config-item>
      <config:config-item config:name="VisibleAreaWidth" config:type="int">35323</config:config-item>
      <config:config-item config:name="VisibleAreaHeight" config:type="int">29132</config:config-item>
      <config:config-item config:name="GridCoarseWidth" config:type="int">2540</config:config-item>
@@ -1786,6 +1786,9 @@
   <style:style style:name="P27" style:family="paragraph">
    <style:paragraph-properties fo:margin-left="1.524cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0.254cm" fo:text-indent="0cm"/>
   </style:style>
+  <style:style style:name="P28" style:family="paragraph">
+   <style:paragraph-properties fo:margin-left="1.524cm" fo:margin-right="0cm" fo:margin-top="0.508cm" fo:margin-bottom="0.762cm" fo:text-align="start" fo:text-indent="0cm"/>
+  </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties fo:font-size="14pt" style:font-size-asian="14pt" style:font-size-complex="14pt"/>
   </style:style>
@@ -1809,6 +1812,24 @@
   </style:style>
   <style:style style:name="T8" style:family="text">
    <style:text-properties fo:font-size="11pt" style:font-size-asian="11pt" style:font-size-complex="11pt"/>
+  </style:style>
+  <style:style style:name="T9" style:family="text">
+   <style:text-properties fo:font-size="28pt" style:font-size-asian="28pt" style:font-size-complex="28pt"/>
+  </style:style>
+  <style:style style:name="T10" style:family="text">
+   <style:text-properties fo:font-size="20pt" style:font-size-asian="20pt" style:font-size-complex="20pt"/>
+  </style:style>
+  <style:style style:name="T11" style:family="text">
+   <style:text-properties fo:font-size="20pt" fo:font-weight="bold" style:font-size-asian="20pt" style:font-weight-asian="bold" style:font-size-complex="20pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="T12" style:family="text">
+   <style:text-properties fo:font-size="28pt" fo:font-weight="bold" style:font-size-asian="28pt" style:font-weight-asian="bold" style:font-size-complex="28pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="T13" style:family="text">
+   <style:text-properties fo:font-size="28pt" fo:font-weight="normal" style:font-size-asian="28pt" style:font-weight-asian="normal" style:font-size-complex="28pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="T14" style:family="text">
+   <style:text-properties fo:font-size="26pt" fo:font-style="italic" fo:font-weight="bold" style:font-size-asian="26pt" style:font-style-asian="italic" style:font-weight-asian="bold" style:font-size-complex="26pt" style:font-style-complex="italic" style:font-weight-complex="bold"/>
   </style:style>
   <text:list-style style:name="L1">
    <text:list-level-style-bullet text:level="1" text:bullet-char="●">
@@ -2652,7 +2673,7 @@
       <text:p>Formato do Curso</text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame presentation:style-name="pr15" draw:layer="layout" svg:width="25.199cm" svg:height="14.082cm" svg:x="1.4cm" svg:y="4.914cm" presentation:class="outline" presentation:user-transformed="true">
+    <draw:frame presentation:style-name="pr15" draw:layer="layout" svg:width="25.199cm" svg:height="15.575cm" svg:x="1.4cm" svg:y="4.914cm" presentation:class="outline" presentation:user-transformed="true">
      <draw:text-box>
       <text:list text:style-name="L2">
        <text:list-item>
@@ -2685,6 +2706,9 @@
          </text:list-item>
          <text:list-item>
           <text:p>Provas (???)</text:p>
+         </text:list-item>
+         <text:list-item>
+          <text:p>75% de presença</text:p>
          </text:list-item>
         </text:list>
        </text:list-item>
@@ -2850,48 +2874,43 @@
       <text:p>Avaliação</text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame presentation:style-name="pr18" draw:text-style-name="P26" draw:layer="layout" svg:width="25.199cm" svg:height="17.305cm" svg:x="1.4cm" svg:y="4.914cm" presentation:class="outline" presentation:user-transformed="true">
+    <draw:frame presentation:style-name="pr18" draw:text-style-name="P26" draw:layer="layout" svg:width="25.199cm" svg:height="17.305cm" svg:x="1.4cm" svg:y="4.314cm" presentation:class="outline" presentation:user-transformed="true">
      <draw:text-box>
       <text:list text:style-name="L2">
        <text:list-item>
-        <text:p text:style-name="P25">(Assumindo que não haverá provas presenciais)</text:p>
-       </text:list-item>
-       <text:list-item>
-        <text:p text:style-name="P25">Perguntas sobre os vídeos</text:p>
+        <text:p text:style-name="P25"><text:span text:style-name="T9">Perguntas devem ser respondidas no prazo.</text:span></text:p>
         <text:list>
          <text:list-item>
-          <text:p text:style-name="P27"><text:span text:style-name="T6">[peso 1] Módulo 1</text:span></text:p>
-         </text:list-item>
-         <text:list-item>
-          <text:p text:style-name="P27"><text:span text:style-name="T6">[peso 1] Módulo 2</text:span></text:p>
-         </text:list-item>
-         <text:list-item>
-          <text:p text:style-name="P27"><text:span text:style-name="T6">[peso 2] Módulo 3</text:span></text:p>
-         </text:list-item>
-         <text:list-item>
-          <text:p text:style-name="P27"><text:span text:style-name="T6">[peso 1] Módulo 4</text:span></text:p>
+          <text:p><text:span text:style-name="T6">nota decrescente conforme atraso</text:span></text:p>
          </text:list-item>
         </text:list>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P25">Calendário</text:p>
+        <text:p text:style-name="P25"><text:span text:style-name="T9">4 notas, uma para cada conjunto de perguntas</text:span></text:p>
         <text:list>
          <text:list-item>
-          <text:p text:style-name="P25"><text:span text:style-name="T8">https://calendar.google.com/calendar/u/0?cid=Y19jbGFzc3Jvb21hNjU1MzYwYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t</text:span></text:p>
+          <text:p text:style-name="P27"><text:span text:style-name="T10">Módulo 1 (x1)</text:span></text:p>
+         </text:list-item>
+         <text:list-item>
+          <text:p text:style-name="P27"><text:span text:style-name="T10">Módulo 2 (x1)</text:span></text:p>
+         </text:list-item>
+         <text:list-item>
+          <text:p text:style-name="P27"><text:span text:style-name="T10">Módulo 3 (</text:span><text:span text:style-name="T11">x2</text:span><text:span text:style-name="T10">)</text:span></text:p>
+         </text:list-item>
+         <text:list-item>
+          <text:p text:style-name="P27"><text:span text:style-name="T10">Módulo 4 (x1)</text:span></text:p>
          </text:list-item>
         </text:list>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P25">Conteúdo</text:p>
-        <text:list>
-         <text:list-item>
-          <text:p text:style-name="P25"><text:span text:style-name="T6">discussão sobre os vídeos</text:span></text:p>
-         </text:list-item>
-         <text:list-item>
-          <text:p text:style-name="P25"><text:span text:style-name="T6">dúvidas sobre as perguntas</text:span></text:p>
-         </text:list-item>
-        </text:list>
-        <text:p text:style-name="P26"/>
+        <text:p text:style-name="P25"><text:span text:style-name="T9">Prova final: perguntas selecionadas</text:span></text:p>
+       </text:list-item>
+       <text:list-item>
+        <text:p text:style-name="P25"><text:span text:style-name="T9">Trabalho 1: </text:span><text:span text:style-name="T12">+1</text:span><text:span text:style-name="T13"> ponto extra na média final</text:span></text:p>
+       </text:list-item>
+       <text:list-item>
+        <text:p text:style-name="P25"><text:span text:style-name="T13">75% de presença na aulas síncronas</text:span></text:p>
+        <text:p text:style-name="P28"><text:span text:style-name="T14">(Assumindo que não haverá provas presenciais)</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
