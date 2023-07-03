@@ -31,6 +31,7 @@ avaliaExp mem (Var id)    = consulta mem id
 data Cmd = Atr String Exp
          | Seq Cmd Cmd
          | Cnd Exp Cmd Cmd
+         | Prt Exp
   deriving Show
 
 avaliaCmd :: Mem -> Cmd -> Mem
@@ -42,14 +43,15 @@ avaliaCmd mem (Cnd exp c1 c2) = if (avaliaExp mem exp) /= 0 then
                                   avaliaCmd mem c1
                                 else
                                   avaliaCmd mem c2
+avaliaCmd mem (Prt e) = traceShow (avaliaExp mem e) mem
 
 -------------------------------------------------------------------------------
 
 prog :: Cmd
 prog = Seq (Atr "x" (Num 10))
            (Seq (Atr "x" (Num 20))
-                (Atr "y" (Var "x")))
+                (Seq (Atr "y" (Var "x"))
+                     (Prt (Var "y"))))
 
-p2 = Cnd (Num 0) (Atr "x" (Num 10)) (Atr "x" (Num 99))
 
-main = print (avaliaCmd [] p2)
+main = print (avaliaCmd [] prog)
